@@ -1,0 +1,4 @@
+body{
+    background-color: var(--common-dark);
+    color: var(--common-light);
+}

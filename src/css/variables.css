@@ -1,0 +1,10 @@
+:root {
+  /* Сітка */
+  --flex-items: 3;
+  --flex-items-gap: 32px;
+
+  /* Кольори */
+  --common-dark: #121212;
+  --common-light: #F6F6F6;
+  --light: #fff;
+}
