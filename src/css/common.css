@@ -11,6 +11,8 @@ body {
 
   background-color: var(--common-light);
 
+  line-height: calc(18 / 14);
+
   letter-spacing: -0.02em;
 }
 
