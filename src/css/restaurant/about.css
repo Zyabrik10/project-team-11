@@ -17,14 +17,16 @@ p {
     padding: 0;
 }
 
-.about-img {
+.about-img,
+.about-pic,
+.about-pics-wrapper,
+.about-txt-hidden {
     display: block;
 }
 
 /* picture */
 
 .about-pic {
-    display: block;
     margin-bottom: 20px;
 }
 
@@ -35,10 +37,6 @@ p {
 }
 
 /* common pics div */
-
-.about-pics-wrapper {
-    display: block;
-}
 
 @media screen and (min-width: 768px) {
     .about-pics-wrapper {
@@ -115,10 +113,8 @@ p {
     .about-txt-hidden {
         display: block;
         margin-top: var(--flex-items-gap);
-
         font-weight: 500;
         font-size: 18px;
         line-height: 1.3;
-
     }
 }
