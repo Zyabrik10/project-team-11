@@ -27,12 +27,6 @@ body {
   );
 }
 
-.flex-container-item-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .container {
   width: 100%;
   max-width: 375px;
@@ -102,4 +96,20 @@ body {
   line-height: 1.1;
 
   letter-spacing: -0.02em;
+}
+
+.spec-page-button {
+  background-color: transparent;
+
+  border-radius: 32px;
+
+  color: #f7f7f7;
+
+  border: 1px solid currentColor;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  padding-left: 24px;
+  padding-right: 24px;
 }
