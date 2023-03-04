@@ -1,17 +1,17 @@
 @import url('variables.css');
 
-body{
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    color: var(--common-dark);
+  color: var(--common-dark);
 
-    background-color: var(--common-light);
+  background-color: var(--common-light);
 
-    letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
 }
 
 /* Сітка */
@@ -35,7 +35,7 @@ body{
 
 .container {
   width: 100%;
-  max-width: 405px;
+  max-width: 375px;
 
   padding-left: 20px;
   padding-right: 20px;
@@ -75,13 +75,13 @@ body{
   }
 }
 
-.common-image{
+.common-image {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.common-button{
+.common-button {
   color: currentColor;
   cursor: pointer;
 
@@ -94,11 +94,10 @@ body{
 }
 
 .section-title {
-  font-family: 'DM Sans', sans-serif;
   font-style: normal;
 
   font-weight: 700;
-  font-size: 40px;
+  font-size: 32px;
 
   line-height: 1.1;
 
