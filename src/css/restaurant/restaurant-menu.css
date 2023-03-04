@@ -56,15 +56,12 @@
 
 .meal-info-box:first-child {
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .meal-name,
 .meal-structure {
   margin-right: auto;
-}
-
-.meal-info-box:first-child {
-  margin-bottom: 10px;
 }
 
 .meal-info-box:first-child::before {
