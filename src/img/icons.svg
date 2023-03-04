@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="menu-button" viewBox="0 0 28 28">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.5 14h21m-21-7h21m-21 14h14" />
+    </symbol>
+    <symbol id="close-button" viewBox="0 0 28 28">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7 7 21M7 7l14 14" />
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 28 28">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.82" d="M19.832 2.332H8.165a5.833 5.833 0 0 0-5.833 5.833v11.667a5.833 5.833 0 0 0 5.833 5.833h11.667a5.833 5.833 0 0 0 5.833-5.833V8.165a5.833 5.833 0 0 0-5.833-5.833z" />
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.82" d="M18.667 13.265a4.667 4.667 0 1 1-9.234 1.37 4.667 4.667 0 0 1 9.234-1.371zM20.418 7.582h.014" />
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 28 28">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.82" d="M21.001 2.332h-3.5a5.834 5.834 0 0 0-5.834 5.834v3.5h-3.5v4.667h3.5v9.333h4.667v-9.333h3.5l1.167-4.667h-4.667v-3.5a1.167 1.167 0 0 1 1.167-1.167h3.5V2.332z" />
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 28 28">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.82" d="M26.834 3.501a12.71 12.71 0 0 1-3.663 1.785 5.23 5.23 0 0 0-8.268.494 5.233 5.233 0 0 0-.902 3.006v1.167a12.441 12.441 0 0 1-10.5-5.285s-4.667 10.5 5.833 15.167a13.576 13.576 0 0 1-8.167 2.333c10.5 5.833 23.333 0 23.333-13.417a5.239 5.239 0 0 0-.093-.968 9.006 9.006 0 0 0 2.427-4.282z" />
+    </symbol>
+    <symbol id="arrow-left" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M14.666 16.667 9.999 12l4.667-4.667" />
+    </symbol>
+    <symbol id="arrow-right" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="m9.331 16.668 4.667-4.667-4.667-4.667" />
+    </symbol>
+  </defs>
+</svg>
