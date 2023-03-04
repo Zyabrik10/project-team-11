@@ -1,4 +1,8 @@
 @import url('reset.css');
 @import url('common.css');
 @import url('header.css');
+@import url('./home/styles.css');
+@import url('./hotel/styles.css');
+@import url('./restaurant/styles.css');
+@import url('./room/styles.css');
 @import url('footer.css');
