@@ -58,14 +58,6 @@
     color: var(--common-light);
 }
 
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.list {
-    list-style: none;
-}
 
 site-nav-mobile {
     padding: 0;
