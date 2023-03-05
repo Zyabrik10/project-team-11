@@ -161,6 +161,8 @@
   @media screen and (min-width: 1440px) {
     .room-amenities-btn {
       padding: 9px 24px;
+      font-style: 18px;
+      line-height: calc(24 / 18);
       bottom: 135px;
       width: 170px;
     }
