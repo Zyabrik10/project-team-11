@@ -58,7 +58,7 @@
   color: var(--common-light);
 }
 
-site-nav-mobile {
+.site-nav-mobile {
   padding: 0;
   margin: 0;
 }
