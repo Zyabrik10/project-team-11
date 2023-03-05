@@ -136,6 +136,20 @@ body {
 @media screen and (min-width: 1440px) {
   .spec-page-button {
     padding: 9px 24px;
-    line-height: 1.33;
+    font-size: 18px;
+    line-height: calc(24 / 18);
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
