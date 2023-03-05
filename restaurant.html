@@ -519,8 +519,79 @@
   
 
   <!-- modal "Book a table" -->
-  ENOENT: no such file or directory, open '/home/runner/work/project-team-11/project-team-11/src/partials\modal-book-table.html'
-  
+  <div class="backdrop" data-modal>
+  <div class="modal">
+    <button class="modal-button-close" type="button" data-modal-close>
+      <svg class="button-close-icon" width="14" height="14">
+        <use href="../img/icons-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal-title">Book <i>a table</i></p>
+
+    <form class="book-form" name="book_form">
+      <div class="book-form-wrp">
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="Your name"
+            type="text"
+            name="client_name"
+            id="client_name"
+            required
+          />
+
+          <label class="book-form-label" for="client_name"
+            >Who should book a table for?</label
+          >
+        </div>
+
+        <div class="book-form-field-wrp">
+          <select
+            class="book-form-select"
+            name="number_people"
+            id="number_people"
+            required
+          >
+            <option selected disabled>Number of people</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div class="book-form-field-wrp">
+          <select class="book-form-select" name="date" id="date" required>
+            <option selected value="Today">Today</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="Day after tomorrow">Day after tomorrow</option>
+          </select>
+
+          <label class="book-form-label" for="date">What date to book?</label>
+        </div>
+
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="+ 38 ()"
+            type="tel"
+            name="phone_number"
+            id="phone_number"
+            required
+          />
+          <label class="book-form-label" for="phone_number">Phone number</label>
+        </div>
+      </div>
+      <button class="book-form-button common-button" type="submit">
+        Make a reservation
+      </button>
+    </form>
+  </div>
+</div>
+
+
 </body>
 
 </html>
