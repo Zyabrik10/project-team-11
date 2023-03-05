@@ -1,2 +1,3 @@
-import './js/modal';
-import './js/phone-mask';
+import './js/modal.js';
+import './js/phone-mask.js';
+import './js/mobile-menu.js';
