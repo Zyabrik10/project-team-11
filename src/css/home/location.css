@@ -1,0 +1,126 @@
+.location-titel{
+    margin: 0;
+    margin-bottom: 32px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+}
+.map-location{
+    margin-bottom: 32px;
+}
+.address{
+    margin-bottom: 28px;
+}
+.address > .reset-paragraph{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.33;
+    font-style: normal;
+}
+.contacts > .reset-paragraph{
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.28;
+
+}
+.number-phone{
+    font-style: normal;
+}
+.our-number{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.location-link{
+    position: relative;
+}
+.location-icons{
+    position: absolute;
+    top: 47%;
+    left: 36.9%;
+}
+.location-img{
+    box-shadow: -14px 24px 68px rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 375px){
+    .location-icons{
+        top: 183px;
+        left: 122px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .contact-block{
+        display: flex;
+    }
+    .address {
+      margin-right: auto;
+    }
+    .contacts{
+        margin-left: auto;
+    }
+    .location-titel{
+        margin-bottom: 40px;
+    }
+    .location-img{
+        margin-bottom: 32px;
+    }
+    .number-phone{
+        font-size: 18px;
+    }
+    .location-icons{
+        top: 269px;
+        left: 318px;
+        width: 34px;
+        height: 42px;
+    }
+    .our-number{
+        gap: 2px;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .location-container{
+        position: relative;
+        display: flex;
+    }
+    .location-titel{
+        position: absolute;
+        top: 0;
+        left: 736px;
+        margin: 0;
+
+        font-size: 68px;
+    }
+    .contacts > .reset-paragraph{
+        margin: 0;
+        font-weight: 700;
+    }
+
+    .contact-block {
+    margin-top: auto;
+    margin-left: 32px;
+    }
+    .contacts{
+        display: flex;
+        margin-left: 70px;
+    }
+    .our-number{
+        margin-left: 12px;
+        gap: 4px;
+    }
+    .location-icons{
+        top: 241px;
+        left: 286px;
+    }
+    .location-section > .container{
+        padding-left: 64px;
+    }
+    .location-img{
+        margin: 0;
+    }
+  }
+
+    
