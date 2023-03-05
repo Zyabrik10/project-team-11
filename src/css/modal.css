@@ -25,9 +25,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    height: 528px;
-    width: 335px;
-
     padding: 24px 24px 40px 24px;
     background-color: var(--common-dark);
     color: var(--modal-light-text);
@@ -40,11 +37,48 @@
 
 @media screen and (min-width: 768px) {
     .modal {
-        height: 476px;
-        width: 628px;
         padding: 32px 32px 60px 32px;
     }
 }
+
+
+.modal-table {
+    height: 528px;
+    width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-table {
+        height: 476px;
+        width: 628px;
+    }
+}
+
+.modal-room {
+    height: 636px;
+    width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-room {
+        height: 572px;
+        width: 628px;
+    }
+}
+
+.modal-price {
+    height: 414px;
+    width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-price {
+        height: 430px;
+        width: 628px;
+    }
+}
+
+
 
 .modal-button-close {
     display: flex;
@@ -108,6 +142,16 @@
     }
 
 }
+
+.modal-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--modal-light-text);
+}
+ 
+    
+
 
 
 
@@ -213,7 +257,7 @@
         padding-top: 0px;
     }
 
-    .book-form-field-wrp:nth-child(3) {
+    /* .book-form-field-wrp:nth-child(3) {
         order: 1;
-    }
+    } */
 }
