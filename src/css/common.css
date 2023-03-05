@@ -136,6 +136,7 @@ body {
 @media screen and (min-width: 1440px) {
   .spec-page-button {
     padding: 9px 24px;
-    line-height: 1.33;
+    font-size: 18px;
+    line-height: calc(24 / 18);
   }
 }
