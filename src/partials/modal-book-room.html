@@ -1,0 +1,77 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal modal-room">
+    <button class="modal-button-close" type="button" data-modal-close>
+      <svg class="button-close-icon" width="14" height="14">
+        <use href="./img/icons-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h1 class="modal-title">Book <i>а room</i></h1>
+
+    <form class="book-form" name="book_form">
+      <div class="book-form-wrp">
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="Your name"
+            type="text"
+            name="client_name"
+            id="client_name"
+            required
+          />
+          <label class="book-form-label" for="client_name"
+            >Who should book a table for?</label
+          >
+        </div>
+
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="+ 38 ()"
+            type="tel"
+            name="phone_number"
+            id="phone_number"
+            required
+          />
+          <label class="book-form-label" for="phone_number">Phone number</label>
+        </div>
+
+        <div class="book-form-field-wrp">
+          <select class="book-form-select" name="date-in" id="date-in" required>
+            <option selected value="Today">Today</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="Day after tomorrow">Day after tomorrow</option>
+          </select>
+
+          <label class="book-form-label" for="date-in">Check-in date</label>
+        </div>
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            type="date"
+            name="date-out"
+            id="date-out"
+            required
+          />
+          <label class="book-form-label" for="date-out">Check-out date</label>
+        </div>
+        <div class="book-form-field-wrp">
+          <select
+            class="book-form-select"
+            name="category"
+            id="category"
+            required
+          >
+            <option selected value="Doble suite">Doble suite</option>
+            <option value="Single suite">Single suite</option>
+          </select>
+
+          <label class="book-form-label" for="category">Number category</label>
+        </div>
+      </div>
+      <button class="book-form-button common-button" type="submit">
+        Make a reservation
+      </button>
+    </form>
+  </div>
+</div>
