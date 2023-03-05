@@ -117,7 +117,7 @@ background-color: inherit;
 }
 
 .arrow-button {
-  fill: #121212;
+  fill: var(--common-dark);
 }
 
 /* arrow-par */
