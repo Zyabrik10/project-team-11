@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/project-team-11/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/svg+xml" href="/project-team-11/favicon.svg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimino | Home</title>
 
-  <title>Mimino | Home</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-    rel="stylesheet">
+    <!-- Normolize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
 
-  <!-- Normolize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-
-  <!-- Styles -->
-  
-  <script type="module" crossorigin src="/project-team-11/assets/index-efe2f7cc.js"></script>
-  <link rel="stylesheet" href="/project-team-11/assets/styles-3785b3c3.css">
-</head>
-
-<body>
-  <!-- header -->
-  
-
-  <!-- main -->
-  <main>
-    <!-- sections -->
+    <!-- Styles -->
     
-    <!-- --- -->
-    <!-- визначити назву секції -->
+    <script type="module" crossorigin src="/project-team-11/assets/mobile-menu-9861ce74.js"></script>
+    <link rel="stylesheet" href="/project-team-11/assets/mobile-menu-f64e7586.css">
+  </head>
+
+  <body>
+    <!-- header -->
     
-    <!-- --- -->
-    
-    
-    
-    <section class="section location-section">
+
+    <!-- main -->
+    <main>
+      <!-- sections -->
+      
+      <!-- --- -->
+      <!-- визначити назву секції -->
+      
+      <!-- --- -->
+      
+      
+      
+      <section class="section location-section">
     <div class="container location-container">
     <h2 class="reset-title section-title location-title">location</h2>
     <div class="map-location">
@@ -97,68 +101,55 @@
     </div>
 </div>
 </section>
-  </main>
+    </main>
 
-  <!-- footer -->
+    <!-- footer -->
+    
+
+    <!-- modal "Book a table" -->
+    ENOENT: no such file or directory, open '/home/runner/work/project-team-11/project-team-11/src/partials\modal-book-table.html'
+
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-button-close js-close-menu">
+    <svg class="button-close-icon" width="8" height="8">
+      <use href="../img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+
+  
+  	<nav class="nav-wrp">
+        <ul class="site-nav-mobile list">
+            <li>
+                <a href="../index.html" class="nav-link link">Home</a>
+            </li>
+            <li>
+                <a href="../hotel.html" class="nav-link link">Hotel</a>
+            </li>
+            <li>
+                <a href="../restaurant.html" class="nav-link link">Restaurant</a>
+            </li>
+        </ul>
+    </nav>
   
 
-  <!-- modal "Book a table" -->
-  <div class="backdrop" data-modal>
-  <div class="modal">
-    <button class="modal-button-close" type="button" data-modal-close>
-      <svg class="button-close-icon" width="14" height="14">
-        <use href="../../img/icons-defs.svg#icon-close"></use>
-      </svg>
-    </button>
-
-    <p class="modal-title">Book <i>a table</i></p>
-
-    <form class="book-form" name="book_form">
-      <div class="book-form-wrp">
-        <div class="book-form-field-wrp">
-          <input class="book-form-field" placeholder="Your name" type="text" name="client_name" id="client_name"
-            required />
-
-          <label class="book-form-label" for="client_name">Who should book a table for?</label>
-        </div>
-
-        <div class="book-form-field-wrp">
-          <select class="book-form-select" name="number_people" id="number_people" required>
-            <option selected disabled>Number of people</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-
-        <div class="book-form-field-wrp">
-          <select class="book-form-select" name="date" id="date" required>
-            <option selected value="Today">Today</option>
-            <option value="Tomorrow">Tomorrow</option>
-            <option value="Day after tomorrow">Day after tomorrow</option>
-          </select>
-
-          <label class="book-form-label" for="date">What date to book?</label>
-        </div>
-
-        <div class="book-form-field-wrp">
-          <input class="book-form-field" placeholder="+ 38 ()" type="tel" name="phone_number" id="phone_number"
-            required />
-          <label class="book-form-label" for="phone_number">Phone number</label>
-        </div>
-      </div>
-      <button class="book-form-button common-button" type="submit">
-        Make a reservation
-      </button>
-    </form>
+    
   </div>
 </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
-  
-</body>
 
+    <!-- scripts -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
+    
+    <!-- ВРЕМЕННО -->
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
 </html>
