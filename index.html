@@ -21,7 +21,7 @@
   <!-- Styles -->
   
   <script type="module" crossorigin src="/project-team-11/assets/mobile-menu-9861ce74.js"></script>
-  <link rel="stylesheet" href="/project-team-11/assets/mobile-menu-1d775fb7.css">
+  <link rel="stylesheet" href="/project-team-11/assets/mobile-menu-f3e37037.css">
 </head>
 
 <body id="up">
@@ -405,7 +405,78 @@
   
 
   <!-- modal "Book a table" -->
-  ENOENT: no such file or directory, open '/home/runner/work/project-team-11/project-team-11/src/partials\modal-book-table.html'
+  <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-button-close" type="button" data-modal-close>
+      <svg class="button-close-icon" width="14" height="14">
+        <use href="./img/icons-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal-title">Book <i>a table</i></p>
+
+    <form class="book-form" name="book_form">
+      <div class="book-form-wrp">
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="Your name"
+            type="text"
+            name="client_name"
+            id="client_name"
+            required
+          />
+
+          <label class="book-form-label" for="client_name"
+            >Who should book a table for?</label
+          >
+        </div>
+
+        <div class="book-form-field-wrp">
+          <select
+            class="book-form-select"
+            name="number_people"
+            id="number_people"
+            required
+          >
+            <option selected disabled>Number of people</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div class="book-form-field-wrp">
+          <select class="book-form-select" name="date" id="date" required>
+            <option selected value="Today">Today</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="Day after tomorrow">Day after tomorrow</option>
+          </select>
+
+          <label class="book-form-label" for="date">What date to book?</label>
+        </div>
+
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="+ 38 ()"
+            type="tel"
+            name="phone_number"
+            id="phone_number"
+            required
+          />
+          <label class="book-form-label" for="phone_number">Phone number</label>
+        </div>
+      </div>
+      <button class="book-form-button common-button" type="submit">
+        Make a reservation
+      </button>
+    </form>
+  </div>
+</div>
+
 
   <!-- mobile menu -->
   <div class="menu-container js-menu-container" id="mobile-menu">
@@ -414,9 +485,6 @@
       <use href="../img/icons.svg#icon-close"></use>
     </svg>
   </button>
-
-
-
   <nav class="nav-wrp">
     <ul class="site-nav-mobile list">
       <li>
@@ -430,10 +498,6 @@
       </li>
     </ul>
   </nav>
-
-
-
-</div>
 </div>
 
   <!-- Anchor -->
@@ -454,4 +518,17 @@
   <script defer src="./js/mobile-menu.js"></script>
 </body>
 
+    <!-- scripts -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
+    
+    <!-- ВРЕМЕННО -->
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
 </html>
