@@ -1,5 +1,5 @@
 .four-seater-section {
-    background-color: #F6F6F6;
+    background-color: var (--common-light);
 }
 
 .four-seater-list {
@@ -174,7 +174,7 @@
 
 .room-button:hover,
 .room-button:focus {
-    color: #F6F6F6;
+    color: var (--common-light);
     background-color: #121212;
-    border-color: #F6F6F6;
+    color: var (--common-light);
 }
