@@ -1,17 +1,19 @@
 @import url('variables.css');
 
-body{
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    color: var(--common-dark);
+  color: var(--common-dark);
 
-    background-color: var(--common-light);
+  background-color: var(--common-light);
 
-    letter-spacing: -0.02em;
+  line-height: calc(18 / 14);
+
+  letter-spacing: -0.02em;
 }
 
 /* Сітка */
@@ -27,15 +29,9 @@ body{
   );
 }
 
-.flex-container-item-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .container {
   width: 100%;
-  max-width: 405px;
+  max-width: 375px;
 
   padding-left: 20px;
   padding-right: 20px;
@@ -46,42 +42,44 @@ body{
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 744px;
+    min-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1415px;
+    max-width: 1440px;
   }
 }
 
 .section {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
-.common-image{
+.common-image {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.common-button{
+.common-button {
   color: currentColor;
   cursor: pointer;
 
@@ -94,13 +92,46 @@ body{
 }
 
 .section-title {
-  font-family: 'DM Sans', sans-serif;
   font-style: normal;
 
   font-weight: 700;
-  font-size: 40px;
+  font-size: 32px;
 
   line-height: 1.1;
 
   letter-spacing: -0.02em;
+}
+
+.spec-page-button {
+  background-color: transparent;
+
+  border-radius: 32px;
+
+  color: #f7f7f7;
+
+  border: 1px solid currentColor;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  font-size: 14px;
+
+  line-height: 1.29;
+}
+
+@media screen and (min-width: 768px) {
+  .spec-page-button {
+    padding: 8px 24px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .spec-page-button {
+    padding: 9px 24px;
+    line-height: 1.33;
+  }
 }
