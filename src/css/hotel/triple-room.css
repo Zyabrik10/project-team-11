@@ -50,7 +50,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: flex-end;
-        align-content: flex-end
+        align-content: flex-end;
     }
 }
 
@@ -60,8 +60,7 @@
     color: var(--common-dark);
     font-weight: 700;
     font-size: 32px;
-    line-height: 40px;
-    letter-spacing: 1.25;
+    line-height: 1.25;
     text-transform: uppercase;
     margin-bottom: 32px;
     margin-top: 0;
@@ -71,8 +70,7 @@
 @media screen and (min-width: 768px) {
     .room-title {
         font-size: 40px;
-        line-height: 44px;
-        letter-spacing: 1.1;
+        line-height: 1.1;
     }
 }
 
@@ -113,8 +111,7 @@
     display: block;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 1.28;
+    line-height: 1.28;
     text-transform: uppercase;
     color: var(--common-dark);
     max-width: 355px;
@@ -124,8 +121,7 @@
 @media screen and (min-width: 768px) {
     .room-subtitle {
         font-size: 18px;
-        line-height: 24px;
-        letter-spacing: 1.33;
+        line-height: 1.33;
     }
 }
 
@@ -156,7 +152,7 @@
     cursor: pointer;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     background-color: transparent;
     text-transform: uppercase;
     border: 0.8px solid #121212;
@@ -171,7 +167,7 @@
 @media screen and (min-width: 768px) {
     .room-button {
        padding: 8px 24px;
-       line-height: 18px;
+       line-height: 1.71;
     }
 }
 
@@ -179,13 +175,13 @@
     .room-button {
         padding: 9px 24px;
         font-size: 18px;
-        line-height: 24px;
+        line-height: 1.33;
     }
 }
 
 .room-button:hover,
 .room-button:focus {
-    color: white;
+    color: #F6F6F6;
     background-color: #121212;
-    border-color: white;
+    border-color: #F6F6F6;
 }
