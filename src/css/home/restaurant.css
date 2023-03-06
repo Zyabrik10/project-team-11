@@ -74,8 +74,14 @@
 .restaurant-button-modal {
   padding: 8px 18px;
 
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+
   color: var(--common-dark);
   background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 32px;
 
   transition: background-color var(--transition-function);
 }
@@ -83,6 +89,8 @@
 @media screen and (min-width: 768px) {
   .restaurant-button-modal {
     padding: 8px 24px;
+
+    line-height: calc(24 / 14);
   }
 }
 
@@ -90,6 +98,9 @@
   .restaurant-button-modal {
     padding: 9px 24px;
     gap: 14px;
+
+    font-size: 18px;
+    line-height: calc(24 / 18);
   }
 }
 
