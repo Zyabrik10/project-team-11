@@ -216,7 +216,9 @@
 
 
     left: 10%;
-    top: 61%; }
+    top: 61%; 
+
+}
 
 
         .section-page-home-about-image_three {
@@ -227,7 +229,7 @@
         }
         
 
-        .borin {
+        .section-page-home-about-wrapper_tablet {
             display: flex;
             justify-content: center;
             
@@ -245,3 +247,49 @@
         
 
     }
+
+    
+        /* ------Decstop--- */
+
+                @media screen and (min-width: 1440px) {
+                    .section-page-home-about-head_wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    .section-page-home-about-image_two {
+                        top: 48%;
+                            left: 108%;
+                            transform: translate(-50%, -50%);
+                        width: 439px;
+                        height: auto;
+                    }
+
+                                        .review-home_about {
+                                            top: 32%;
+                                            left: 100%;
+                                            transform: translate(-50%, -50%);
+                    
+                }
+
+                .section-page-home-about-secondery_wrapper {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    
+                    align-items: center;
+                }
+
+                .section-page-home-about-relative_two {
+                    margin-left: 87px;
+                }
+
+                                .review-home-about_two {
+                
+                
+                                    left: 0;
+                                    top: 65%;
+                                    transform: translate(-53%, -50%);
+                
+                                }
+            }
