@@ -14,6 +14,8 @@
           <input
             class="book-form-field"
             placeholder="Your name"
+            pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
+            title="Letters only"
             type="text"
             name="client_name"
             id="client_name"
@@ -56,6 +58,8 @@
             class="book-form-field"
             placeholder="+ 38 ()"
             type="tel"
+            pattern="^[0-9]+$"
+            title="Numbers only"
             name="phone_number"
             id="phone_number"
             required
