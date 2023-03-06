@@ -1,12 +1,12 @@
 <div class="backdrop is-hidden" data-modal>
-  <div class="modal modal-table">
+  <div class="modal modal-room">
     <button class="modal-button-close" type="button" data-modal-close>
       <svg class="button-close-icon" width="14" height="14">
         <use href="./img/icons-defs.svg#icon-close"></use>
       </svg>
     </button>
 
-    <h1 class="modal-title">Book <i>a table</i></h1>
+    <h2 class="modal-title">Book <i>а room</i></h2>
 
     <form class="book-form" name="book_form">
       <div class="book-form-wrp">
@@ -19,36 +19,9 @@
             id="client_name"
             required
           />
-
           <label class="book-form-label" for="client_name"
             >Who should book a table for?</label
           >
-        </div>
-
-        <div class="book-form-field-wrp">
-          <select
-            class="book-form-select"
-            name="number_people"
-            id="number_people"
-            required
-          >
-            <option selected disabled>Number of people</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-
-        <div class="book-form-field-wrp">
-          <select class="book-form-select" name="date" id="date" required>
-            <option selected value="Today">Today</option>
-            <option value="Tomorrow">Tomorrow</option>
-            <option value="Day after tomorrow">Day after tomorrow</option>
-          </select>
-
-          <label class="book-form-label" for="date">What date to book?</label>
         </div>
 
         <div class="book-form-field-wrp">
@@ -61,6 +34,39 @@
             required
           />
           <label class="book-form-label" for="phone_number">Phone number</label>
+        </div>
+
+        <div class="book-form-field-wrp">
+          <select class="book-form-select" name="date-in" id="date-in" required>
+            <option selected value="Today">Today</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="Day after tomorrow">Day after tomorrow</option>
+          </select>
+
+          <label class="book-form-label" for="date-in">Check-in date</label>
+        </div>
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            type="date"
+            name="date-out"
+            id="date-out"
+            required
+          />
+          <label class="book-form-label" for="date-out">Check-out date</label>
+        </div>
+        <div class="book-form-field-wrp">
+          <select
+            class="book-form-select"
+            name="category"
+            id="category"
+            required
+          >
+            <option selected value="Doble suite">Doble suite</option>
+            <option value="Single suite">Single suite</option>
+          </select>
+
+          <label class="book-form-label" for="category">Number category</label>
         </div>
       </div>
       <button class="book-form-button common-button" type="submit">
