@@ -1,6 +1,6 @@
 /* -------STYLE FOR LUXURE ROOM TITLE-----NIK----- */
 .double-room{
-    background: #d8d8d83e;
+    background:var(--light);
 }
 .container-lux{
     min-width: 320px;
@@ -12,12 +12,12 @@ margin: 0 auto;
 
 .section-titles{ 
 width: 270px;
-font-family: 'DM Sans';
+/* font-family: 'DM Sans'; */
 font-style: normal;
 font-weight: 400;
 font-size: 40px;
 line-height: 1;
-letter-spacing: -0.02em;
+/* letter-spacing: -0.02em; */
 text-transform: uppercase;
 margin: 0;
 padding-top: 40px;
@@ -36,7 +36,7 @@ padding: 8px 18px;
 gap: 10px;
 width: 123px;
 height: 34px;
-border: 0.8px solid #121212;
+border: 0.8px solid var(--common-dark);
 border-radius: 32px;
 background: inherit;
 cursor: pointer; 
@@ -48,19 +48,19 @@ margin-top: 24px;
 margin-bottom: 48px;
 
 /* -----for knopa text ---- */
-font-family: 'DM Sans';
+/* font-family: 'DM Sans'; */
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 18px;
-letter-spacing: -0.02em;
+/* letter-spacing: -0.02em; */
 text-transform: uppercase;
 }
 
 .double-room-button:hover,
 .double-room-button:focus{
-    background-color: #121212;
-    color: aliceblue;
+    background-color: var(--common-dark); 
+    color: var(--light);
 }
 
 .slider{
@@ -98,7 +98,7 @@ text-transform: uppercase;
     padding: 0;
     background-color: transparent;
     border: none;
-    fill: #12121236;
+    fill: var(--common-dark-30);
     
 }
 .controls-buttons{
@@ -110,19 +110,19 @@ text-transform: uppercase;
 .slider-prev:focus,
 .slider-next:hover,
 .slider-next:focus {
-    fill: #121212;
+    fill: var(--common-dark);
 }
 
 .section-text{
     width: 289px;
-    font-family: 'DM Sans';
+    /* font-family: 'DM Sans'; */
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #121212;
+    color: var(--common-dark);
     margin: 0;
     margin-top: 51px; /*or 100 */ 
     padding-bottom: 64px;
