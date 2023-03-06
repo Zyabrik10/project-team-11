@@ -1,4 +1,4 @@
-.anchor {
+#anchor-up {
   position: fixed;
   bottom: 10%;
   right: 5%;
@@ -25,12 +25,12 @@
   z-index: 5;
 }
 
-.anchor:hover,
-.anchor:focus {
+#anchor-up:hover,
+#anchor-up:focus {
   color: var(--common-light);
   background-color: var(--common-dark);
 }
 
-.anchor.hidden {
+#anchor-up.hidden {
   opacity: 0;
 }
