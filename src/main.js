@@ -3,4 +3,4 @@
 // import './js/modal';
 // import './js/phone-mask';
 // import './js/mobile-menu';
-import 'js/anchor.js';
+import '/js/anchor.js';
