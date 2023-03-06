@@ -15,21 +15,15 @@
         line-height:1.2 em;
         text-decoration: none;
         letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: #121212;
+        color: var(--common-dark);
         padding-top:32px;
         justify-content: center;
         margin-left:32%;
         padding-left:35px;
-
-
     }
     
-        
     .footer-description{
         letter-spacing: 0.18em;
-        text-transform: uppercase;
-        font-family: 'DM Sans';
         font-weight: 400;
         font-size: 8px;
         line-height: 1.25em;
@@ -55,16 +49,21 @@
         right: 20%;
         gap: 16px;
         list-style: none;
-        padding-right:32px;
-        margin-right: auto;
-        margin-left: auto;
-       
-
-
+        width: 32px;
+        height: 32px;
+    
+    
     }
     .socials-footer-list:hover,
     .socials-footer-list:focus{
-        color: white;
+
+width:32px;
+height:32px; 
+opacity:10%;
+border:1px;
+opacity: 0.1;
+border: 1px solid var(--common-dark);
+border-radius: 8px;
 
         }
         @media screen and (max-width: 767.98px) {
@@ -77,7 +76,6 @@
     margin-left: auto;
     margin-right: auto;
     height: 100px;
-   
-    opcaity: 0.5px;
-    background: #121212;
+    opacity: 0.5px;
+    background: var(--common-dark);
 }
