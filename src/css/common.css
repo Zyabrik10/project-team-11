@@ -107,6 +107,8 @@ body {
 }
 
 .spec-page-button {
+  display: block;
+
   background-color: transparent;
 
   border-radius: 32px;
