@@ -127,8 +127,6 @@ body {
 
   line-height: 1.29;
 
-  margin: 0;
-
   transition-property: background-color, border-color, color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
