@@ -1,0 +1,106 @@
+/*:root {
+    accent-color: #F6F6F6;
+    background-color: #121212;
+    border-color: #F7F7F7;
+}*/
+
+.body {
+        /* ... your other properties */
+        padding-bottom: 65px;
+    }
+
+.footer-container{
+    min-width:auto;
+max-width: auto;
+}
+
+.hr {
+    display: block;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    background-color: #F7F7F7;
+    position:absolute;
+    margin-top:34px;
+    box-align:flex;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .footer-logo{
+        margin-bottom:48px;
+        text-align:left;
+    
+    }
+    
+}
+
+.footer-logo{
+        display:flex;
+        width: 93px;
+        height: 24px;
+        font-family: var(--main-font);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2em;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color:var(--secondary-color);
+        text-decoration: none;
+        padding-top:80px;
+}
+@media screen and (max-width: 1440px) {
+    .footer-logo{
+        display:block;
+    }
+}
+
+.footer-description{
+    font-family: 'DM Sans';
+        width: 149px;
+        height: 10px;
+        font-family: var(--main-font);
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.25em;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        display: inline;
+        color: var(--secondary-color);
+        padding-top:3px;
+        padding-bottom:32px;
+
+    
+}
+.social-icon-footer{
+    gap:16px;
+    position: absolute;
+    display:flex;
+}
+
+.socials-footer-list {
+    display: flex;
+    gap: 25px;
+    padding-left: 32px;
+    padding-bottom: 45px;
+    justify-content: center;
+    margin-left: 50px;
+    padding-left: 451px;
+    padding-top: 0px;
+    padding-right: 32px;
+    list-style: none;
+}
+.socials-footer-link{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
+.socials-footer-link:hover,
+.socials-footer-link:focus {
+    fill:#F7F7F7;
+    background: black;
+    
+}
+
+

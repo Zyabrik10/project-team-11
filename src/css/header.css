@@ -1,0 +1,15 @@
+.page-header{
+    max-width:1440px ;
+}
+.header-link{
+        width: 46px;
+        height: 18px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1,3em;
+        display: inline;
+        padding-right:32px;
+        gap: 32px;
+    
+}
