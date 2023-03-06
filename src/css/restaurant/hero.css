@@ -81,7 +81,7 @@
     padding: 8px 18px;
     display: block;
 
-    border: 0.8px solid #121212;
+    border: 0.8px solid var(--common-dark);
     border-radius: var(--button-radius);
     background-color: transparent;
 
@@ -98,7 +98,7 @@
 
 .hero-btn:hover,
 .hero-btn:focus {
-    border: 0.8px solid #ffffff;
+    border: 0.8px solid var(--light);
     border-radius: var(--button-radius);
     background: var(--common-dark);
     color: var(--common-light);
@@ -141,7 +141,7 @@
 .slider-button {
     border: none;
     background: transparent;
-    color: rgba(18, 18, 18, 0.3);
+    color: var(--common-dark-30);
     padding: 11px 15px;
 }
 
