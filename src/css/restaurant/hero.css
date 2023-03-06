@@ -124,7 +124,7 @@
 
 .slider-button-list {
     display: flex;
-    gap: 32px;
+    gap: var(--flex-items-gap);
     margin-top: 24px;
     justify-content: flex-end;
 }
