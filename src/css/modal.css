@@ -254,7 +254,7 @@
     }
 
     .book-form-field-wrp:not(:first-child) {
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     /* .book-form-field-wrp:nth-child(3) {
