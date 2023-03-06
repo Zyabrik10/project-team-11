@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mimino | Room</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mimino | Room</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-    rel="stylesheet" />
+    <!-- Normolize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
 
-  <!-- Normolize -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-
-  <!-- Styles -->
-  
-  <script type="module" crossorigin src="/project-team-11/assets/mobile-menu-9861ce74.js"></script>
-  <link rel="stylesheet" href="/project-team-11/assets/mobile-menu-a4da06e1.css">
-</head>
-
-<body id="#up">
-  <!-- Header -->
-  
-
-  <!-- Main -->
-  <main>
-    <!-- Sections -->
+    <!-- Styles -->
     
-    <!-- Amenities Section-->
+    <script type="module" crossorigin src="/project-team-11/assets/mobile-menu-9861ce74.js"></script>
+    <link rel="stylesheet" href="/project-team-11/assets/mobile-menu-eef56339.css">
+  </head>
+
+  <body id="#up">
+    <!-- Header -->
+    
+
+    <!-- Main -->
+    <main>
+      <!-- Sections -->
+      
+      <!-- Amenities Section-->
 
 <section class="room-amenities-section section">
   <div class="room-amenities-container container">
@@ -246,13 +249,138 @@
   </div>
 </section>
 
-  </main>
+    </main>
 
-  <!-- Footer -->
-  
+    <!-- Footer -->
+    
 
-  <!-- mobile menu -->
-  <div class="menu-container js-menu-container" id="mobile-menu">
+    <!-- modal "Prices per room" -->
+    <div class="backdrop is-hidden" data-modal>
+  <div class="modal modal-price">
+    <button class="modal-button-close" type="button" data-modal-close>
+      <svg class="button-close-icon" width="14" height="14">
+        <use href="./img/icons-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h1 class="modal-title">Prices per <i>Room</i></h1>
+
+    <h2 class="modal-subtitle">double suite</h2>
+
+    <form class="book-form" name="book_form">
+      <div class="book-form-wrp">
+        <div class="book-form-field-wrp">
+          <select class="book-form-select" name="nights" id="nights" required>
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <label class="book-form-label" for="nights">Number of nights</label>
+        </div>
+
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="1000"
+            type="text"
+            name="price"
+            id="price"
+            required
+          />
+          <label class="book-form-label" for="price">UAH</label>
+        </div>
+      </div>
+      <button class="book-form-button common-button" type="submit">
+        Make a reservation
+      </button>
+    </form>
+  </div>
+</div>
+
+
+    <!-- modal "Book a room" -->
+    <div class="backdrop is-hidden" data-modal>
+  <div class="modal modal-room">
+    <button class="modal-button-close" type="button" data-modal-close>
+      <svg class="button-close-icon" width="14" height="14">
+        <use href="./img/icons-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-title">Book <i>а room</i></h2>
+
+    <form class="book-form" name="book_form">
+      <div class="book-form-wrp">
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="Your name"
+            type="text"
+            name="client_name"
+            id="client_name"
+            required
+          />
+          <label class="book-form-label" for="client_name"
+            >Who should book a table for?</label
+          >
+        </div>
+
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="+ 38 ()"
+            type="tel"
+            name="phone_number"
+            id="phone_number"
+            required
+          />
+          <label class="book-form-label" for="phone_number">Phone number</label>
+        </div>
+
+        <div class="book-form-field-wrp">
+          <select class="book-form-select" name="date-in" id="date-in" required>
+            <option selected value="Today">Today</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="Day after tomorrow">Day after tomorrow</option>
+          </select>
+
+          <label class="book-form-label" for="date-in">Check-in date</label>
+        </div>
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            type="date"
+            name="date-out"
+            id="date-out"
+            required
+          />
+          <label class="book-form-label" for="date-out">Check-out date</label>
+        </div>
+        <div class="book-form-field-wrp">
+          <select
+            class="book-form-select"
+            name="category"
+            id="category"
+            required
+          >
+            <option selected value="Doble suite">Doble suite</option>
+            <option value="Single suite">Single suite</option>
+          </select>
+
+          <label class="book-form-label" for="category">Number category</label>
+        </div>
+      </div>
+      <button class="book-form-button common-button" type="submit">
+        Make a reservation
+      </button>
+    </form>
+  </div>
+</div>
+
+
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
   <button class="menu-button-close js-close-menu">
     <svg class="button-close-icon" width="8" height="8">
       <use href="../img/icons.svg#icon-close"></use>
@@ -273,19 +401,21 @@
   </nav>
 </div>
 
-  <!-- Anchor -->
-  <a class="anchor reset-link hidden" href="#up">up</a>
+    <!-- Anchor -->
+    <a class="anchor reset-link hidden" href="#up">up</a>
 
-  <!-- scripts -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
-  
+    <!-- scripts -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
+    
 
-  <!-- Anchor -->
-  <script src="./js/anchor.js"></script>
-</body>
-
+    <!-- Anchor -->
+    <script src="./js/anchor.js"></script>
+  </body>
 </html>

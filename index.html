@@ -21,7 +21,7 @@
   <!-- Styles -->
   
   <script type="module" crossorigin src="/project-team-11/assets/mobile-menu-9861ce74.js"></script>
-  <link rel="stylesheet" href="/project-team-11/assets/mobile-menu-a4da06e1.css">
+  <link rel="stylesheet" href="/project-team-11/assets/mobile-menu-eef56339.css">
 </head>
 
 <body id="up">
@@ -263,14 +263,14 @@
 
   <!-- modal "Book a table" -->
   <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
+  <div class="modal modal-table">
     <button class="modal-button-close" type="button" data-modal-close>
       <svg class="button-close-icon" width="14" height="14">
         <use href="./img/icons-defs.svg#icon-close"></use>
       </svg>
     </button>
 
-    <p class="modal-title">Book <i>a table</i></p>
+    <h1 class="modal-title">Book <i>a table</i></h1>
 
     <form class="book-form" name="book_form">
       <div class="book-form-wrp">
@@ -325,6 +325,131 @@
             required
           />
           <label class="book-form-label" for="phone_number">Phone number</label>
+        </div>
+      </div>
+      <button class="book-form-button common-button" type="submit">
+        Make a reservation
+      </button>
+    </form>
+  </div>
+</div>
+
+  
+  <!-- modal "Book a room" -->
+  <div class="backdrop is-hidden" data-modal>
+  <div class="modal modal-room">
+    <button class="modal-button-close" type="button" data-modal-close>
+      <svg class="button-close-icon" width="14" height="14">
+        <use href="./img/icons-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-title">Book <i>а room</i></h2>
+
+    <form class="book-form" name="book_form">
+      <div class="book-form-wrp">
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="Your name"
+            type="text"
+            name="client_name"
+            id="client_name"
+            required
+          />
+          <label class="book-form-label" for="client_name"
+            >Who should book a table for?</label
+          >
+        </div>
+
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="+ 38 ()"
+            type="tel"
+            name="phone_number"
+            id="phone_number"
+            required
+          />
+          <label class="book-form-label" for="phone_number">Phone number</label>
+        </div>
+
+        <div class="book-form-field-wrp">
+          <select class="book-form-select" name="date-in" id="date-in" required>
+            <option selected value="Today">Today</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="Day after tomorrow">Day after tomorrow</option>
+          </select>
+
+          <label class="book-form-label" for="date-in">Check-in date</label>
+        </div>
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            type="date"
+            name="date-out"
+            id="date-out"
+            required
+          />
+          <label class="book-form-label" for="date-out">Check-out date</label>
+        </div>
+        <div class="book-form-field-wrp">
+          <select
+            class="book-form-select"
+            name="category"
+            id="category"
+            required
+          >
+            <option selected value="Doble suite">Doble suite</option>
+            <option value="Single suite">Single suite</option>
+          </select>
+
+          <label class="book-form-label" for="category">Number category</label>
+        </div>
+      </div>
+      <button class="book-form-button common-button" type="submit">
+        Make a reservation
+      </button>
+    </form>
+  </div>
+</div>
+
+
+  <!-- modal "Prices per room" -->
+  <div class="backdrop is-hidden" data-modal>
+  <div class="modal modal-price">
+    <button class="modal-button-close" type="button" data-modal-close>
+      <svg class="button-close-icon" width="14" height="14">
+        <use href="./img/icons-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h1 class="modal-title">Prices per <i>Room</i></h1>
+
+    <h2 class="modal-subtitle">double suite</h2>
+
+    <form class="book-form" name="book_form">
+      <div class="book-form-wrp">
+        <div class="book-form-field-wrp">
+          <select class="book-form-select" name="nights" id="nights" required>
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <label class="book-form-label" for="nights">Number of nights</label>
+        </div>
+
+        <div class="book-form-field-wrp">
+          <input
+            class="book-form-field"
+            placeholder="1000"
+            type="text"
+            name="price"
+            id="price"
+            required
+          />
+          <label class="book-form-label" for="price">UAH</label>
         </div>
       </div>
       <button class="book-form-button common-button" type="submit">
