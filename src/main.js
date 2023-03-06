@@ -1,5 +1,6 @@
-import './js/slick.min.js';
-import './js/slider-slick.js';
-import './js/modal.js';
-import './js/phone-mask.js';
-import './js/mobile-menu.js';
+import 'js/slick.min';
+import 'js/slider-slick';
+import 'js/modal';
+import 'js/phone-mask';
+import 'js/mobile-menu';
+import 'js/mobile-menu';
