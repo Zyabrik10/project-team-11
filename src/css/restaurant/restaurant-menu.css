@@ -256,7 +256,7 @@
   color: var(--common-light-30);
 }
 
-.spec-page-button {
+.resturant-resturant-spec-page-button {
   display: block;
 
   padding-left: 24px;
@@ -277,19 +277,19 @@
 }
 
 @media screen and (min-width: 768px) {
-  .spec-page-button {
+  .resturant-spec-page-button {
     margin-left: 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .spec-page-button {
+  .resturant-spec-page-button {
     margin-top: 50px;
   }
 }
 
-.spec-page-button:hover,
-.spec-page-button:focus {
+.resturant-spec-page-button:hover,
+.resturant-spec-page-button:focus {
   color: var(--common-dark);
   border-color: #fff;
   background-color: #fff;

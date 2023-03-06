@@ -107,6 +107,8 @@ body {
 }
 
 .spec-page-button {
+  display: block;
+
   background-color: transparent;
 
   border-radius: 32px;
@@ -124,6 +126,8 @@ body {
   font-size: 14px;
 
   line-height: 1.29;
+
+  margin: 0;
 
   transition-property: background-color, border-color, color;
   transition-duration: var(--transition-duration);
