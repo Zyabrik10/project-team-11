@@ -22,10 +22,6 @@
         margin-left:32%;
         padding-left:35px;
     }
-
-    
-        
-
     .footer-description{
         letter-spacing: 0.18em;
         font-weight: 400;
@@ -36,7 +32,7 @@
         padding-left: 35px;
         padding-bottom: 64px;
     }
-        @media screen and (max-width: 767.98px) {
+        @media screen and (max-width: 768px) {
         
                 .footer-logo,
                 .footer-description {
@@ -70,7 +66,7 @@ border: 1px solid var(--common-dark);
 border-radius: 8px;
 
         }
-        @media screen and (max-width: 767.98px) {
+        @media screen and (max-width: 768px) {
             .socials-footer-list{
             position: right;
             }
