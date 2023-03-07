@@ -1,0 +1,295 @@
+
+.section-page-home-about-title_one {
+
+    text-align: center;
+    display: none;
+}
+
+.section-page-home-about_relative {
+    position: relative;
+}
+
+.section-page-home-about_list {
+   
+
+    
+    margin-bottom: 32px;
+    
+}
+
+.section-page-home-about-list_item {
+    
+
+
+    margin-bottom: 20px;
+}
+
+.section-page-home-about_image {
+    width: 335px;
+    height: auto;
+}
+
+.section-page-home-about-image_two {
+    width: 282px;
+        height: auto;
+
+}
+
+.section-page-home-about-image_three {
+    width: 335px;
+        height: auto;
+
+}
+
+.section-page-home-about-image_four {
+    width: 335px;
+        height: auto;
+}
+
+.review-home_about {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: 67.5%;
+    right: 8%;
+
+    width: 212px;
+    height: 61px;
+    border-radius: 6px;
+    background-color: var(--common-dark);
+   
+}
+
+.review-home-about_img {
+    margin-right: 12px;
+    margin-left: 14px;
+  
+}
+
+.review-home-about_name {
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1;
+        margin-bottom: 9px;
+        color: var(--common-light);
+}
+
+.review-home-about_rating {
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133.02%;
+        color: var(--common-gray);
+}
+
+.review-home-about_number {
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133.02%;
+        color: var(--common-light);
+
+}
+
+
+
+    
+
+.section-page-home-about-title_two {
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    color: var(--common-gray);
+    margin-bottom: 18px
+    ;
+
+}
+
+.section-page-home-about_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 335px;
+    margin-bottom: 64px;
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+    
+        color: var(--common-dark);
+}
+
+.section-page-home-about-title-two_down {
+    margin-bottom: 54px;
+}
+
+.section-page-home-about-text_two {
+    margin-bottom: 40px;
+
+}
+
+.section-page-home-about-relative_two {
+    position: relative;
+    margin-bottom: 54px;
+}
+
+.review-home-about_two {
+   
+    display: flex;
+        justify-content: start;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        bottom: -7.5%;
+   
+    
+        width: 212px;
+        height: 61px;
+        border-radius: 6px;
+        background-color: var(--common-dark);
+    
+
+}
+
+
+
+/* ------Tablet--- */
+
+
+@media screen and (min-width: 768px) {
+
+.section-page-home-about_image {
+        width: 482px;
+        height: auto;
+        position: relative;
+    }
+
+    .section-page-home-about-image_two {
+        position: absolute;
+        top: 48%;
+        left: 70%;
+            transform: translate(-50%, -50%);
+        width: 404px;
+        height: auto;
+      
+
+    }
+
+    
+
+    .review-home_about {
+    top: 32%;
+     left: 65%;
+    transform: translate(-50%, -50%);
+        
+    }
+
+    .section-page-home-about-title_two {
+        font-size: 14px;
+
+    }
+
+    .section-page-home-about_text {
+        width: 472px;
+        height: auto;
+        font-size: 18px;
+    }
+
+
+.section-page-home-about-relative_two{
+    display: flex;
+    justify-content: end;
+   
+}
+
+.review-home-about_two { 
+
+
+    left: 10%;
+    top: 61%; 
+
+}
+
+
+        .section-page-home-about-image_three {
+           
+            width: 530px;
+            height: auto;
+    
+        }
+        
+
+        .section-page-home-about-wrapper_tablet {
+            display: flex;
+            justify-content: center;
+            
+            flex-direction: row-reverse;
+        }
+
+        .section-page-home-about-image_four {
+            width: 266px;
+            margin-right: 32px;
+        }
+
+        .section-page-home-about-text_two {
+            width: 263px;
+        }
+        
+
+    }
+
+    
+        /* ------Decstop--- */
+
+                @media screen and (min-width: 1440px) {
+                    .section-page-home-about-head_wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    .section-page-home-about-image_two {
+                        top: 48%;
+                            left: 108%;
+                            transform: translate(-50%, -50%);
+                        width: 439px;
+                        height: auto;
+                    }
+
+                                        .review-home_about {
+                                            top: 32%;
+                                            left: 100%;
+                                            transform: translate(-50%, -50%);
+                    
+                }
+
+                .section-page-home-about-secondery_wrapper {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    
+                    align-items: center;
+                }
+
+                .section-page-home-about-relative_two {
+                    margin-left: 87px;
+                }
+
+                                .review-home-about_two {
+                
+                
+                                    left: 0;
+                                    top: 65%;
+                                    transform: translate(-53%, -50%);
+                
+                                }
+            }
