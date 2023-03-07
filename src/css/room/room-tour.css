@@ -1,8 +1,12 @@
 /* Amenities Section */
 
 .room-amenities-section {
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 40px;
   padding-bottom: 64px;
+  max-width: 375px;
+  
   background-color: var(--common-dark);
   color: var(--common-light);
 }
@@ -11,11 +15,15 @@
   .room-amenities-section {
     padding-top: 80px;
     padding-bottom: 80px;
+    max-width: none;
+    width: 768px;
   }
   @media screen and (min-width: 1440px) {
     .room-amenities-section {
       padding-top: 94px;
       padding-bottom: 100px;
+
+      width: 1440px;
     }
   }
 }
@@ -138,21 +146,16 @@
   left: calc(50% - (175px / 2));
   width: 175px;
 
-  padding: 8px 18px;
-  background-color: transparent;
-  font-size: 14px;
+  color: currentColor;
+
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
   border: 0.8px solid currentColor;
-  border-radius: 32px;
-  transition: color var(--transition-function),
-    border-color var(--transition-function),
-    background-color var(--transition-function),
-    box-shadow var(--transition-function);
+
+  transition: box-shadow var(--transition-function);
 }
 @media screen and (min-width: 768px) {
   .room-amenities-btn {
-    padding: 8px 24px;
     line-height: calc(24 / 14);
     left: 0;
     bottom: 114px;
@@ -160,11 +163,9 @@
   }
   @media screen and (min-width: 1440px) {
     .room-amenities-btn {
-      padding: 9px 24px;
-      font-size: 18px;
-      line-height: calc(24 / 18);
       bottom: 135px;
-      width: 170px;
+      width: 172px;
+      line-height: calc(24 / 18);
     }
   }
 }
