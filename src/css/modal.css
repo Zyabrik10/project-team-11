@@ -191,7 +191,7 @@
     content: "";
     display: block;
     position: absolute;
-    background: url(./img/select.svg);
+    background: url(../img/select.svg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 12px;
