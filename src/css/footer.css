@@ -6,7 +6,7 @@
     padding-left: 20px;
     padding-right:20px;
 }
-/*==================*/
+
 .footer-logo{
         width: 93px;
         height: 24px;
@@ -22,12 +22,10 @@
         margin-left:32%;
         padding-left:35px;
     }
-<<<<<<< Updated upstream
+
     
-=======
-    /*==================*/
         
->>>>>>> Stashed changes
+
     .footer-description{
         letter-spacing: 0.18em;
         font-weight: 400;
@@ -47,7 +45,7 @@
                     text-align: left;
                     position: inherit;
                 }
-/*=========================*/
+
     }
     .socials-footer-list{
         display:flex;
@@ -62,7 +60,7 @@
     }
     .socials-footer-list:hover,
     .socials-footer-list:focus{
-/*========*/
+
 width:32px;
 height:32px; 
 opacity:10%;
