@@ -5,19 +5,17 @@
   margin-left: auto;
   padding-top: 40px;
   padding-bottom: 64px;
-
+  max-width: 375px;
+  
   background-color: var(--common-dark);
   color: var(--common-light);
 }
-@media screen and (max-width: 767px) {
-  .room-amenities-section {
-    max-width: 375px;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .room-amenities-section {
     padding-top: 80px;
     padding-bottom: 80px;
+    max-width: none;
     width: 768px;
   }
   @media screen and (min-width: 1440px) {
