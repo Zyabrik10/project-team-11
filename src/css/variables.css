@@ -5,7 +5,23 @@
 
   /* Кольори */
   --common-dark: #121212;
-  --common-light: #F6F6F6;
+  --common-dark-30: rgba(18, 18, 18, 0.3);
+  --common-light: #f6f6f6;
+  --common-light-30: rgba(246, 246, 246, 0.3);
+  --light-title: #484848;
+  --dark-card: #575757;
+  --weight: #d8d7d7;
+  --food-list: #d8d7d7;
   --light: #fff;
   --common-gray :#575757;
+  --modal-light-text: #f7f7f7;
+
+  /* Стилі */
+  --button-radius: 32px;
+
+  /* Анімація */
+  --transition-duration: 0.3s;
+  --transition-timing-function: ease;
+  /* all - за замовчуванням */
+  --transition-function: 0.3 ease;
 }

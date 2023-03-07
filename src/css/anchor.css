@@ -1,0 +1,36 @@
+#anchor-up {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  border: 2px solid var(--common-dark);
+  color: var(--common-dark);
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  opacity: 1;
+
+  transition-property: color, border, opacity, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  z-index: 5;
+}
+
+#anchor-up:hover,
+#anchor-up:focus {
+  color: var(--common-light);
+  background-color: var(--common-dark);
+}
+
+#anchor-up.hidden {
+  opacity: 0;
+}
