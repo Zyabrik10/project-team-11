@@ -1,0 +1,113 @@
+.home-hotel-sec{
+    background-color: var(--common-dark);
+}
+.container .home-hotel-title{
+    color: var(--common-light);
+    margin-bottom: 32px;
+}
+.hotel-paragraph{
+    color: var(--common-light);
+    margin-bottom: 32px;
+    
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(18/14);
+    font-style: normal;
+
+}
+.home-hotel-btn-list{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+.home-hotel-img-right{
+    display: none;
+}
+.home-hotel-set-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+.home-hotel-img-left{
+    display: flex;
+    gap: 19px;
+    margin-bottom: 18px;
+}
+
+
+
+.sliders-home-hotel > .home-hotel-slider-btn-list{
+    justify-content: left;
+}
+.slider-buttons > .slider-icon-hotel{
+    fill: #ffffff30;
+}
+.home-hotel-slider-btn:hover .slider-icon-hotel,
+.home-hotel-slider-btn:focus .slider-icon-hotel{
+    fill: var(--common-light);
+}
+
+@media screen and (min-width: 768px) {
+    .sliders-home-hotel{
+        display: none;
+    } 
+    .hotel-paragraph{
+        max-width: 362px;
+        margin: 0;
+    }
+    .home-hotel-description .home-hotel-title{
+        margin: 0;
+    }
+    .home-hotel-description{
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    .home-hotel-set-img{
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+    .home-hotel-img-left{
+        flex-direction: column;
+        gap: 16px;
+        margin: 0;
+    }
+   .home-hotel-img-center{
+    order: 1;
+   }
+   .home-hotel-img-right{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    gap: 16px;
+   }
+   .home-hotel-description > .home-hotel-title{
+    font-size: 68px;
+    line-height: calc(68/68);
+   }
+}
+@media screen and (min-width: 1440px){
+    .home-hotel-set-img{
+        gap: 32px;
+        justify-content: center;
+        margin: 0;
+    }
+    .home-hotel-img-right{
+        gap: 28px;
+    }
+    .home-hotel-img-left{
+        gap: 28px;
+    }
+    .home-hotel-container{
+        position: relative;
+    }
+    .home-hotel-btn-list{
+        position: absolute;
+        top: 0;
+        right: 32px;
+        
+    }
+}
