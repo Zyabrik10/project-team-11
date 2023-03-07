@@ -11,7 +11,7 @@ margin: 0 auto;
 }
 
 .section-titles{ 
-width: 270px;
+width: 271px; /* -- fixbag try2--*/
 /* font-family: 'DM Sans'; */
 font-style: normal;
 font-weight: 400;
@@ -138,7 +138,7 @@ text-transform: uppercase;
     }
 
     .section-titles{
-        width: 406px;
+        width: 407px; /*-- fixbag try2--*/
         font-size: 60px;
     }
     .double-room-button{
