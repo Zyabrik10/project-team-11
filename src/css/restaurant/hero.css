@@ -78,6 +78,7 @@
 }
 
 .hero-btn {
+    font-size: 14px;
     padding: 8px 18px;
     display: block;
 
@@ -85,13 +86,14 @@
     border-radius: var(--button-radius);
     background-color: transparent;
 
-    transition-property: color background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var (--transition-function);
 }
 
 @media screen and (min-width: 1440px) {
     .hero-btn {
+        font-size: 18px;
         padding: 9px 24px;
     }
 }
