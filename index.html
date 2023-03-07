@@ -21,7 +21,7 @@
   <!-- Styles -->
   
   <script type="module" crossorigin src="/project-team-11/assets/anchor-783dd448.js"></script>
-  <link rel="stylesheet" href="/project-team-11/assets/anchor-6027c528.css">
+  <link rel="stylesheet" href="/project-team-11/assets/anchor-6f635148.css">
 </head>
 
 <body id="up">
@@ -619,6 +619,8 @@
           <input
             class="book-form-field"
             placeholder="Your name"
+            pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
+            title="Letters only"
             type="text"
             name="client_name"
             id="client_name"
@@ -631,28 +633,31 @@
         </div>
 
         <div class="book-form-field-wrp">
-          <select
-            class="book-form-select"
-            name="number_people"
-            id="number_people"
-            required
-          >
-            <option selected disabled>Number of people</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
+          <div class="select">
+            <select
+              class="book-form-select"
+              name="number_people"
+              id="number_people"
+              required
+            >
+              <option selected disabled>Number of people</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
         </div>
 
         <div class="book-form-field-wrp">
-          <select class="book-form-select" name="date" id="date" required>
-            <option selected value="Today">Today</option>
-            <option value="Tomorrow">Tomorrow</option>
-            <option value="Day after tomorrow">Day after tomorrow</option>
-          </select>
-
+          <div class="select">
+            <select class="book-form-select" name="date" id="date" required>
+              <option selected value="Today">Today</option>
+              <option value="Tomorrow">Tomorrow</option>
+              <option value="Day after tomorrow">Day after tomorrow</option>
+            </select>
+          </div>
           <label class="book-form-label" for="date">What date to book?</label>
         </div>
 
@@ -661,6 +666,8 @@
             class="book-form-field"
             placeholder="+ 38 ()"
             type="tel"
+            pattern="^[0-9]+$"
+            title="Numbers only"
             name="phone_number"
             id="phone_number"
             required
@@ -694,6 +701,8 @@
             class="book-form-field"
             placeholder="Your name"
             type="text"
+            pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
+            title="Letters only"
             name="client_name"
             id="client_name"
             required
@@ -708,6 +717,8 @@
             class="book-form-field"
             placeholder="+ 38 ()"
             type="tel"
+            pattern="^[0-9]+$"
+            title="Numbers only"
             name="phone_number"
             id="phone_number"
             required
@@ -716,34 +727,46 @@
         </div>
 
         <div class="book-form-field-wrp">
-          <select class="book-form-select" name="date-in" id="date-in" required>
-            <option selected value="Today">Today</option>
-            <option value="Tomorrow">Tomorrow</option>
-            <option value="Day after tomorrow">Day after tomorrow</option>
-          </select>
-
+          <div class="select">
+            <select
+              class="book-form-select"
+              name="date-in"
+              id="date-in"
+              required
+            >
+              <option selected value="Today">Today</option>
+              <option value="Tomorrow">Tomorrow</option>
+              <option value="Day after tomorrow">Day after tomorrow</option>
+            </select>
+          </div>
           <label class="book-form-label" for="date-in">Check-in date</label>
         </div>
         <div class="book-form-field-wrp">
-          <input
-            class="book-form-field"
-            type="date"
-            name="date-out"
-            id="date-out"
-            required
-          />
+          <div class="select">
+            <input
+              class="book-form-field"
+              type="date"
+              value="2023-03-09"
+              title="Only number and dots"
+              name="date-out"
+              id="date-out"
+              required
+            />
+          </div>
           <label class="book-form-label" for="date-out">Check-out date</label>
         </div>
         <div class="book-form-field-wrp">
-          <select
-            class="book-form-select"
-            name="category"
-            id="category"
-            required
-          >
-            <option selected value="Doble suite">Doble suite</option>
-            <option value="Single suite">Single suite</option>
-          </select>
+          <div class="select">
+            <select
+              class="book-form-select"
+              name="category"
+              id="category"
+              required
+            >
+              <option selected value="Doble suite">Doble suite</option>
+              <option value="Single suite">Single suite</option>
+            </select>
+          </div>
 
           <label class="book-form-label" for="category">Number category</label>
         </div>
@@ -772,12 +795,13 @@
     <form class="book-form" name="book_form">
       <div class="book-form-wrp">
         <div class="book-form-field-wrp">
-          <select class="book-form-select" name="nights" id="nights" required>
-            <option selected value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-
+          <div class="select">
+            <select class="book-form-select" name="nights" id="nights" required>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
           <label class="book-form-label" for="nights">Number of nights</label>
         </div>
 
@@ -786,9 +810,9 @@
             class="book-form-field"
             placeholder="1000"
             type="text"
+            pattern="^[0-9]+$"
             name="price"
             id="price"
-            required
           />
           <label class="book-form-label" for="price">UAH</label>
         </div>

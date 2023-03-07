@@ -20,7 +20,7 @@
   <!-- Styles -->
   
   <script type="module" crossorigin src="/project-team-11/assets/anchor-783dd448.js"></script>
-  <link rel="stylesheet" href="/project-team-11/assets/anchor-6027c528.css">
+  <link rel="stylesheet" href="/project-team-11/assets/anchor-6f635148.css">
 </head>
 
 <body id="up">
@@ -1492,6 +1492,8 @@
           <input
             class="book-form-field"
             placeholder="Your name"
+            pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
+            title="Letters only"
             type="text"
             name="client_name"
             id="client_name"
@@ -1504,28 +1506,31 @@
         </div>
 
         <div class="book-form-field-wrp">
-          <select
-            class="book-form-select"
-            name="number_people"
-            id="number_people"
-            required
-          >
-            <option selected disabled>Number of people</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
+          <div class="select">
+            <select
+              class="book-form-select"
+              name="number_people"
+              id="number_people"
+              required
+            >
+              <option selected disabled>Number of people</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
         </div>
 
         <div class="book-form-field-wrp">
-          <select class="book-form-select" name="date" id="date" required>
-            <option selected value="Today">Today</option>
-            <option value="Tomorrow">Tomorrow</option>
-            <option value="Day after tomorrow">Day after tomorrow</option>
-          </select>
-
+          <div class="select">
+            <select class="book-form-select" name="date" id="date" required>
+              <option selected value="Today">Today</option>
+              <option value="Tomorrow">Tomorrow</option>
+              <option value="Day after tomorrow">Day after tomorrow</option>
+            </select>
+          </div>
           <label class="book-form-label" for="date">What date to book?</label>
         </div>
 
@@ -1534,6 +1539,8 @@
             class="book-form-field"
             placeholder="+ 38 ()"
             type="tel"
+            pattern="^[0-9]+$"
+            title="Numbers only"
             name="phone_number"
             id="phone_number"
             required
