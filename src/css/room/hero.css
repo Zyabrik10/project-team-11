@@ -165,7 +165,7 @@ text-transform: uppercase;
 /* -------MEDIA DESC ----------- */
 @media screen and (min-width: 1440px) {
     .container-lux {
-        width: 100%;
+        width: 1440px;
     }
     .sec-global {
         display: flex;
