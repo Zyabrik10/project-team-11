@@ -1,0 +1,84 @@
+.four-seater-section {
+  background-color: var (--common-light);
+}
+
+.four-seater-list {
+  min-width: 355px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .four-seater-list {
+    margin-bottom: 40px;
+    gap: 32px;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .four-seater-bath {
+    order: -2;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .four-seater-list {
+    position: relative;
+  }
+
+  .four-seater-kitchen {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .four-seater-list {
+    display: flex;
+    max-width: 1440;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+
+  .four-seater-kitchen {
+    order: -3;
+  }
+  .four-seater-bed {
+    order: -2;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .four-rooms-box {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hotel-four-room-text-title-box {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+.four-room-paragraph {
+  max-width: 475px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .hotel-four-room-buttons-list {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hotel-four-room-buttons-list {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

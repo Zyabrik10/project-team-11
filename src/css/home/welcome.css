@@ -1,0 +1,102 @@
+/* =================== section welcome =================== */
+.welcome {
+  padding-top: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .welcome {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .welcome-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .welcome-box {
+    max-width: 437px;
+  }
+}
+
+.welcome-title {
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 32px;
+  line-height: calc(36 / 32);
+  letter-spacing: -0.02em;
+
+  color: var(--dark);
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-title {
+    max-width: 404px;
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: calc(40 / 36);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .welcome-title {
+    max-width: 434px;
+    margin-bottom: 310px;
+  }
+}
+
+.welcome-title-span {
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-list {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 40px;
+
+    line-height: calc(18.23 / 14);
+  }
+  .welcome-list-item:first-child {
+    min-width: 306px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .welcome-list {
+    display: block;
+    margin-bottom: 0px;
+  }
+  .welcome-list-item:first-child {
+    margin-bottom: 24px;
+  }
+}
+
+.welcome-list-item {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-list-item {
+    margin-bottom: 0px;
+  }
+}
+
+.welcome-list-item-text {
+  letter-spacing: -0.02em;
+
+  color: var(--dark);
+}
+
+@media screen and (min-width: 1440px) {
+  .welcome-box-pic {
+    margin-right: 32px;
+  }
+}
+/* =================== /section welcome =================== */

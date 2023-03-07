@@ -1,0 +1,300 @@
+/* =================== section restaurant =================== */
+
+@media screen and (min-width: 1440px) {
+  .restaurant-container {
+    position: relative;
+    padding-top: 44px;
+    padding-bottom: 447px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.restaurant-title {
+  margin-bottom: 24px;
+  max-width: 239px;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(40 / 40);
+}
+
+.restaurant-text {
+  margin-bottom: 32px;
+  max-width: 231px;
+
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-header {
+    display: flex;
+    align-items: center;
+    width: 659px;
+    margin-bottom: 80px;
+  }
+
+  .restaurant-title {
+    margin: 0;
+    margin-right: 32px;
+    max-width: 406px;
+
+    font-size: 68px;
+    line-height: calc(68 / 68);
+    letter-spacing: -0.02em;
+  }
+
+  .restaurant-text {
+    margin-bottom: 0px;
+    padding: 7px 0;
+    max-width: 221px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant-header {
+    margin-bottom: 0;
+  }
+}
+
+.restaurant-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-buttons {
+    gap: 14px;
+  }
+}
+
+.restaurant-button-modal {
+  padding: 8px 18px;
+
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: var(--common-dark);
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 32px;
+
+  transition: background-color var(--transition-function);
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-button-modal {
+    padding: 8px 24px;
+
+    line-height: calc(24 / 14);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant-button-modal {
+    padding: 9px 24px;
+    gap: 14px;
+
+    font-size: 18px;
+    line-height: calc(24 / 18);
+  }
+}
+
+.restaurant-button-modal:hover,
+.restaurant-button-modal:focus {
+  color: var(--light);
+  background-color: var(--common-dark);
+}
+
+.restaurant-buttons-ref {
+  display: block;
+  padding: 8px 18px;
+
+  color: var(--common-dark);
+  background-color: transparent;
+  border: 0.8px solid var(--common-dark);
+  border-radius: 32px;
+
+  transition: background-color var(--transition-function);
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-buttons-ref {
+    padding: 8px 24px;
+
+    line-height: calc(24 / 14);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant-buttons-ref {
+    padding: 9px 24px;
+
+    font-size: 18px;
+    line-height: calc(24 / 18);
+  }
+}
+.restaurant-buttons-ref:hover,
+.restaurant-buttons-ref:focus {
+  color: var(--light);
+  background-color: var(--common-dark);
+}
+
+/* =================== slider restaurant =================== */
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+  min-width: 177px;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .slick-track {
+    gap: 32px;
+  }
+}
+
+/* Слайд */
+/* .slick-slide {
+} */
+/* Слайд активный */
+/* .slick-slide.slick-active {
+} */
+/* Слайд основной */
+/* .slick-slide.slick-current {
+} */
+/* Слайд по центру */
+/* .slick-slide.slick-center {
+} */
+
+/* Стрелка */
+/* .slick-arrow {
+} */
+/* Стрелка влево */
+/* .slick-arrow.slick-prev {
+} */
+/* Стрелка вправо */
+/* .slick-arrow.slick-next {
+} */
+/* Стрелка не активная */
+/* .slick-arrow.slick-disabled {
+} */
+
+/* Точки */
+/* .slick-dots {
+} */
+/* .slick-dots li {
+} */
+
+/* Конкретный слайдер */
+/* =================== main restaurant slider =================== */
+.main-restaurant-slider {
+  position: relative;
+  padding: 0px 0px;
+  margin-bottom: 82px;
+}
+
+@media screen and (min-width: 1440px) {
+  .main-restaurant-slider {
+    position: absolute;
+    top: 237px;
+    left: 32px;
+  }
+}
+
+.main-restaurant-slider-item {
+  text-align: center;
+}
+
+.main-restaurant-slider-img {
+  width: 157px;
+  height: 201px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-restaurant-slider-img {
+    width: 336px;
+    height: 309px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-restaurant-slider-img {
+    width: 266px;
+  }
+}
+
+.main-restaurant-slider .slick-arrow {
+  position: absolute;
+  bottom: -42px;
+  margin: 0px 0px 0px 0px;
+  width: 24px;
+  height: 24px;
+
+  font-size: 0;
+  border: 0;
+
+  z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+  .main-restaurant-slider .slick-arrow {
+    width: 36px;
+    height: 36px;
+    bottom: -68px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-restaurant-slider .slick-arrow {
+    bottom: -87px;
+  }
+}
+
+.main-restaurant-slider .slick-arrow.slick-prev {
+  left: 0;
+  /* stroke: var(--common-dark); */
+  background: url('/img/arrow-left.svg') 0 0 / 100% no-repeat;
+}
+.main-restaurant-slider .slick-arrow.slick-next {
+  left: 44px;
+  /* stroke: var(--common-dark); */
+  background: url('/img/arrow-right.svg') 0 0 / 100% no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .main-restaurant-slider .slick-arrow.slick-next {
+    left: 68px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-restaurant-slider .slick-arrow.slick-prev {
+    left: calc(50vw - 36px - 32px - (50vw - 700px));
+  }
+  .main-restaurant-slider .slick-arrow.slick-next {
+    left: calc(50vw - (50vw - 700px));
+  }
+}
+
+.main-restaurant-slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+/* =================== /main restaurant slider =================== */
+/* =================== /slider restaurant =================== */
+/* =================== /section restaurant =================== */
