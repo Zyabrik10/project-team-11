@@ -80,8 +80,7 @@
 
   width: 28px;
   height: 28px;
-  
-  
+
   background-color: transparent;
   border: none;
   color: var(--common-light);
@@ -110,7 +109,7 @@
   text-align: center;
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(22/14);
+  line-height: calc(22 / 14);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--modal-light-text);
@@ -119,7 +118,7 @@
 @media screen and (min-width: 768px) {
   .logo-mob-title {
     font-size: 20px;
-    line-height: calc(24/20);
+    line-height: calc(24 / 20);
   }
 }
 
@@ -130,7 +129,7 @@
   font-weight: 400;
   font-size: 6px;
   line-height: 8px;
-  line-height: calc(8/6);
+  line-height: calc(8 / 6);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--weight);
@@ -139,7 +138,7 @@
 @media screen and (min-width: 768px) {
   .logo-mob-discr {
     font-size: 8px;
-    line-height: calc(10/8);
+    line-height: calc(10 / 8);
   }
 }
 
@@ -164,11 +163,9 @@
   }
 }
 
-
 .site-nav-mob-item:last-child {
   margin-bottom: auto;
 }
-
 
 .site-nav-mob-item:not(:last-child) {
   margin-bottom: 32px;
@@ -201,12 +198,12 @@
 }
 
 .social-mob-list-link {
-    display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 24px;
-      height: 24px;
-      color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  color: var(--light);
 }
 
 .social-mob-icon {
@@ -214,6 +211,7 @@
   fill: var(--common-dark);
 }
 
-.social-mob-icon:hover, .social-mob-icon:focus {
+.social-mob-icon:hover,
+.social-mob-icon:focus {
   fill: currentColor;
 }
