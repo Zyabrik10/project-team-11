@@ -127,8 +127,14 @@
   .about-txt {
     display: block;
     margin-top: var(--flex-items-gap);
-    font-weight: 500;
     font-size: 18px;
     line-height: 1.3;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-txt {
+    font-weight: 500;
+
   }
 }
