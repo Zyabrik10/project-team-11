@@ -9,7 +9,7 @@
 
   padding: 20px;
 
-  border: 2px solid rgba(30, 30, 30, 0.5);
+  background-color: rgba(30, 30, 30, 0.5);
   color: var(--common-light);
 
   border-radius: 10px;
@@ -29,7 +29,7 @@
 
 #anchor-up:hover,
 #anchor-up:focus {
-  color: var(--common-dark);
+  color: var(--common-light);
   background-color: rgba(30, 30, 30, 1);
 }
 
