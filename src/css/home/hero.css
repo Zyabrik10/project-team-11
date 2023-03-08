@@ -19,6 +19,8 @@
 
 @media screen and (min-width: 768px) {
   .home-hero-container {
+    max-width: 768px;
+    margin: 0 auto;
     background-size: 542px 710px;
     background-position: top 128px center;
   }
@@ -114,7 +116,7 @@
 }
 
 .home-hero-title {
-  padding-top: 429px;
+  padding-top: 507px;
   font-size: 80px;
   font-weight: 400;
   line-height: 1;
@@ -220,6 +222,7 @@
 }
 
 .home-hero-txt {
+  letter-spacing: 0.05em;
   color: var(--modal-light-text);
   display: block;
   text-align: left;
