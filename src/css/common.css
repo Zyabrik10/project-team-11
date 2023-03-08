@@ -101,6 +101,8 @@ body {
   font-weight: inherit;
 
   text-transform: uppercase;
+
+  letter-spacing: -0.02em;
 }
 
 .section-title {

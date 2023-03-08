@@ -57,6 +57,12 @@
 
 /* 2 small pics */
 
+@media screen and (max-width: 767px) {
+  .about-img {
+    max-width: 100%;
+  }
+}
+
 .about-pics-list {
   display: flex;
   gap: 20px;
@@ -79,10 +85,8 @@
 }
 
 /* paragraph text */
-.about-txt-list {
-  width: 335px;
-  /* width: 100%; */
 
+.about-txt-list {
   display: flex;
   flex-direction: column;
   gap: 24px;

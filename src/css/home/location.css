@@ -1,126 +1,161 @@
-.location-title{
-    margin: 0;
-    margin-bottom: 32px;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 1;
+/* =================== section location =================== */
+.location-section.section {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
-.map-location{
-    margin-bottom: 32px;
-}
-.address{
-    margin-bottom: 28px;
-}
-.address > .reset-paragraph{
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.33;
-    font-style: normal;
-}
-.contacts > .reset-paragraph{
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.28;
 
-}
-.number-phone{
-    font-style: normal;
-}
-.our-number{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-.location-link{
-    position: relative;
-}
-.location-icons{
-    position: absolute;
-    top: 47%;
-    left: 36.9%;
-}
-.location-img{
-    box-shadow: -14px 24px 68px rgba(0, 0, 0, 0.12);
-}
-@media screen and (min-width: 375px){
-    .location-icons{
-        top: 183px;
-        left: 122px;
-    }
-}
 @media screen and (min-width: 768px) {
-    .contact-block{
-        display: flex;
-    }
-    .address {
-      margin-right: auto;
-    }
-    .contacts{
-        margin-left: auto;
-    }
-    .location-title{
-        margin-bottom: 40px;
-    }
-    .location-img{
-        margin-bottom: 32px;
-    }
-    .number-phone{
-        font-size: 18px;
-    }
-    .location-icons{
-        top: 269px;
-        left: 318px;
-        width: 34px;
-        height: 42px;
-    }
-    .our-number{
-        gap: 2px;
-    }
+  .location-section.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
-  
-  @media screen and (min-width: 1440px) {
-    .location-container{
-        position: relative;
-        display: flex;
-    }
-    .location-title{
-        position: absolute;
-        top: 0;
-        left: 736px;
-        margin: 0;
+}
 
-        font-size: 68px;
-    }
-    .contacts > .reset-paragraph{
-        margin: 0;
-        font-weight: 700;
-    }
+@media screen and (min-width: 1440px) {
+  .location-section.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 
-    .contact-block {
+.location-title {
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .location-title {
+    margin-bottom: 40px;
+
+    font-size: 68px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .location-title {
+    position: absolute;
+    top: 0;
+    left: 704px;
+    margin: 0;
+  }
+}
+
+.map-location {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .map-location {
+    margin-bottom: 0px;
+  }
+}
+
+.map-location-ref {
+  width: 335px;
+  height: 384px;
+
+  box-shadow: -14px 24px 68px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) {
+  .map-location-ref {
+    width: 704px;
+    height: 796px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .map-location-ref {
+    width: 640px;
+    height: 524px;
+  }
+}
+
+.contact-address-text {
+  margin-bottom: 28px;
+
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact-address-text {
+    margin-bottom: 0px;
+  }
+}
+
+.contacts-number-text {
+  margin-bottom: 12px;
+
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-address {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .contact-address-text {
+    margin-right: 70px;
+  }
+
+  .contacts-number {
+    display: flex;
+  }
+
+  .contacts-number-text {
+    margin-right: 12px;
+    margin-bottom: 0px;
+
+    font-weight: 700;
+  }
+}
+
+.number-phone {
+  font-style: normal;
+}
+.our-number {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .number-phone {
+    font-size: 18px;
+  }
+
+  .our-number {
+    gap: 2px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .location-container {
+    position: relative;
+    display: flex;
+  }
+
+  .contact-block {
     margin-top: auto;
     margin-left: 32px;
-    }
-    .contacts{
-        display: flex;
-        margin-left: 70px;
-    }
-    .our-number{
-        margin-left: 12px;
-        gap: 4px;
-    }
-    .location-icons{
-        top: 241px;
-        left: 286px;
-    }
-    .location-section > .container{
-        padding-left: 64px;
-    }
-    .location-img{
-        margin: 0;
-    }
   }
-
-    
+  .our-number {
+    gap: 4px;
+  }
+}
+/* =================== /section location =================== */
