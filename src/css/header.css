@@ -26,7 +26,6 @@
   }
 }
 
-
 .header-main-page {
   position: absolute;
   top: 0;
@@ -34,14 +33,12 @@
   transform: translateX(-50%);
 
   z-index: 999;
-}
 
-.header-container-main-page {
+  width: 100%;
+
   background-color: transparent;
   color: var(--common-light);
-
-  width: 1440px;
-
+  
   border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
 
