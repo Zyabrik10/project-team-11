@@ -1,6 +1,3 @@
-Revealator.scroll_padding = '100';
-Revealator.effects_padding = '-100';
-
 const relveators = document.querySelectorAll(".relv-animation");
 
 function removeAnimationIfNeeded() {
