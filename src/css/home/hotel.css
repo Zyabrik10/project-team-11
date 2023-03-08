@@ -111,3 +111,16 @@
         
     }
 }
+
+.hotel-btn{
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.hotel-btn:hover,
+.hotel-btn:focus{
+    color: var(--common-dark);
+    background-color: var(--common-light);
+
+}
