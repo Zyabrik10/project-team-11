@@ -1,13 +1,6 @@
 .header{
-  margin-bottom: 40px;
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
   background: #fff;
-}
-
-@media screen and (min-width: 1440px) {
-  .header {
-    margin-bottom: 30px;
-  }
 }
 
 .header-container {
