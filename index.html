@@ -21,14 +21,14 @@
   <!-- Styles -->
   
   <script type="module" crossorigin src="/project-team-11/assets/anchor-8a234086.js"></script>
-  <link rel="stylesheet" href="/project-team-11/assets/anchor-97dc4515.css">
+  <link rel="stylesheet" href="/project-team-11/assets/anchor-c0a4cb74.css">
 </head>
 
 <body id="up">
   <!-- header -->
   <header class="header header-main-page">
     <div class="container header-container header-container-main-page">
-        <button class="header-menu-button common-button" type="button">
+        <button class="header-menu-button common-button" type="button" data-model-button='mobile_open'>
             <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
                 <use href="/project-team-11/assets/icons-c259e0ca.svg#menu-button"></use>
             </svg>
@@ -844,7 +844,7 @@
 
   <!-- mobile menu -->
   <div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="menu-button-close js-close-menu">
+  <button class="menu-button-close js-close-menu" data-model-button='mobile_close'>
     <svg class="button-close-icon" width="20" height="20">
       <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-close"></use>
     </svg>
@@ -868,48 +868,31 @@
         <a href="./hotel.html" class="nav-mob-link reset-link">Hotel</a>
       </li>
       <li class="site-nav-mob-item">
-        <a href="./restaurant.html" class="nav-mob-link reset-link"
-          >Restaurant</a
-        >
+        <a href="./restaurant.html" class="nav-mob-link reset-link">Restaurant</a>
       </li>
     </ul>
   </nav>
 
   <ul class="social-mob-list reset-list">
     <li class="social-mob-list-item">
-      <a
-        class="social-mob-list-link reset-link"
-        href="https://instagram.com"
-        aria-label="Instagram"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a class="social-mob-list-link reset-link" href="https://instagram.com" aria-label="Instagram" target="_blank"
+        rel="noopener noreferrer">
         <svg class="social-mob-icon" width="24" height="24">
           <use href="/project-team-11/assets/icons-c259e0ca.svg#instagram"></use>
         </svg>
       </a>
     </li>
     <li class="social-mob-list-item">
-      <a
-        class="social-mob-list-link reset-link"
-        href="https://facebook.com"
-        aria-label="Facebook"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a class="social-mob-list-link reset-link" href="https://facebook.com" aria-label="Facebook" target="_blank"
+        rel="noopener noreferrer">
         <svg class="social-mob-icon" width="24" height="24">
           <use href="/project-team-11/assets/icons-c259e0ca.svg#facebook"></use>
         </svg>
       </a>
     </li>
     <li class="social-mob-list-item">
-      <a
-        class="social-mob-list-link reset-link"
-        href="https://twitter.com"
-        aria-label="Twitter"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a class="social-mob-list-link reset-link" href="https://twitter.com" aria-label="Twitter" target="_blank"
+        rel="noopener noreferrer">
         <svg class="social-mob-icon" width="24" height="24">
           <use href="/project-team-11/assets/icons-c259e0ca.svg#twitter"></use>
         </svg>
@@ -917,7 +900,6 @@
     </li>
   </ul>
 </div>
-
 
   <!-- Anchor -->
   <a id="anchor-up" class="reset-link hidden" href="#up">up</a>
@@ -939,7 +921,6 @@
   </script>
 
   <script>
-
     const room_buttons = document.querySelectorAll("[data-model-window=room]");
     const table_buttons = document.querySelectorAll("[data-model-window=table]");
 
@@ -968,6 +949,21 @@
         table_window.classList.remove("is-hidden");
       };
     })
+  </script>
+
+  <script>
+    const mobile_menu_button_open = document.querySelector("[data-model-button=mobile_open]");
+    const mobile_menu_button_close = document.querySelector("[data-model-button=mobile_close]");
+
+    const mobile_menu = document.querySelector("#mobile-menu");
+
+    mobile_menu_button_open.onclick = () => {
+      mobile_menu.classList.add("is-open");
+    }
+
+    mobile_menu_button_close.onclick = () => {
+      mobile_menu.classList.remove("is-open");
+    }
   </script>
 </body>
 
