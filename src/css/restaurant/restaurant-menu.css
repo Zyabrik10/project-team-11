@@ -1,5 +1,9 @@
-.rest-menu-content {
+.rest-menu{
   background-color: var(--common-dark);
+
+}
+
+.rest-menu-content {
   color: var(--common-light);
 
   padding-top: 40px;

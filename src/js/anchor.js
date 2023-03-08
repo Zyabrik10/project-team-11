@@ -22,5 +22,5 @@ window.onscroll = () => {
         document.querySelector("#anchor-up").classList.add("hidden");
     }
 
-    removeAnimationIfNeeded();
+    // removeAnimationIfNeeded();
 }
