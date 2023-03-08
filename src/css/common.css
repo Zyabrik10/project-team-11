@@ -63,14 +63,6 @@ body {
   padding-bottom: 32px;
 }
 
-.section:first-child {
-  padding-top: 0;
-}
-
-.section:last-child {
-  padding-bottom: 0;
-}
-
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 40px;
@@ -83,6 +75,14 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+}
+
+.section:first-child {
+  padding-top: 0;
+}
+
+.section:last-child {
+  padding-bottom: 0;
 }
 
 .common-image {
