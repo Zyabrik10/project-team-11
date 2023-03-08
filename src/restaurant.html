@@ -18,9 +18,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
 
   <!-- Animation -->
-  <link rel="stylesheet" href="./css/animation/fm.revealator.jquery.css">
+  <!-- <link rel="stylesheet" href="./css/animation/fm.revealator.jquery.css">
   <script src="./js/animation/jquery-1.11.3.min.js"></script>
-  <script src="./js/animation/fm.revealator.jquery.js"></script>
+  <script src="./js/animation/fm.revealator.jquery.js"></script> -->
 
   <!-- Styles -->
   <link rel="stylesheet" href="./css/styles.css" />
@@ -58,6 +58,24 @@
   <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
 
   <script type="module" src="/main.js"></script>
+
+  <script>
+    const table_buttons = document.querySelectorAll("[data-model-window=table]");
+
+    const table_window = document.querySelector("[data-modal-window=table]");
+
+    const close_modal_table = document.querySelector("[data-modal-button=close_table]");
+
+    close_modal_table.onclick = () => {
+      table_window.classList.add("is-hidden");
+    }
+
+    table_buttons.forEach((button) => {
+      button.onclick = () => {
+        table_window.classList.remove("is-hidden");
+      };
+    })
+  </script>
 </body>
 
 </html>
