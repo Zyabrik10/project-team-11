@@ -6,6 +6,7 @@
     padding-left: 20px;
     padding-right:20px;
 }
+<<<<<<< Updated upstream
 
 .footer-logo{
         width: 93px;
@@ -41,6 +42,34 @@
                     text-align: left;
                     position: inherit;
                 }
+=======
+.footer-navigation-link{
+  display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+.footer-logo-name{
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color:var(--common-dark);
+}
+.footer-logo-sub-name{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+>>>>>>> Stashed changes
 
     }
     .socials-footer-list{
