@@ -1,17 +1,23 @@
 .header{
+  margin-bottom: 40px;
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+  background: #fff;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    margin-bottom: 30px;
+  }
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  background: #fff;
 
 
   padding-top: 20px;
   padding-bottom: 20px;
 
-  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -20,11 +26,6 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .header-container {
-    margin-bottom: 30px;
-  }
-}
 
 .header-main-page {
   position: absolute;
