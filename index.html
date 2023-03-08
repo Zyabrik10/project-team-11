@@ -55,12 +55,14 @@
         <h1 class="home-hero-title section-title reset-title revealator-slideright relv-animation">Mimino</h1>
         <ul class="home-hero-button-list reset-list revealator-slideleft relv-animation">
           <li>
-            <button class="home-hero-btn spec-page-button common-button" type="button">
+            <button class="home-hero-btn spec-page-button common-button backdrop_button" type="button"
+              data-model-window="table">
               book a table
             </button>
           </li>
           <li>
-            <button class="home-hero-btn spec-page-button common-button" type="button">
+            <button class="home-hero-btn spec-page-button common-button backdrop_button" type="button"
+              data-model-window="room">
               book a room
             </button>
           </li>
@@ -331,227 +333,62 @@
     <ul class="main-restaurant-slider reset-list">
       <li class="main-restaurant-slider-item reset-list">
         <picture>
-          <source
-            srcset="/project-team-11/assets/sl-rest-img1-des@1x-d52a4068.webp 1x, /project-team-11/assets/sl-rest-img1-des@2x-128fc11d.webp 2x"
-            media="(min-width: 1440px)"
-            type="image/webp"
-            width="266"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img1-des@1x-eed9474e.jpg 1x, /project-team-11/assets/sl-rest-img1-des@2x-8e957784.jpg 2x"
-            media="(min-width: 1440px)"
-            type="image/jpg"
-            width="266"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img1-tab@1x-9ff05060.webp 1x, /project-team-11/assets/sl-rest-img1-tab@2x-b70e3ca3.webp 2x"
-            media="(min-width: 768px)"
-            type="image/webp"
-            width="366"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img1-tab@1x-7dbffac8.jpg 1x, /project-team-11/assets/sl-rest-img1-tab@2x-fe079ab0.jpg 2x"
-            media="(min-width: 768px)"
-            type="image/jpg"
-            width="366"
-          />
-          <source
-            srcset="data:image/webp;base64,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 1x, /project-team-11/assets/sl-rest-img1-mob@2x-fb990fff.webp 2x"
-            type="image/webp"
-            width="157"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img1-mob@1x-0e773d60.jpg 1x, /project-team-11/assets/sl-rest-img1-mob@2x-75d2a944.jpg 2x"
-            type="image/jpg"
-            width="157"
-          />
-          <img
-            class="main-restaurant-slider-img common-image"
-            src="/project-team-11/assets/sl-rest-img1-mob@1x-0e773d60.jpg"
-            alt="cocktail with ice and strawberries"
-            width="157"
-            loading="lazy"
-          />
+          <source srcset="/project-team-11/assets/sl-rest-img1-des@1x-d52a4068.webp 1x, /project-team-11/assets/sl-rest-img1-des@2x-128fc11d.webp 2x" media="(min-width: 1440px)" type="image/webp" width="266" />
+          <source srcset="/project-team-11/assets/sl-rest-img1-des@1x-eed9474e.jpg 1x, /project-team-11/assets/sl-rest-img1-des@2x-8e957784.jpg 2x" media="(min-width: 1440px)" type="image/jpg" width="266" />
+          <source srcset="/project-team-11/assets/sl-rest-img1-tab@1x-9ff05060.webp 1x, /project-team-11/assets/sl-rest-img1-tab@2x-b70e3ca3.webp 2x" media="(min-width: 768px)" type="image/webp" width="366" />
+          <source srcset="/project-team-11/assets/sl-rest-img1-tab@1x-7dbffac8.jpg 1x, /project-team-11/assets/sl-rest-img1-tab@2x-fe079ab0.jpg 2x" media="(min-width: 768px)" type="image/jpg" width="366" />
+          <source srcset="data:image/webp;base64,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 1x, /project-team-11/assets/sl-rest-img1-mob@2x-fb990fff.webp 2x" type="image/webp" width="157" />
+          <source srcset="/project-team-11/assets/sl-rest-img1-mob@1x-0e773d60.jpg 1x, /project-team-11/assets/sl-rest-img1-mob@2x-75d2a944.jpg 2x" type="image/jpg" width="157" />
+          <img class="main-restaurant-slider-img common-image" src="/project-team-11/assets/sl-rest-img1-mob@1x-0e773d60.jpg"
+            alt="cocktail with ice and strawberries" width="157" loading="lazy" />
         </picture>
       </li>
       <li class="main-restaurant-slider-item reset-list main-filter">
         <picture>
-          <source
-            srcset="/project-team-11/assets/sl-rest-img2-des@1x-4bf5f4f5.webp 1x, /project-team-11/assets/sl-rest-img2-des@2x-9ea5f36c.webp 2x"
-            media="(min-width: 1440px)"
-            type="image/webp"
-            width="266"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img2-des@1x-59fbd1dd.jpg 1x, /project-team-11/assets/sl-rest-img2-des@2x-5d432042.jpg 2x"
-            media="(min-width: 1440px)"
-            type="image/jpg"
-            width="266"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img2-des@1x-4bf5f4f5.webp 1x, /project-team-11/assets/sl-rest-img2-des@2x-9ea5f36c.webp 2x"
-            media="(min-width: 768px)"
-            type="image/webp"
-            width="366"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img2-des@1x-59fbd1dd.jpg 1x, /project-team-11/assets/sl-rest-img2-des@2x-5d432042.jpg 2x"
-            media="(min-width: 768px)"
-            type="image/jpg"
-            width="366"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img2-des@1x-4bf5f4f5.webp 1x, /project-team-11/assets/sl-rest-img2-des@2x-9ea5f36c.webp 2x"
-            type="image/webp"
-            width="157"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img2-des@1x-59fbd1dd.jpg 1x, /project-team-11/assets/sl-rest-img2-des@2x-5d432042.jpg 2x"
-            type="image/jpg"
-            width="157"
-          />
-          <img
-            class="main-restaurant-slider-img common-image"
-            src="/project-team-11/assets/sl-rest-img2-des@1x-59fbd1dd.jpg"
-            alt="hot sandwiches with vegetables and bacon"
-            width="157"
-            loading="lazy"
-          />
+          <source srcset="/project-team-11/assets/sl-rest-img2-des@1x-4bf5f4f5.webp 1x, /project-team-11/assets/sl-rest-img2-des@2x-9ea5f36c.webp 2x" media="(min-width: 1440px)" type="image/webp" width="266" />
+          <source srcset="/project-team-11/assets/sl-rest-img2-des@1x-59fbd1dd.jpg 1x, /project-team-11/assets/sl-rest-img2-des@2x-5d432042.jpg 2x" media="(min-width: 1440px)" type="image/jpg" width="266" />
+          <source srcset="/project-team-11/assets/sl-rest-img2-des@1x-4bf5f4f5.webp 1x, /project-team-11/assets/sl-rest-img2-des@2x-9ea5f36c.webp 2x" media="(min-width: 768px)" type="image/webp" width="366" />
+          <source srcset="/project-team-11/assets/sl-rest-img2-des@1x-59fbd1dd.jpg 1x, /project-team-11/assets/sl-rest-img2-des@2x-5d432042.jpg 2x" media="(min-width: 768px)" type="image/jpg" width="366" />
+          <source srcset="/project-team-11/assets/sl-rest-img2-des@1x-4bf5f4f5.webp 1x, /project-team-11/assets/sl-rest-img2-des@2x-9ea5f36c.webp 2x" type="image/webp" width="157" />
+          <source srcset="/project-team-11/assets/sl-rest-img2-des@1x-59fbd1dd.jpg 1x, /project-team-11/assets/sl-rest-img2-des@2x-5d432042.jpg 2x" type="image/jpg" width="157" />
+          <img class="main-restaurant-slider-img common-image" src="/project-team-11/assets/sl-rest-img2-des@1x-59fbd1dd.jpg"
+            alt="hot sandwiches with vegetables and bacon" width="157" loading="lazy" />
         </picture>
       </li>
       <li class="main-restaurant-slider-item reset-list main-filter">
         <picture>
-          <source
-            srcset="/project-team-11/assets/sl-rest-img3-des@1x-26409d5e.webp 1x, /project-team-11/assets/sl-rest-img3-des@2x-0260d3d4.webp 2x"
-            media="(min-width: 1440px)"
-            type="image/webp"
-            width="266"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img3-des@1x-e594bd9b.jpg 1x, /project-team-11/assets/sl-rest-img3-des@2x-ef15391f.jpg 2x"
-            media="(min-width: 1440px)"
-            type="image/jpg"
-            width="266"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img3-des@1x-26409d5e.webp 1x, /project-team-11/assets/sl-rest-img3-des@2x-0260d3d4.webp 2x"
-            media="(min-width: 768px)"
-            type="image/webp"
-            width="366"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img3-des@1x-e594bd9b.jpg 1x, /project-team-11/assets/sl-rest-img3-des@2x-ef15391f.jpg 2x"
-            media="(min-width: 768px)"
-            type="image/jpg"
-            width="366"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img3-des@1x-26409d5e.webp 1x, /project-team-11/assets/sl-rest-img3-des@2x-0260d3d4.webp 2x"
-            type="image/webp"
-            width="157"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img3-des@1x-e594bd9b.jpg 1x, /project-team-11/assets/sl-rest-img3-des@2x-ef15391f.jpg 2x"
-            type="image/jpg"
-            width="157"
-          />
-          <img
-            class="main-restaurant-slider-img common-image"
-            src="/project-team-11/assets/sl-rest-img3-des@1x-e594bd9b.jpg"
-            alt="wine glasses and wine on the table"
-            width="157"
-            loading="lazy"
-          />
+          <source srcset="/project-team-11/assets/sl-rest-img3-des@1x-26409d5e.webp 1x, /project-team-11/assets/sl-rest-img3-des@2x-0260d3d4.webp 2x" media="(min-width: 1440px)" type="image/webp" width="266" />
+          <source srcset="/project-team-11/assets/sl-rest-img3-des@1x-e594bd9b.jpg 1x, /project-team-11/assets/sl-rest-img3-des@2x-ef15391f.jpg 2x" media="(min-width: 1440px)" type="image/jpg" width="266" />
+          <source srcset="/project-team-11/assets/sl-rest-img3-des@1x-26409d5e.webp 1x, /project-team-11/assets/sl-rest-img3-des@2x-0260d3d4.webp 2x" media="(min-width: 768px)" type="image/webp" width="366" />
+          <source srcset="/project-team-11/assets/sl-rest-img3-des@1x-e594bd9b.jpg 1x, /project-team-11/assets/sl-rest-img3-des@2x-ef15391f.jpg 2x" media="(min-width: 768px)" type="image/jpg" width="366" />
+          <source srcset="/project-team-11/assets/sl-rest-img3-des@1x-26409d5e.webp 1x, /project-team-11/assets/sl-rest-img3-des@2x-0260d3d4.webp 2x" type="image/webp" width="157" />
+          <source srcset="/project-team-11/assets/sl-rest-img3-des@1x-e594bd9b.jpg 1x, /project-team-11/assets/sl-rest-img3-des@2x-ef15391f.jpg 2x" type="image/jpg" width="157" />
+          <img class="main-restaurant-slider-img common-image" src="/project-team-11/assets/sl-rest-img3-des@1x-e594bd9b.jpg"
+            alt="wine glasses and wine on the table" width="157" loading="lazy" />
         </picture>
       </li>
       <li class="main-restaurant-slider-item reset-list">
         <picture>
-          <source
-            srcset="/project-team-11/assets/sl-rest-img4-des@1x-d225344c.webp 1x, /project-team-11/assets/sl-rest-img4-des@2x-e62ad51b.webp 2x"
-            media="(min-width: 1440px)"
-            type="image/webp"
-            width="266"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img4-des@1x-3db4ad52.jpg 1x, /project-team-11/assets/sl-rest-img4-des@2x-82e0cdbf.jpg 2x"
-            media="(min-width: 1440px)"
-            type="image/jpg"
-            width="266"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img4-tab@1x-1607e9f6.webp 1x, /project-team-11/assets/sl-rest-img4-tab@2x-a6eddde9.webp 2x"
-            media="(min-width: 768px)"
-            type="image/webp"
-            width="366"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img4-tab@1x-95b70ff9.jpg 1x, /project-team-11/assets/sl-rest-img4-tab@2x-f782c3a2.jpg 2x"
-            media="(min-width: 768px)"
-            type="image/jpg"
-            width="366"
-          />
-          <source
-            srcset="data:image/webp;base64,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 1x, /project-team-11/assets/sl-rest-img4-mob@2x-1ffadeb4.webp 2x"
-            type="image/webp"
-            width="157"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img4-mob@1x-63739a59.jpg 1x, /project-team-11/assets/sl-rest-img4-mob@2x-a5fca5ee.jpg 2x"
-            type="image/jpg"
-            width="157"
-          />
-          <img
-            class="main-restaurant-slider-img common-image"
-            src="/project-team-11/assets/sl-rest-img4-mob@1x-63739a59.jpg"
-            alt="the cook prepares the dish"
-            width="157"
-            loading="lazy"
-          />
+          <source srcset="/project-team-11/assets/sl-rest-img4-des@1x-d225344c.webp 1x, /project-team-11/assets/sl-rest-img4-des@2x-e62ad51b.webp 2x" media="(min-width: 1440px)" type="image/webp" width="266" />
+          <source srcset="/project-team-11/assets/sl-rest-img4-des@1x-3db4ad52.jpg 1x, /project-team-11/assets/sl-rest-img4-des@2x-82e0cdbf.jpg 2x" media="(min-width: 1440px)" type="image/jpg" width="266" />
+          <source srcset="/project-team-11/assets/sl-rest-img4-tab@1x-1607e9f6.webp 1x, /project-team-11/assets/sl-rest-img4-tab@2x-a6eddde9.webp 2x" media="(min-width: 768px)" type="image/webp" width="366" />
+          <source srcset="/project-team-11/assets/sl-rest-img4-tab@1x-95b70ff9.jpg 1x, /project-team-11/assets/sl-rest-img4-tab@2x-f782c3a2.jpg 2x" media="(min-width: 768px)" type="image/jpg" width="366" />
+          <source srcset="data:image/webp;base64,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 1x, /project-team-11/assets/sl-rest-img4-mob@2x-1ffadeb4.webp 2x" type="image/webp" width="157" />
+          <source srcset="/project-team-11/assets/sl-rest-img4-mob@1x-63739a59.jpg 1x, /project-team-11/assets/sl-rest-img4-mob@2x-a5fca5ee.jpg 2x" type="image/jpg" width="157" />
+          <img class="main-restaurant-slider-img common-image" src="/project-team-11/assets/sl-rest-img4-mob@1x-63739a59.jpg"
+            alt="the cook prepares the dish" width="157" loading="lazy" />
         </picture>
       </li>
       <li class="main-restaurant-slider-item reset-list main-filter">
         <picture>
-          <source
-            srcset="/project-team-11/assets/sl-rest-img5-des@1x-fc6ffb18.webp 1x, /project-team-11/assets/sl-rest-img5-des@2x-306114d3.webp 2x"
-            media="(min-width: 1440px)"
-            type="image/webp"
-            width="266"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img5-des@1x-5413cd16.jpg 1x, /project-team-11/assets/sl-rest-img5-des@2x-de7c1d96.jpg 2x"
-            media="(min-width: 1440px)"
-            type="image/jpg"
-            width="266"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img5-des@1x-fc6ffb18.webp 1x, /project-team-11/assets/sl-rest-img5-des@2x-306114d3.webp 2x"
-            media="(min-width: 768px)"
-            type="image/webp"
-            width="366"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img5-des@1x-5413cd16.jpg 1x, /project-team-11/assets/sl-rest-img5-des@2x-de7c1d96.jpg 2x"
-            media="(min-width: 768px)"
-            type="image/jpg"
-            width="366"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img5-des@1x-fc6ffb18.webp 1x, /project-team-11/assets/sl-rest-img5-des@2x-306114d3.webp 2x"
-            type="image/webp"
-            width="157"
-          />
-          <source
-            srcset="/project-team-11/assets/sl-rest-img5-des@1x-5413cd16.jpg 1x, /project-team-11/assets/sl-rest-img5-des@2x-de7c1d96.jpg 2x"
-            type="image/jpg"
-            width="157"
-          />
-          <img
-            class="main-restaurant-slider-img common-image"
-            src="/project-team-11/assets/sl-rest-img5-des@1x-5413cd16.jpg"
-            alt="baked salmon with vegetables and greens on a plate"
-            width="157"
-            loading="lazy"
-          />
+          <source srcset="/project-team-11/assets/sl-rest-img5-des@1x-fc6ffb18.webp 1x, /project-team-11/assets/sl-rest-img5-des@2x-306114d3.webp 2x" media="(min-width: 1440px)" type="image/webp" width="266" />
+          <source srcset="/project-team-11/assets/sl-rest-img5-des@1x-5413cd16.jpg 1x, /project-team-11/assets/sl-rest-img5-des@2x-de7c1d96.jpg 2x" media="(min-width: 1440px)" type="image/jpg" width="266" />
+          <source srcset="/project-team-11/assets/sl-rest-img5-des@1x-fc6ffb18.webp 1x, /project-team-11/assets/sl-rest-img5-des@2x-306114d3.webp 2x" media="(min-width: 768px)" type="image/webp" width="366" />
+          <source srcset="/project-team-11/assets/sl-rest-img5-des@1x-5413cd16.jpg 1x, /project-team-11/assets/sl-rest-img5-des@2x-de7c1d96.jpg 2x" media="(min-width: 768px)" type="image/jpg" width="366" />
+          <source srcset="/project-team-11/assets/sl-rest-img5-des@1x-fc6ffb18.webp 1x, /project-team-11/assets/sl-rest-img5-des@2x-306114d3.webp 2x" type="image/webp" width="157" />
+          <source srcset="/project-team-11/assets/sl-rest-img5-des@1x-5413cd16.jpg 1x, /project-team-11/assets/sl-rest-img5-des@2x-de7c1d96.jpg 2x" type="image/jpg" width="157" />
+          <img class="main-restaurant-slider-img common-image" src="/project-team-11/assets/sl-rest-img5-des@1x-5413cd16.jpg"
+            alt="baked salmon with vegetables and greens on a plate" width="157" loading="lazy" />
         </picture>
       </li>
     </ul>
@@ -570,26 +407,18 @@
 
     <ul class="main-restaurant-buttons reset-list">
       <li class="main-restaurant-buttons-item">
-        <button
-          class="main-restaurant-button"
-          aria-expanded="false"
-          type="button"
-        >
+        <button class="main-restaurant-button backdrop_button" aria-expanded="false" type="button"
+          data-model-window="table">
           book a table
         </button>
       </li>
       <li class="main-restaurant-buttons-item reset-list">
-        <a
-          class="main-restaurant-buttons-ref-link reset-link"
-          href="./restaurant.html"
-          >View the menu</a
-        >
+        <a class="main-restaurant-buttons-ref-link reset-link" href="./restaurant.html">View the menu</a>
       </li>
     </ul>
   </div>
 </section>
 <!-- /restaurant section -->
-
     <!-- welcome section -->
 <section class="welcome section">
   <div class="welcome-container container">
@@ -632,10 +461,11 @@
     <div class="container home-hotel-container">
         <div class="home-hotel-description">
             <h2 class="reset-title hotel-title home-hotel-title">Hotel</h2>
-            <p class="reset-paragraph hotel-paragraph">Book your stay with us now and experience the epitome of comfort and luxury at our hotel. We guarantee you'll be thrilled with your decision.</p>
+            <p class="reset-paragraph hotel-paragraph">Book your stay with us now and experience the epitome of comfort
+                and luxury at our hotel. We guarantee you'll be thrilled with your decision.</p>
         </div>
-        
-           <div class="home-hotel-set-img">
+
+        <div class="home-hotel-set-img">
             <div class="home-hotel-img-center">
                 <picture>
                     <source media="(min-width: 1440px)" srcset="/project-team-11/assets/image.desctop-2@1x-9d3edba3.jpg 1x, /project-team-11/assets/image.desctop-2@2x-6b841c56.jpg 2x" type="image/jpg">
@@ -678,9 +508,9 @@
                     <img class="common-image" src="/project-team-11/assets/image.tablet-5@1x-5cc37677.jpg" alt="">
                 </picture>
             </div>
-           </div>
+        </div>
         <div class="sliders-home-hotel">
-            <ul class="slider-arrows reset-list home-hotel-slider-btn-list"> 
+            <ul class="slider-arrows reset-list home-hotel-slider-btn-list">
                 <li>
                     <button type="button" class="slider-buttons home-hotel-slider-btn">
                         <svg class="arrow-button slider-icon-hotel" width="7" height="14">
@@ -699,7 +529,9 @@
         </div>
         <ul class="reset-list home-hotel-btn-list">
             <li>
-                <button class="spec-page-button common-button hotel-btn" type="button">Book a room</button>
+                <button class="spec-page-button common-button hotel-btn backdrop_button" type="button"
+                    data-model-window="room">Book a
+                    room</button>
             </li>
             <li>
                 <a class="spec-page-button common-button hotel-btn reset-link" href="">View room</a>
@@ -792,9 +624,9 @@
 </footer>
 
   <!-- modal "Book a table" -->
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal data-modal-window="table">
   <div class="modal modal-table">
-    <button class="modal-button-close" type="button" data-modal-close>
+    <button class="modal-button-close" type="button" data-modal-close data-modal-button="close_table">
       <svg class="button-close-icon" width="14" height="14">
         <use href="/project-team-11/assets/icons-ebd5185b.svg#icon-close"></use>
       </svg>
@@ -805,30 +637,15 @@
     <form class="book-form" name="book_form">
       <div class="book-form-wrp">
         <div class="book-form-field-wrp">
-          <input
-            class="book-form-field"
-            placeholder="Your name"
-            pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
-            title="Letters only"
-            type="text"
-            name="client_name"
-            id="client_name"
-            required
-          />
+          <input class="book-form-field" placeholder="Your name" pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
+            title="Letters only" type="text" name="client_name" id="client_name" required />
 
-          <label class="book-form-label" for="client_name"
-            >Who should book a table for?</label
-          >
+          <label class="book-form-label" for="client_name">Who should book a table for?</label>
         </div>
 
         <div class="book-form-field-wrp">
           <div class="select">
-            <select
-              class="book-form-select"
-              name="number_people"
-              id="number_people"
-              required
-            >
+            <select class="book-form-select" name="number_people" id="number_people" required>
               <option selected disabled>Number of people</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -851,16 +668,8 @@
         </div>
 
         <div class="book-form-field-wrp">
-          <input
-            class="book-form-field"
-            placeholder="+ 38 ()"
-            type="tel"
-            pattern="^[0-9]+$"
-            title="Numbers only"
-            name="phone_number"
-            id="phone_number"
-            required
-          />
+          <input class="book-form-field" placeholder="+ 38 ()" type="tel" pattern="^[0-9]+$" title="Numbers only"
+            name="phone_number" id="phone_number" required />
           <label class="book-form-label" for="phone_number">Phone number</label>
         </div>
       </div>
@@ -871,11 +680,10 @@
   </div>
 </div>
 
-
   <!-- modal "Book a room" -->
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal data-modal-window="room">
   <div class="modal modal-room">
-    <button class="modal-button-close" type="button" data-modal-close>
+    <button class="modal-button-close" type="button" data-modal-close data-modal-button="close_room">
       <svg class="button-close-icon" width="14" height="14">
         <use href="/project-team-11/assets/icons-ebd5185b.svg#icon-close"></use>
       </svg>
@@ -886,43 +694,20 @@
     <form class="book-form" name="book_form">
       <div class="book-form-wrp">
         <div class="book-form-field-wrp">
-          <input
-            class="book-form-field"
-            placeholder="Your name"
-            type="text"
-            pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
-            title="Letters only"
-            name="client_name"
-            id="client_name"
-            required
-          />
-          <label class="book-form-label" for="client_name"
-            >Who should book a table for?</label
-          >
+          <input class="book-form-field" placeholder="Your name" type="text" pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
+            title="Letters only" name="client_name" id="client_name" required />
+          <label class="book-form-label" for="client_name">Who should book a table for?</label>
         </div>
 
         <div class="book-form-field-wrp">
-          <input
-            class="book-form-field"
-            placeholder="+ 38 ()"
-            type="tel"
-            pattern="^[0-9]+$"
-            title="Numbers only"
-            name="phone_number"
-            id="phone_number"
-            required
-          />
+          <input class="book-form-field" placeholder="+ 38 ()" type="tel" pattern="^[0-9]+$" title="Numbers only"
+            name="phone_number" id="phone_number" required />
           <label class="book-form-label" for="phone_number">Phone number</label>
         </div>
 
         <div class="book-form-field-wrp">
           <div class="select">
-            <select
-              class="book-form-select"
-              name="date-in"
-              id="date-in"
-              required
-            >
+            <select class="book-form-select" name="date-in" id="date-in" required>
               <option selected value="Today">Today</option>
               <option value="Tomorrow">Tomorrow</option>
               <option value="Day after tomorrow">Day after tomorrow</option>
@@ -932,26 +717,14 @@
         </div>
         <div class="book-form-field-wrp">
           <div class="select">
-            <input
-              class="book-form-field"
-              type="date"
-              value="2023-03-09"
-              title="Only number and dots"
-              name="date-out"
-              id="date-out"
-              required
-            />
+            <input class="book-form-field" type="date" value="2023-03-09" title="Only number and dots" name="date-out"
+              id="date-out" required />
           </div>
           <label class="book-form-label" for="date-out">Check-out date</label>
         </div>
         <div class="book-form-field-wrp">
           <div class="select">
-            <select
-              class="book-form-select"
-              name="category"
-              id="category"
-              required
-            >
+            <select class="book-form-select" name="category" id="category" required>
               <option selected value="Doble suite">Doble suite</option>
               <option value="Single suite">Single suite</option>
             </select>
@@ -967,11 +740,10 @@
   </div>
 </div>
 
-
   <!-- modal "Prices per room" -->
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal data-modal-window="price">
   <div class="modal modal-price">
-    <button class="modal-button-close" type="button" data-modal-close>
+    <button class="modal-button-close" type="button" data-modal-close data-modal-button=close_price>
       <svg class="button-close-icon" width="14" height="14">
         <use href="/project-team-11/assets/icons-ebd5185b.svg#icon-close"></use>
       </svg>
@@ -995,14 +767,7 @@
         </div>
 
         <div class="book-form-field-wrp">
-          <input
-            class="book-form-field"
-            placeholder="1000"
-            type="text"
-            pattern="^[0-9]+$"
-            name="price"
-            id="price"
-          />
+          <input class="book-form-field" placeholder="1000" type="text" pattern="^[0-9]+$" name="price" id="price" />
           <label class="book-form-label" for="price">UAH</label>
         </div>
       </div>
@@ -1012,7 +777,6 @@
     </form>
   </div>
 </div>
-
 
   <!-- mobile menu -->
   <div class="menu-container js-menu-container" id="mobile-menu">
@@ -1101,6 +865,36 @@
   <!-- main js -->
   
 
+  <script>
+    const room_buttons = document.querySelectorAll("[data-model-window=room]");
+    const table_buttons = document.querySelectorAll("[data-model-window=table]");
+
+    const room_window = document.querySelector("[data-modal-window=room]");
+    const table_window = document.querySelector("[data-modal-window=table]");
+
+    const close_modal_room = document.querySelector("[data-modal-button=close_room]");
+    const close_modal_table = document.querySelector("[data-modal-button=close_table]");
+
+    close_modal_room.onclick = () => {
+      room_window.classList.add("is-hidden");
+    }
+
+    close_modal_table.onclick = () => {
+      table_window.classList.add("is-hidden");
+    }
+
+    room_buttons.forEach((button) => {
+      button.onclick = () => {
+        room_window.classList.remove("is-hidden");
+      };
+    })
+
+    table_buttons.forEach((button) => {
+      button.onclick = () => {
+        table_window.classList.remove("is-hidden");
+      };
+    })
+  </script>
 </body>
 
 </html>

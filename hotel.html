@@ -50,42 +50,62 @@
     <section class="section hotel-hero-section">
     <div class="container">
         <div class="hero-flex">
-        <div class="title-button">
-        <h1 class="hotel-title">Hotel</h1>
-        <ul class="button-flex reset-list">
-            <li><button type="button" class="button-hero common-button" >Book a room</button></li>
-            <li><button type="button" class="button-hero common-button">View prices</button></li>
-        </ul>
-    </div>
-        <ul class="hotel-photo-flex reset-list">
-            <li>
-                <picture class="common-image">
-                    <source media="(min-width: 1440px)" srcset="/project-team-11/assets/hotel1_desk@1x-a2c1a69e.jpg 1x, /project-team-11/assets/hotel1_desk@2x-b24f388f.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="/project-team-11/assets/hotel1_tab@1x-be9597a6.jpg 1x, /project-team-11/assets/hotel1_tab@2x-9543e33d.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="/project-team-11/assets/hotel1_mob@1x-119e75f4.jpg 1x, /project-team-11/assets/hotel1_mob@2x-942e1f91.jpg 2x" type="image/jpg">
-                    <img src="/project-team-11/assets/hotel1_desk-d8c747c0.jpg" alt="Mimino hotel">
-                </picture>
-            </li>
-            <li>
-                <picture class="common-image">
-                    <source media="(min-width: 1440px)" srcset="/project-team-11/assets/hotel2_desk@1x-eb9e453f.jpg 1x, /project-team-11/assets/hotel2_desk@2x-9ee7492d.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="/project-team-11/assets/hotel2_tab@1x-947cd0ae.jpg 1x, /project-team-11/assets/hotel2_tab@2x-bc0ab5f7.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="/project-team-11/assets/hotel2_mob@1x-4c56adce.jpg 1x, /project-team-11/assets/hotel2_mob@2x-6952b078.jpg 2x" type="image/jpg">
-                    <img src="/project-team-11/assets/hotel2_desk-715a5e93.jpg" alt="Mimino hotel">
-                </picture>
-            </li>
-            <li>
-                <picture class="common-image">
-                    <source media="(min-width: 1440px)" srcset="/project-team-11/assets/hotel3_desk@1x-8dcb4cce.jpg 1x, /project-team-11/assets/hotel3_desk@2x-1df65535.jpg 2x" type="image/jpg">
-                    <source media="(min-width: 768px)" srcset="/project-team-11/assets/hotel3_tab@1x-f1bb900c.jpg 1x, /project-team-11/assets/hotel3_tab@2x-2134a320.jpg 2x" type="image/jpg">
-                    <source media="(max-width: 767px)" srcset="/project-team-11/assets/hotel3_mob@1x-f8e811cd.jpg 1x, /project-team-11/assets/hotel3_mob@2x-46c2f934.jpg 2x" type="image/jpg">
-                    <img src="/project-team-11/assets/hotel3_desk-c988a23a.jpg" alt="Mimino hotel">
-                </picture>
-            </li>
-        </ul>
-    </div>
+            <div class="title-button">
+                <h1 class="hotel-title">Hotel</h1>
+                <ul class="button-flex reset-list">
+                    <li><button type="button" class="button-hero common-button" data-model-window="room">Book a
+                            room</button></li>
+                    <li><button type="button" class="button-hero common-button" data-model-window="price">View
+                            prices</button></li>
+                </ul>
+            </div>
+            <ul class="hotel-photo-flex reset-list">
+                <li>
+                    <picture class="common-image">
+                        <source media="(min-width: 1440px)"
+                            srcset="/project-team-11/assets/hotel1_desk@1x-a2c1a69e.jpg 1x, /project-team-11/assets/hotel1_desk@2x-b24f388f.jpg 2x"
+                            type="image/jpg">
+                        <source media="(min-width: 768px)"
+                            srcset="/project-team-11/assets/hotel1_tab@1x-be9597a6.jpg 1x, /project-team-11/assets/hotel1_tab@2x-9543e33d.jpg 2x"
+                            type="image/jpg">
+                        <source media="(max-width: 767px)"
+                            srcset="/project-team-11/assets/hotel1_mob@1x-119e75f4.jpg 1x, /project-team-11/assets/hotel1_mob@2x-942e1f91.jpg 2x"
+                            type="image/jpg">
+                        <img src="/project-team-11/assets/hotel1_desk-d8c747c0.jpg" alt="Mimino hotel">
+                    </picture>
+                </li>
+                <li>
+                    <picture class="common-image">
+                        <source media="(min-width: 1440px)"
+                            srcset="/project-team-11/assets/hotel2_desk@1x-eb9e453f.jpg 1x, /project-team-11/assets/hotel2_desk@2x-9ee7492d.jpg 2x"
+                            type="image/jpg">
+                        <source media="(min-width: 768px)"
+                            srcset="/project-team-11/assets/hotel2_tab@1x-947cd0ae.jpg 1x, /project-team-11/assets/hotel2_tab@2x-bc0ab5f7.jpg 2x"
+                            type="image/jpg">
+                        <source media="(max-width: 767px)"
+                            srcset="/project-team-11/assets/hotel2_mob@1x-4c56adce.jpg 1x, /project-team-11/assets/hotel2_mob@2x-6952b078.jpg 2x"
+                            type="image/jpg">
+                        <img src="/project-team-11/assets/hotel2_desk-715a5e93.jpg" alt="Mimino hotel">
+                    </picture>
+                </li>
+                <li>
+                    <picture class="common-image">
+                        <source media="(min-width: 1440px)"
+                            srcset="/project-team-11/assets/hotel3_desk@1x-8dcb4cce.jpg 1x, /project-team-11/assets/hotel3_desk@2x-1df65535.jpg 2x"
+                            type="image/jpg">
+                        <source media="(min-width: 768px)"
+                            srcset="/project-team-11/assets/hotel3_tab@1x-f1bb900c.jpg 1x, /project-team-11/assets/hotel3_tab@2x-2134a320.jpg 2x"
+                            type="image/jpg">
+                        <source media="(max-width: 767px)"
+                            srcset="/project-team-11/assets/hotel3_mob@1x-f8e811cd.jpg 1x, /project-team-11/assets/hotel3_mob@2x-46c2f934.jpg 2x"
+                            type="image/jpg">
+                        <img src="/project-team-11/assets/hotel3_desk-c988a23a.jpg" alt="Mimino hotel">
+                    </picture>
+                </li>
+            </ul>
+        </div>
         <div class="arrow-par">
-            <ul class="slider-arrows reset-list"> 
+            <ul class="slider-arrows reset-list">
                 <li>
                     <button type="button" class="slider-buttons">
                         <svg class="arrow-button" width="7" height="14">
@@ -101,8 +121,9 @@
                     </button>
                 </li>
             </ul>
-        <p class="reset-paragraph hotel-hero-par">Whether you're in the mood for a hearty breakfast, a light lunch, or <i>a romantic dinner</i>, our menu has something for everyone.</p>
-    </div>
+            <p class="reset-paragraph hotel-hero-par">Whether you're in the mood for a hearty breakfast, a light lunch,
+                or <i>a romantic dinner</i>, our menu has something for everyone.</p>
+        </div>
     </div>
 </section>
     <section class="section double-room">
@@ -211,7 +232,7 @@
         </picture>
       </li>
     </ul>
-    
+
     <div class="description-wrap">
       <div class="room-text-title-box">
         <h2 class="hotel-room-title reset-title">Triple room</h2>
@@ -231,7 +252,7 @@
           <a class="hotel-room-button reset-link spec-page-button" href="#">More details</a>
         </li>
         <li class="hotel-room-buttons-item">
-          <a class="hotel-room-button reset-link spec-page-button" href="#">View prices</a>
+          <a class="hotel-room-button reset-link spec-page-button" href="#" data-model-window="price">View prices</a>
         </li>
       </ul>
     </div>
@@ -300,13 +321,13 @@
           </p>
         </div>
       </div>
-      
+
       <ul class="hotel-room-buttons-list hotel-four-room-buttons-list reset-list">
         <li class="hotel-room-buttons-item">
           <a class="hotel-room-button reset-link spec-page-button" href="#">More details</a>
         </li>
         <li class="hotel-room-buttons-item">
-          <a class="hotel-room-button reset-link spec-page-button" href="#">View prices</a>
+          <a class="hotel-room-button reset-link spec-page-button" href="#" data-model-window="price">View prices</a>
         </li>
       </ul>
     </div>
@@ -434,9 +455,9 @@
 
 
   <!-- modal "Book a room" -->
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal data-modal-window="room">
   <div class="modal modal-room">
-    <button class="modal-button-close" type="button" data-modal-close>
+    <button class="modal-button-close" type="button" data-modal-close data-modal-button="close_room">
       <svg class="button-close-icon" width="14" height="14">
         <use href="/project-team-11/assets/icons-ebd5185b.svg#icon-close"></use>
       </svg>
@@ -447,43 +468,20 @@
     <form class="book-form" name="book_form">
       <div class="book-form-wrp">
         <div class="book-form-field-wrp">
-          <input
-            class="book-form-field"
-            placeholder="Your name"
-            type="text"
-            pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
-            title="Letters only"
-            name="client_name"
-            id="client_name"
-            required
-          />
-          <label class="book-form-label" for="client_name"
-            >Who should book a table for?</label
-          >
+          <input class="book-form-field" placeholder="Your name" type="text" pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
+            title="Letters only" name="client_name" id="client_name" required />
+          <label class="book-form-label" for="client_name">Who should book a table for?</label>
         </div>
 
         <div class="book-form-field-wrp">
-          <input
-            class="book-form-field"
-            placeholder="+ 38 ()"
-            type="tel"
-            pattern="^[0-9]+$"
-            title="Numbers only"
-            name="phone_number"
-            id="phone_number"
-            required
-          />
+          <input class="book-form-field" placeholder="+ 38 ()" type="tel" pattern="^[0-9]+$" title="Numbers only"
+            name="phone_number" id="phone_number" required />
           <label class="book-form-label" for="phone_number">Phone number</label>
         </div>
 
         <div class="book-form-field-wrp">
           <div class="select">
-            <select
-              class="book-form-select"
-              name="date-in"
-              id="date-in"
-              required
-            >
+            <select class="book-form-select" name="date-in" id="date-in" required>
               <option selected value="Today">Today</option>
               <option value="Tomorrow">Tomorrow</option>
               <option value="Day after tomorrow">Day after tomorrow</option>
@@ -493,26 +491,14 @@
         </div>
         <div class="book-form-field-wrp">
           <div class="select">
-            <input
-              class="book-form-field"
-              type="date"
-              value="2023-03-09"
-              title="Only number and dots"
-              name="date-out"
-              id="date-out"
-              required
-            />
+            <input class="book-form-field" type="date" value="2023-03-09" title="Only number and dots" name="date-out"
+              id="date-out" required />
           </div>
           <label class="book-form-label" for="date-out">Check-out date</label>
         </div>
         <div class="book-form-field-wrp">
           <div class="select">
-            <select
-              class="book-form-select"
-              name="category"
-              id="category"
-              required
-            >
+            <select class="book-form-select" name="category" id="category" required>
               <option selected value="Doble suite">Doble suite</option>
               <option value="Single suite">Single suite</option>
             </select>
@@ -528,11 +514,10 @@
   </div>
 </div>
 
-
   <!-- modal "Prices per room" -->
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal data-modal-window="price">
   <div class="modal modal-price">
-    <button class="modal-button-close" type="button" data-modal-close>
+    <button class="modal-button-close" type="button" data-modal-close data-modal-button=close_price>
       <svg class="button-close-icon" width="14" height="14">
         <use href="/project-team-11/assets/icons-ebd5185b.svg#icon-close"></use>
       </svg>
@@ -556,14 +541,7 @@
         </div>
 
         <div class="book-form-field-wrp">
-          <input
-            class="book-form-field"
-            placeholder="1000"
-            type="text"
-            pattern="^[0-9]+$"
-            name="price"
-            id="price"
-          />
+          <input class="book-form-field" placeholder="1000" type="text" pattern="^[0-9]+$" name="price" id="price" />
           <label class="book-form-label" for="price">UAH</label>
         </div>
       </div>
@@ -573,7 +551,6 @@
     </form>
   </div>
 </div>
-
 
   <!-- Anchor -->
   <a id="anchor-up" class="reset-link hidden" href="#up">up</a>
@@ -587,6 +564,37 @@
 
   <!-- main js -->
   
+
+  <script>
+    const room_buttons = document.querySelectorAll("[data-model-window=room]");
+    const price_buttons = document.querySelectorAll("[data-model-window=price]");
+
+    const room_window = document.querySelector("[data-modal-window=room]");
+    const price_window = document.querySelector("[data-modal-window=price]");
+
+    const close_modal_room = document.querySelector("[data-modal-button=close_room]");
+    const close_modal_price = document.querySelector("[data-modal-button=close_price]");
+
+    close_modal_room.onclick = () => {
+      room_window.classList.add("is-hidden");
+    }
+
+    close_modal_price.onclick = () => {
+      price_window.classList.add("is-hidden");
+    }
+
+    room_buttons.forEach((button) => {
+      button.onclick = () => {
+        room_window.classList.remove("is-hidden");
+      };
+    })
+
+    price_buttons.forEach((button) => {
+      button.onclick = () => {
+        price_window.classList.remove("is-hidden");
+      };
+    })
+  </script>
 </body>
 
 </html>
