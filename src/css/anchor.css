@@ -9,8 +9,8 @@
 
   padding: 20px;
 
-  border: 2px solid var(--common-dark);
-  color: var(--common-dark);
+  background-color: rgba(30, 30, 30, 0.7);
+  color: var(--common-light);
 
   border-radius: 10px;
 
@@ -23,14 +23,17 @@
   transition-timing-function: var(--transition-timing-function);
 
   z-index: 5;
+
+  /* pointer-events: all; */
 }
 
 #anchor-up:hover,
 #anchor-up:focus {
   color: var(--common-light);
-  background-color: var(--common-dark);
+  background-color: rgba(30, 30, 30, 1);
 }
 
 #anchor-up.hidden {
   opacity: 0;
+  /* pointer-events: none; */
 }
