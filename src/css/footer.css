@@ -102,3 +102,15 @@
     gap: 18px;
   }
 }
+
+.footer-media-link {
+  fill: currentColor;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.footer-media-link:hover,
+.footer-media-link:focus {
+  color: var(--common-dark-30);
+}
