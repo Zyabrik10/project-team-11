@@ -1,10 +1,11 @@
-/* -------STYLE FOR LUXURE ROOM TITLE-----NIK----- */
+* -------STYLE FOR LUXURE ROOM TITLE-----NIK----- */
 .double-room{
-    background:var(--light);
+    padding-top: 0;
+    /* background:var(--light); */
 }
 .container-lux{
     min-width: 320px;
-    max-width: 428px;
+    max-width: 375px;
 /* width: 768px; */
 padding-left: 20px;
 margin: 0 auto;
@@ -71,24 +72,27 @@ text-transform: uppercase;
 
 .slider-line{
     display: flex;
+}
+.sliders-img-list{
+    display: flex;
     gap: 20px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pick-size{
     width: 250px;
+    display: block;
 }
 
 .control-button{
-    padding-top: 15px;
+    padding-top: 24px;
     margin: 0 auto;
     margin-right: 35px;
     display: flex;
-    gap: 60px;
+    gap: var(--flex-items-gap);
     justify-content: end;
 }
 .slider-prev, .slider-next {
-    width: 16px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     display: inline;
     align-items:center;
     justify-content: center;
@@ -124,7 +128,7 @@ text-transform: uppercase;
     text-transform: uppercase;
     color: var(--common-dark);
     margin: 0;
-    margin-top: 51px; /*or 100 */ 
+    margin-top: 40px; /*or 100 */ 
     padding-bottom: 64px;
 }
 
@@ -146,7 +150,7 @@ text-transform: uppercase;
         margin-bottom: 36px;
     }
 
-    .slider-line{
+    .sliders-img-list{
         gap: 32px;
     }
 
@@ -160,6 +164,7 @@ text-transform: uppercase;
     }
     .section-text{
         margin-top: -40px;
+        padding-bottom: 120px;
     }
 }
 /* -------MEDIA DESC ----------- */
@@ -173,7 +178,7 @@ text-transform: uppercase;
     
     .sec-one {
         padding-top: 169px;
-        margin-right: 207px;
+        margin-right: 112px;
     }
 
 .section-titles{
@@ -191,14 +196,15 @@ text-transform: uppercase;
     }
     
     .control-button{
-       padding-top: 27px;
-       margin-left: 20px;
-       justify-content: flex-start;
+        padding: 0;
+        margin-top: 16px;
+        margin-left: 20px;
+        justify-content: flex-start;
     }
     
     .section-text{
       margin-top: -100px;
-      /* padding-bottom: 48px; */
+      padding-bottom: 48px;
     }
 
 }

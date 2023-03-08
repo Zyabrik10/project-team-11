@@ -1,3 +1,16 @@
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 0;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .about {
+    padding-top: 0;
+  }
+}
+
 .about-img,
 .about-pic,
 .about-pics-wrapper,
@@ -22,6 +35,7 @@
     min-width: 511px;
   }
 }
+
 /* common pics div */
 
 @media screen and (min-width: 768px) {

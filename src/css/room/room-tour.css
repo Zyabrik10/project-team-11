@@ -1,25 +1,25 @@
 /* Amenities Section */
 
-.room-amenities-section {
+.section.room-amenities-section {
   margin-right: auto;
   margin-left: auto;
   padding-top: 40px;
   padding-bottom: 64px;
   max-width: 375px;
-  
+
   background-color: var(--common-dark);
   color: var(--common-light);
 }
 
 @media screen and (min-width: 768px) {
-  .room-amenities-section {
+  .section.room-amenities-section {
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: none;
     width: 768px;
   }
   @media screen and (min-width: 1440px) {
-    .room-amenities-section {
+    .section.room-amenities-section {
       padding-top: 94px;
       padding-bottom: 100px;
 

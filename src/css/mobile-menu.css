@@ -1,19 +1,21 @@
+/* Стилі іконки бургера в хедері (МОї ТИМЧАСОВІ) */
+
 .menu-toggle {
-  min-height: 32px;
-  min-width: 22px;
+  min-height: 28px;
+  min-width: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   margin: 0;
   padding: 0;
-  background-color: red;
   cursor: pointer;
-  border: 1px solid white;
-  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--common-dark);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .menu-toggle {
     display: none;
   }
@@ -24,14 +26,22 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.burger-icon {
+  stroke: currentColor;
+}
+
+/* Стилі контейнеру мобільного меню */
+
 .menu-container {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
 
-  padding: 120px 20px 24px 20px;
+  padding-bottom: 24px;
   background-color: var(--common-dark);
   z-index: 999;
 
@@ -41,40 +51,10 @@
   color: var(--modal-light-text);
 }
 
-.menu-button-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  top: 25px;
-  left: 20px;
-
-  width: 28px;
-  height: 28px;
-
-  background-color: transparent;
-  border-color: var(--common-light);
-  color: var(--common-light);
-}
-
-.site-nav-mobile {
-  padding: 0;
-  margin: 0;
-}
-
-.nav-link {
-  display: block;
-  text-align: center;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.3;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.nav-link:not(:last-child) {
-  margin-bottom: 32px;
+@media screen and (min-width: 768px) {
+  .menu-container {
+    padding-bottom: 24px;
+  }
 }
 
 .menu-container.is-open {
@@ -87,10 +67,153 @@
   left: 20px;
 }
 
-/* .header-menu {
-    width: 375px;
-    height: 78px;
-    border-bottom: 0.5px solid white;
-    border-bottom: 375px;
-    
-} */
+/* Кнопка закриття */
+
+.menu-button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 22px;
+  left: 20px;
+
+  width: 28px;
+  height: 28px;
+  
+  
+  background-color: transparent;
+  border: none;
+  color: var(--common-light);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button-close {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Стилі хедера мобільного меню */
+
+.header-mob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+}
+
+.logo-mob-title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(22/14);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--modal-light-text);
+}
+
+@media screen and (min-width: 768px) {
+  .logo-mob-title {
+    font-size: 20px;
+    line-height: calc(24/20);
+  }
+}
+
+.logo-mob-discr {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 8px;
+  line-height: calc(8/6);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--weight);
+}
+
+@media screen and (min-width: 768px) {
+  .logo-mob-discr {
+    font-size: 8px;
+    line-height: calc(10/8);
+  }
+}
+
+/* Основна навігація мобільного меню */
+
+.nav-wrp {
+  margin-top: 128px;
+}
+
+.nav-mob-link {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-mob-link {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+}
+
+
+.site-nav-mob-item:last-child {
+  margin-bottom: auto;
+}
+
+
+.site-nav-mob-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav-mob-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+/* Посилання на соціальні мережі */
+
+.social-mob-list {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 14px;
+  margin-top: auto;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .social-mob-list {
+    position: absolute;
+    top: 27px;
+    right: 32px;
+    padding: 0;
+  }
+}
+
+.social-mob-list-link {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      color: var(--light);
+}
+
+.social-mob-icon {
+  stroke: currentColor;
+  fill: var(--common-dark);
+}
+
+.social-mob-icon:hover, .social-mob-icon:focus {
+  fill: currentColor;
+}
