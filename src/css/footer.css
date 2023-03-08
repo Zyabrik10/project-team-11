@@ -1,3 +1,8 @@
+.footer{
+  border-bottom: 1px solid var(--common-dark-30);
+
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -6,7 +11,6 @@
   padding-top: 24px;
   padding-bottom: 32px;
 
-  border-bottom: 1px solid var(--common-dark-30);
 
   margin-bottom: 32px;
 }
