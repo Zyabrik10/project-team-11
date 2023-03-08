@@ -1,39 +1,47 @@
 <!-- location section -->
 <section class="section location-section">
-  <div class="container location-container">
-    <h2 class="reset-title section-title location-title">location</h2>
-    <div class="map-location">
-      <iframe
-        class="map-location-ref"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d768.7963659092987!2d34.5254815238232!3d49.59940076053931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2sMarshala%20Biryuzova%20St%2C%2015%2C%20Poltava%2C%20Poltavs&#39;ka%20oblast%2C%2036000!5e0!3m2!1sen!2sua!4v1678282156217!5m2!1sen!2sua"
-        width="335"
-        height="384"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-    <div class="contact-block">
-      <address class="contact-address">
-        <p class="contact-address-text reset-paragraph">
-          Ukraine, Poltava, <br />
-          St. Marshal Biryuzov, 15
-        </p>
-        <div class="contacts-number">
-          <p class="contacts-number-text reset-paragraph">call us:</p>
-          <ul class="our-number reset-list">
-            <li class="our-number-item reset-list">
-              <a class="reset-link number-phone" href="tel:+380955559533"
-                >(095) 555 95 33</a
-              >
-            </li>
-            <li class="our-number-item reset-list">
-              <a class="reset-link number-phone" href="tel:+380668491089"
-                >(066) 849 10 89</a
-              >
-            </li>
-          </ul>
+    <div class="container location-container">
+        <h2 class="reset-title section-title location-title">location</h2>
+        <div class="map-location revealator-fade relv-animation">
+            <a class="location-link" href="https://goo.gl/maps/VLFibf7k49snZUpJ8" target="_blank"
+                rel="noreferrer noopener">
+                <picture>
+
+                    <source media="(min-width: 1440px)" srcset="./img/home/location/webp.desctop@1x.webp 1x,
+            ./img/home/location/webp.desctop@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 1440px)" srcset="./img/home/location/desctop@1x.jpg 1x,
+            ./img/home/location/desctop@2x.jpg 2x" type="image/jpg">
+
+                    <source media="(min-width: 768px)" srcset="./img/home/location/webp.tablet@1x.webp 1x,
+            ./img/home/location/webp.tablet@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="./img/home/location/tablet@1x.jpg 1x,
+            ./img/home/location/tablet@2x.jpg 2x" type="image/jpg">
+
+                    <source media="(max-width: 767px)" srcset="./img/home/location/webp.phone@1x.webp 1x,
+            ./img/home/location/webp.phone@2x.webp 2x" type="image/webp">
+                    <source media="(max-width: 767px)" srcset="./img/home/location/phone@1x.jpg 1x,
+            ./img/home/location/phone@2x.jpg 2x" type="image/jpg">
+
+                    <img class="common-image location-img" src="./img/home/location/phone@1x.jpg" alt="map"
+                        loading="lazy">
+                </picture>
+                <svg class="location-icons" width="27.5px" height="34px">
+                    <use href="./img/home/location/icons/map-label.svg#icon-map-label"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="contact-block">
+            <address class="address">
+                <p class="reset-paragraph">Ukraine, Poltava, <br>
+                    St. Marshal Biryuzov, 15</p>
+            </address>
+            <address class="contacts">
+                <p class="reset-paragraph">call us:</p>
+                <div class="our-number">
+                    <a class="reset-link number-phone" href="tel:+380955559533">(095) 555 95 33</a>
+                    <a class="reset-link number-phone" href="tel:+380668491089">(066) 849 10 89</a>
+                </div>
+            </address>
         </div>
       </address>
     </div>

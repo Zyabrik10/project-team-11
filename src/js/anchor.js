@@ -4,7 +4,7 @@ function removeAnimationIfNeeded() {
     relveators.forEach(el => {
         const elementCollided = el.getBoundingClientRect();
 
-        if (window.scrollY - 1000 >= elementCollided.bottom || elementCollided.top <= 0) {
+        if (window.scrollY + innerHeight - 2600 >= elementCollided.bottom) {
             el.classList.forEach(cls => {
                 if (cls.split("-")[0] === "revealator") {
                     el.classList.remove(cls);
