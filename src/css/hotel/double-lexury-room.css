@@ -156,19 +156,8 @@
   }
   
   .book-button {
-    width: 131px;
-  height: 34px;
-  border: 0.8px solid var(--common-dark);
-  border-radius: 32px;
-  font-size: 14px;
-  line-height: calc(18/14);
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: var(--common-dark);
-  background-color: inherit;
-  transition-property: background-color, border-color, color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+    color: var(--common-dark);
+    border-color: var(--common-dark);
   }
   
   .book-button:hover,
