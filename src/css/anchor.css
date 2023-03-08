@@ -29,6 +29,7 @@
 
 #anchor-up:hover,
 #anchor-up:focus {
+  color: var(--common-dark);
   background-color: rgba(30, 30, 30, 1);
 }
 
