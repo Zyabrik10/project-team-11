@@ -1,6 +1,6 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal data-modal-window="table">
   <div class="modal modal-table">
-    <button class="modal-button-close" type="button" data-modal-close>
+    <button class="modal-button-close" type="button" data-modal-close data-modal-button="close_table">
       <svg class="button-close-icon" width="14" height="14">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
@@ -11,30 +11,15 @@
     <form class="book-form" name="book_form">
       <div class="book-form-wrp">
         <div class="book-form-field-wrp">
-          <input
-            class="book-form-field"
-            placeholder="Your name"
-            pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
-            title="Letters only"
-            type="text"
-            name="client_name"
-            id="client_name"
-            required
-          />
+          <input class="book-form-field" placeholder="Your name" pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+$"
+            title="Letters only" type="text" name="client_name" id="client_name" required />
 
-          <label class="book-form-label" for="client_name"
-            >Who should book a table for?</label
-          >
+          <label class="book-form-label" for="client_name">Who should book a table for?</label>
         </div>
 
         <div class="book-form-field-wrp">
           <div class="select">
-            <select
-              class="book-form-select"
-              name="number_people"
-              id="number_people"
-              required
-            >
+            <select class="book-form-select" name="number_people" id="number_people" required>
               <option selected disabled>Number of people</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -57,16 +42,8 @@
         </div>
 
         <div class="book-form-field-wrp">
-          <input
-            class="book-form-field"
-            placeholder="+ 38 ()"
-            type="tel"
-            pattern="^[0-9]+$"
-            title="Numbers only"
-            name="phone_number"
-            id="phone_number"
-            required
-          />
+          <input class="book-form-field" placeholder="+ 38 ()" type="tel" pattern="^[0-9]+$" title="Numbers only"
+            name="phone_number" id="phone_number" required />
           <label class="book-form-label" for="phone_number">Phone number</label>
         </div>
       </div>
