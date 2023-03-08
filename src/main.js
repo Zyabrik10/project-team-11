@@ -1,3 +1,4 @@
+import '/js/removeAnimation.js';
 import '/js/anchor.js';
 import '/js/modal.js';
 import '/js/phone-mask.js';
