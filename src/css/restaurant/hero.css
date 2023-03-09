@@ -5,7 +5,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    padding-bottom: 232px;
+    padding-bottom: 160px;
   }
 }
 
@@ -67,7 +67,7 @@
 }
 
 .hero-txt {
-  margin-top: 100px;
+  margin-top: 40px;
   letter-spacing: 0.05em;
 }
 
@@ -76,7 +76,6 @@
     width: 335px;
     position: absolute;
     top: 100%;
-    margin-top: 40px;
   }
 }
 
