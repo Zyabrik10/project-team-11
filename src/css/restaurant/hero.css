@@ -166,8 +166,6 @@
 
 .slider-button:hover,
 .slider-button:focus {
-    border: none;
-    background: transparent;
     color: var(--common-dark);
 }
 
