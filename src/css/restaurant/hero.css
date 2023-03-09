@@ -142,11 +142,10 @@
 }
 
 .slider-button-list {
-    display: none;
-    /* display: flex;
+    display: flex;
     gap: var(--flex-items-gap);
     margin-top: 24px;
-    justify-content: flex-end; */
+    justify-content: flex-end;
 }
 
 @media screen and (min-width: 1440px) {
