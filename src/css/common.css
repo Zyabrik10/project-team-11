@@ -18,6 +18,20 @@ body {
   line-height: calc(18 / 14);
 
   letter-spacing: -0.02em;
+
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    margin-bottom: 80px;
+  }
 }
 
 /* Сітка */
@@ -84,7 +98,6 @@ body {
   .section:first-child {
     padding-top: 30px;
   }
-  
 }
 
 .section:last-child {
