@@ -8,6 +8,8 @@
   /* width: 768px; */
   padding-left: 20px;
   margin: 0 auto;
+
+  overflow: hidden;
 }
 
 .section-titles {

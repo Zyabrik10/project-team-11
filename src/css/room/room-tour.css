@@ -1,5 +1,9 @@
 /* Amenities Section */
 
+.room-amenities-container {
+  overflow: hidden;
+}
+
 .section.room-amenities-section {
   margin-right: auto;
   margin-left: auto;
