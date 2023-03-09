@@ -1,6 +1,5 @@
-.rest-menu{
+.rest-menu {
   background-color: var(--common-dark);
-
 }
 
 .rest-menu-content {
@@ -195,7 +194,7 @@
 
 @media screen and (min-width: 768px) {
   .compound {
-    width: 329px;
+    width: 335px;
 
     font-size: 12px;
 
@@ -205,7 +204,7 @@
 
 @media screen and (min-width: 1440px) {
   .compound {
-    width: 345px;
+    width: 342px;
   }
 }
 
