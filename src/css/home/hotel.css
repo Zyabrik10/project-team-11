@@ -1,5 +1,7 @@
-.home-hotel-sec{
+.home-hotel-container{
     background-color: var(--common-dark);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .container .home-hotel-title{
     color: var(--common-light);
@@ -88,6 +90,10 @@
     font-size: 68px;
     line-height: calc(68/68);
    }
+   .home-hotel-container{
+    padding-top: 44px;
+    padding-bottom: 44px;
+   }
 }
 @media screen and (min-width: 1440px){
     .home-hotel-set-img{
@@ -106,9 +112,12 @@
     }
     .home-hotel-btn-list{
         position: absolute;
-        top: 0;
+        top: 44px;
         right: 32px;
         
+    }
+    .home-hotel-container{
+        padding-bottom: 60px;
     }
 }
 
