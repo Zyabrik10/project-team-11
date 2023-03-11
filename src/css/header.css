@@ -1,4 +1,4 @@
-.header{
+.header {
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
   background: #fff;
 }
@@ -7,10 +7,8 @@
   display: flex;
   align-items: center;
 
-
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -31,11 +29,11 @@
 
   background-color: transparent;
   color: var(--common-light);
-  
+
   border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
 
-.header-main-page .container{
+.header-main-page .container {
   margin-bottom: 0;
 }
 
@@ -56,6 +54,31 @@
 
 .header-navigation-link.current {
   position: relative;
+}
+
+.header-navigation-link::after {
+  content: '';
+  display: block;
+
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 0;
+  height: 4px;
+
+  background-color: currentColor;
+
+  border-radius: 10px;
+
+  transition-property: width;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.header-navigation-link:hover::after {
+  width: 100%;
 }
 
 .header-navigation-link.current::before {
@@ -151,34 +174,41 @@
   .header-media-list {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 2px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .header-media-list {
-    gap: 18px;
+    gap: 2px;
   }
+}
+
+.header-media-link,
+.header-main-page-media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+
+  border: 2px solid transparent;
+
+  border-radius: 5px;
+
+  fill: currentColor;
+  transition-property: border;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .header-main-page-media-link {
   color: var(--common-light);
 }
 
-.header-media-link,
-.header-main-page-media-link {
-  fill: currentColor;
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
-
 .header-main-page-media-link:hover,
-.header-main-page-media-link:focus {
-  color: var(--common-dark-30);
-}
-
+.header-main-page-media-link:focus,
 .header-media-link:hover,
 .header-media-link:focus {
-  color: var(--common-dark-30);
+  border-color: currentColor;
 }
