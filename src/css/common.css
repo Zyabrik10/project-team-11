@@ -188,3 +188,13 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.animated-image {
+  transition-property: transform;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.animated-image:hover {
+  transform: scale(1.05);
+}
