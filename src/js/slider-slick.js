@@ -1,5 +1,3 @@
-import '/js/slick.min.js';
-
 if ($('.main-restaurant-slider')) {
   $('.main-restaurant-slider').slick({
     arrows: true,
