@@ -14,5 +14,6 @@ mobile_menu_button_close.onclick = () => {
 // Close the mobile menu on wider screens if the device orientation changes
 window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
   if (!e.matches) return;
+  mobile_menu.classList.remove("is-open");
   bodyScrollLock.enableBodyScroll(document.body);
 });
