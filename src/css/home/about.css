@@ -47,6 +47,16 @@
   height: 61px;
   border-radius: 6px;
   background-color: var(--common-dark);
+
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.section-page-home-about_relative:hover .review-home_about {
+  opacity: 1;
 }
 
 .review-home-about_img {
@@ -120,6 +130,16 @@
   height: 61px;
   border-radius: 6px;
   background-color: var(--common-dark);
+
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.section-page-home-about-secondery_wrapper:hover .review-home-about_two {
+  opacity: 1;
 }
 
 /* ------Tablet--- */
