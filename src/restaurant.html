@@ -9,6 +9,18 @@
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+  <!-- scripts -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,21 +69,21 @@
   <script type="module" src="/main.js"></script>
 
   <script>
-    const table_buttons = document.querySelectorAll("[data-model-window=table]");
+    // const table_buttons = document.querySelectorAll("[data-model-window=table]");
 
-    const table_window = document.querySelector("[data-modal-window=table]");
+    // const table_window = document.querySelector("[data-modal-window=table]");
 
-    const close_modal_table = document.querySelector("[data-modal-button=close_table]");
+    // const close_modal_table = document.querySelector("[data-modal-button=close_table]");
 
-    close_modal_table.onclick = () => {
-      table_window.classList.add("is-hidden");
-    }
+    // close_modal_table.onclick = () => {
+    //   table_window.classList.add("is-hidden");
+    // }
 
-    table_buttons.forEach((button) => {
-      button.onclick = () => {
-        table_window.classList.remove("is-hidden");
-      };
-    })
+    // table_buttons.forEach((button) => {
+    //   button.onclick = () => {
+    //     table_window.classList.remove("is-hidden");
+    //   };
+    // })
   </script>
 
   <script>
@@ -90,13 +102,13 @@
   </script>
 
   <script>
-    window.onscroll = () => {
-      if (window.scrollY >= 300) {
-        document.querySelector("#anchor-up").classList.remove("hidden");
-      } else {
-        document.querySelector("#anchor-up").classList.add("hidden");
-      }
-    }
+    // window.onscroll = () => {
+    //   if (window.scrollY >= 300) {
+    //     document.querySelector("#anchor-up").classList.remove("hidden");
+    //   } else {
+    //     document.querySelector("#anchor-up").classList.add("hidden");
+    //   }
+    // }
   </script>
 </body>
 
