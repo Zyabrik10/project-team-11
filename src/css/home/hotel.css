@@ -94,6 +94,8 @@
     display: flex;
     justify-content: space-between;
     width: 1124px;
+    padding: 0;
+    margin: 0;
   }
 
   .home-hotel-img-right {
@@ -103,7 +105,7 @@
   .home-hotel-img-right-list {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 16px;
   }
 
   .home-hotel-description > .home-hotel-title {
@@ -175,6 +177,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .slick-track { 
+  align-items: normal;  
+}
+
   /* Конкретный слайдер */
   .main-hotel-slider {
     position: relative;
@@ -203,11 +209,11 @@
 
   .main-hotel-slider .slick-arrow.slick-prev {
     left: 0;
-    background: url('../images/icons/whait-arrow-left.svg') 0 0 / 100% no-repeat;
+    background: url('/images/icons/whait-arrow-left.svg') 0 0 / 100% no-repeat;
   }
   .main-hotel-slider .slick-arrow.slick-next {
     left: 44px;
-    background: url('../images/icons/whait-arrow-right.svg') 0 0 / 100%
+    background: url('/images/icons/whait-arrow-right.svg') 0 0 / 100%
       no-repeat;
   }
 
