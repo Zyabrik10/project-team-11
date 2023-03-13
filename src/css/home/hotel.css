@@ -1,135 +1,219 @@
-.home-hotel-container{
-    background-color: var(--common-dark);
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-.container .home-hotel-title{
-    color: var(--common-light);
-    margin-bottom: 32px;
-}
-.hotel-paragraph{
-    color: var(--common-light);
-    margin-bottom: 32px;
-    
-    font-size: 14px;
-    font-weight: 500;
-    line-height: calc(18/14);
-    font-style: normal;
+/* =================== main hotel section =================== */
+.home-hotel-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
 
+  background-color: var(--common-dark);
 }
-.home-hotel-btn-list{
-    display: flex;
-    gap: 12px;
-    justify-content: center;
+.container .home-hotel-title {
+  margin-bottom: 32px;
+
+  font-weight: 500;
+
+  color: var(--common-light);
 }
-.home-hotel-img-right{
-    display: none;
+
+.hotel-paragraph {
+  margin-bottom: 32px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: var(--common-light);
 }
-.home-hotel-set-img{
+
+.home-hotel-btn-list {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.home-hotel-img-center {
+  margin-bottom: 27px;
+}
+
+.home-hotel-img-right {
+  display: none;
+}
+
+.home-hotel-img-left {
+  display: flex;
+  gap: 19px;
+  margin-bottom: 18px;
+}
+
+.home-hotel-slider-btn:hover .slider-icon-hotel,
+.home-hotel-slider-btn:focus .slider-icon-hotel {
+  fill: var(--common-light);
+}
+
+@media screen and (min-width: 768px) {
+  .home-hotel-set-img {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 28px;
-}
-.home-hotel-img-left{
+  }
+
+  .hotel-paragraph {
+    max-width: 362px;
+    margin: 0;
+  }
+
+  .home-hotel-description .home-hotel-title {
+    margin: 0;
+  }
+
+  .home-hotel-description {
     display: flex;
-    gap: 19px;
-    margin-bottom: 18px;
-}
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 80px;
+  }
 
+  .home-hotel-set-img {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
 
+  .home-hotel-img-center {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 160px);
+  }
 
-.sliders-home-hotel > .home-hotel-slider-btn-list{
-    justify-content: left;
-}
-.slider-buttons > .slider-icon-hotel{
-    fill: #ffffff30;
-}
-.home-hotel-slider-btn:hover .slider-icon-hotel,
-.home-hotel-slider-btn:focus .slider-icon-hotel{
-    fill: var(--common-light);
-}
+  .home-hotel-img-left {
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+  }
 
-@media screen and (min-width: 768px) {
-    .sliders-home-hotel{
-        display: none;
-    } 
-    .hotel-paragraph{
-        max-width: 362px;
-        margin: 0;
-    }
-    .home-hotel-description .home-hotel-title{
-        margin: 0;
-    }
-    .home-hotel-description{
-        display: flex;
-        gap: 32px;
-        align-items: center;
-        margin-bottom: 80px;
-    }
-    .home-hotel-set-img{
-        flex-direction: row;
-        gap: 16px;
-        margin-bottom: 40px;
-    }
-    .home-hotel-img-left{
-        flex-direction: column;
-        gap: 16px;
-        margin: 0;
-    }
-   .home-hotel-img-center{
-    order: 1;
-   }
-   .home-hotel-img-right{
+  .home-hotel-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1124px;
+  }
+
+  .home-hotel-img-right {
+    display: flex;
+  }
+
+  .home-hotel-img-right-list {
     display: flex;
     flex-direction: column;
-    order: 2;
-    gap: 16px;
-   }
-   .home-hotel-description > .home-hotel-title{
+    gap: 28px;
+  }
+
+  .home-hotel-description > .home-hotel-title {
     font-size: 68px;
-    line-height: calc(68/68);
-   }
-   .home-hotel-container{
+    line-height: calc(68 / 68);
+  }
+
+  .home-hotel-container {
     padding-top: 44px;
     padding-bottom: 44px;
-   }
-}
-@media screen and (min-width: 1440px){
-    .home-hotel-set-img{
-        gap: 32px;
-        justify-content: center;
-        margin: 0;
-    }
-    .home-hotel-img-right{
-        gap: 28px;
-    }
-    .home-hotel-img-left{
-        gap: 28px;
-    }
-    .home-hotel-container{
-        position: relative;
-    }
-    .home-hotel-btn-list{
-        position: absolute;
-        top: 44px;
-        right: 32px;
-        
-    }
-    .home-hotel-container{
-        padding-bottom: 60px;
-    }
+  }
 }
 
-.hotel-btn{
-    transition-property: background-color, color;
-    transition-duration: 0.3s;
-    transition-timing-function: var(--transition-timing-function);
+@media screen and (min-width: 1440px) {
+  .home-hotel-set-img {
+    gap: 32px;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .home-hotel-list {
+    width: 1124px;
+  }
+
+  .home-hotel-img-center {
+    left: calc(50% - 210px);
+  }
+
+  .home-hotel-img-right {
+    gap: 28px;
+  }
+
+  .home-hotel-img-left {
+    gap: 28px;
+  }
+
+  .home-hotel-container {
+    position: relative;
+  }
+
+  .home-hotel-btn-list {
+    position: absolute;
+    top: 44px;
+    right: 32px;
+  }
+
+  .home-hotel-container {
+    padding-bottom: 60px;
+  }
+}
+
+.hotel-btn {
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .hotel-btn:hover,
-.hotel-btn:focus{
-    color: var(--common-dark);
-    background-color: var(--common-light);
-
+.hotel-btn:focus {
+  color: var(--common-dark);
+  background-color: var(--common-light);
 }
+
+/* =================== slider main hotel =================== */
+@media screen and (min-width: 768px) {
+  .main-hotel-filter {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Конкретный слайдер */
+  .main-hotel-slider {
+    position: relative;
+    padding: 0px 0px;
+    margin-bottom: 82px;
+  }
+
+  .main-hotel-slider-item {
+    text-align: center;
+  }
+
+  .main-hotel-slider-img {
+    width: 158px;
+    height: 128px;
+  }
+
+  .main-hotel-slider .slick-arrow {
+    position: absolute;
+    bottom: -42px;
+    margin: 0px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  .main-hotel-slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('../images/icons/whait-arrow-left.svg') 0 0 / 100% no-repeat;
+  }
+  .main-hotel-slider .slick-arrow.slick-next {
+    left: 44px;
+    background: url('../images/icons/whait-arrow-right.svg') 0 0 / 100%
+      no-repeat;
+  }
+
+  .main-hotel-slider .slick-arrow.slick-disabled {
+    opacity: 0.2;
+  }
+}
+/* =================== /slider main hotel =================== */
+/* =================== /main hotel section =================== */
