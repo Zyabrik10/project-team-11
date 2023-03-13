@@ -26,26 +26,33 @@ if ($('.main-restaurant-slider')) {
   });
 }
 
-
-// $('.main-hotel-slider').slick({
-//   arrows: true,
-//   slidesToShow: 2,
-//   speed: 500,
-//   easing: 'easy',
-//   infinite: false,
-//   initialSlide: 0,
-//   autoplay: false,
-//   pauseOnHover: true,
-//   pauseOnFocus: true,
-//   draggable: true,
-//   swipe: true,
-//   touchThreshold: 5,
-//   touchMove: true,
-//   mobileFirst: true,
-//   waitForAnimate: true,
-//   variableWidth: true,
-//   centerMode: false,
-// });
+if ($('.main-hotel-slider')) {
+  $('.main-hotel-slider').slick({
+    arrows: true,
+    slidesToShow: 2,
+    speed: 500,
+    easing: 'easy',
+    infinite: false,
+    initialSlide: 0,
+    autoplay: false,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    draggable: true,
+    swipe: true,
+    touchThreshold: 5,
+    touchMove: true,
+    mobileFirst: true,
+    waitForAnimate: true,
+    variableWidth: true,
+    centerMode: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: 'unslick',
+      },
+    ],
+  });
+}
 
 // $('.hotel-hero-slider').slick({
 //   arrows: true,
