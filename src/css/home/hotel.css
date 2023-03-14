@@ -213,6 +213,8 @@
     font-size: 0;
     width: 24px;
     height: 24px;
+
+    border: none;
   }
 
   .main-hotel-slider .slick-arrow.slick-prev {
