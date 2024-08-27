@@ -8,7 +8,7 @@
 
   <title>Mimino | Home</title>
 
-  <link rel="icon" type="image/svg+xml" href="/project-team-11/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/project-team-11/favicon.svg" />
 
   <!-- jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
@@ -36,49 +36,52 @@
 
   <!-- Styles -->
   
-  <script type="module" crossorigin src="/project-team-11/assets/slider-slick-95ce6972.js"></script>
-  <link rel="stylesheet" href="/project-team-11/assets/slider-slick-12ce4073.css">
+
+  <!-- setCurrentPage function -->
+   <script src="./js/setCurrentPage.js"></script>
+  <script type="module" crossorigin src="/project-team-11/assets/slider-slick-02f9488b.js"></script>
+  <link rel="stylesheet" href="/project-team-11/assets/slider-slick-179bedd3.css">
 </head>
 
 <body id="up">
   <!-- header -->
-  <header class="header header-main-page">
-    <div class="container header-container header-container-main-page">
-        <button class="header-menu-button common-button" type="button" data-model-button='mobile_open'>
+  <header class="header">
+    <div class="container header-container">
+        <button class="header-menu-button " type="button" data-model-button='mobile_open'>
             <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
                 <use href="/project-team-11/assets/icons-c259e0ca.svg#menu-button"></use>
             </svg>
         </button>
         <nav class="header-navigation">
-            <ul class="header-navigation-list reset-list">
+            <ul class="header-navigation-list ">
                 <li class="header-navigation-item">
-                    <a class="header-navigation-link reset-link current" href="./">home</a>
+                    <a class="header-navigation-link " href="./">home</a>
                 </li>
                 <li class="header-navigation-item">
-                    <a class="header-navigation-link reset-link" href="./hotel.html">hotel</a>
+                    <a class="header-navigation-link " href="./hotel.html">hotel</a>
                 </li>
                 <li class="header-navigation-item">
-                    <a class="header-navigation-link reset-link" href="./restaurant.html">restaurant</a>
+                    <a class="header-navigation-link " href="./restaurant.html">restaurant</a>
                 </li>
             </ul>
         </nav>
 
-        <a class="header-logo reset-link" href="./">
+        <a class="header-logo " href="./">
             <span class="header-logo-name">mimino</span>
             <span class="header-logo-sub-name">restaurant-hotel complex</span>
         </a>
 
-        <ul class="header-media-list reset-list">
+        <ul class="header-media-list ">
             <li class="header-media-item">
-                <a class="header-main-page-media-link reset-link" href="https://www.instagram.com/"
-                    aria-label="Instagram" rel="noopener noreferrer nofollow" target="_blank">
+                <a class="header-media-link " href="https://www.instagram.com/" aria-label="Instagram"
+                    rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-header" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-instagram"></use>
                     </svg>
                 </a>
             </li>
             <li class="header-media-item">
-                <a class="header-main-page-media-link reset-link" href="https://www.facebook.com/" aria-label="Facebook"
+                <a class="header-media-link " href="https://www.facebook.com/" aria-label="Facebook"
                     rel="noopener noreferrer" rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-header" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-facebook"></use>
@@ -87,7 +90,7 @@
                 </a>
             </li>
             <li class="header-media-item">
-                <a class="header-main-page-media-link reset-link" href="https://www.twitter.com/" aria-label="Twitter"
+                <a class="header-media-link " href="https://www.twitter.com/" aria-label="Twitter"
                     rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-header" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-twitter"></use>
@@ -98,51 +101,55 @@
     </div>
 </header>
 
+  <script>
+    const header = document.querySelector("header");
+    header.classList.add('header-main-page');
+
+    setCurrentPage(0);
+  </script>
+
   <!-- main -->
   <main>
     <!-- sections -->
-    <section class="home-hero-section">
-  <div class="home-hero-container">
-    <div class="container">
-      <div class="home-hero-wrapper">
-        <h1 class="home-hero-title section-title reset-title revealator-slideright relv-animation">Mimino</h1>
-        <ul class="home-hero-button-list reset-list revealator-slideleft relv-animation revealator-delay4">
-          <li>
-            <button
-              class="home-hero-btn spec-page-button common-button backdrop_button"
-              type="button"
-              data-model-window="table"
-            >
-              book a table
-            </button>
-          </li>
-          <li>
-            <button
-              class="home-hero-btn spec-page-button common-button backdrop_button"
-              type="button"
-              data-model-window="room"
-            >
-              book a room
-            </button>
-          </li>
-        </ul>
-        <ul class="home-hero-txt-list reset-list revealator-slideright revealator-delay2 relv-animation">
-          <li class="item">
-            <p class="home-hero-txt reset-paragraph">
-              Whether you're in the mood for a hearty breakfast, a light lunch,
-              or
-              <i>a romantic dinner</i>, our menu has something for everyone.
-            </p>
-          </li>
-          <li class="item">
-            <p class="home-hero-txt reset-paragraph">
-              At Hotel Mimino, <i>we believe</i> that great food should be
-              available to everyone, no matter the time of day.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <section class="hero-section">
+  <div class="container hero-container">
+    <h1 class="hero-title section-title">Mimino</h1>
+    <ul class="hero-button-list">
+      <li>
+        <button
+          class="hero-btn spec-page-button backdrop_button"
+          type="button"
+          data-model-window="table"
+        >
+          book a table
+        </button>
+      </li>
+      <li>
+        <button
+          class="hero-btn spec-page-button backdrop_button"
+          type="button"
+          data-model-window="room"
+        >
+          book a room
+        </button>
+      </li>
+    </ul>
+    <ul
+      class="hero-txt-list"
+    >
+      <li class="item">
+        <p class="hero-txt">
+          Whether you're in the mood for a hearty breakfast, a light lunch, or
+          <i>a romantic dinner</i>, our menu has something for everyone.
+        </p>
+      </li>
+      <li class="item">
+        <p class="hero-txt">
+          At Hotel Mimino, <i>we believe</i> that great food should be available
+          to everyone, no matter the time of day.
+        </p>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -155,7 +162,7 @@
         <h1 class="section-page-home-about-title_one">About a complex</h1>
         <div class="section-page-home-about-head_wrapper">
             <div class="section-page-home-about_relative">
-                <ul class="section-page-home-about_list reset-list revealator-fade relv-animation">
+                <ul class="section-page-home-about_list  revealator-fade ">
                     <li class="section-page-home-about-list_item ">
                         <picture>
                             <source
@@ -208,7 +215,7 @@
 
                 <div class="review-home_about">
                     <img class="review-home-about_img" src="/project-team-11/assets/home-about-reviews-one-4e568760.png" alt="women">
-                    <ul class="review-home-about_text reset-list">
+                    <ul class="review-home-about_text ">
                         <li class="review-home-about_name">Maria</li>
                         <li class="review-home-about_rating">give rating<span class="review-home-about_number">
                                 4.5</span>
@@ -220,7 +227,7 @@
 
             <div class="section-page-home-about-wrapper_text">
                 <h2 class="section-page-home-about-title_two">restaurant-hotel complex</h2>
-                <ul class="section-page-home-about_text reset-list">
+                <ul class="section-page-home-about_text ">
                     <li>Indulge in a taste of luxury with every bite at Hotel Mimino. From the freshest seafood to the
                         most
                         succulent steaks,
@@ -232,7 +239,7 @@
         </div>
 
         <div class="section-page-home-about-secondery_wrapper">
-            <div class="section-page-home-about-relative_two revealator-fade relv-animation">
+            <div class="section-page-home-about-relative_two revealator-fade ">
                 <picture>
                     <source
                         srcset="/project-team-11/assets/home-about-restaurant-desktop-c77e8a08.webp 1x, /project-team-11/assets/home-about-restaurant-desktop@2x-5097e7d1.webp 2x"
@@ -259,7 +266,7 @@
 
                 <div class="review-home-about_two">
                     <img class="review-home-about_img" src="data:image/png;base64,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" alt="men">
-                    <ul class="review-home-about_text reset-list">
+                    <ul class="review-home-about_text ">
                         <li class="review-home-about_name">Alexander</li>
                         <li class="review-home-about_rating">give rating<span class="review-home-about_number">
                                 5.5</span>
@@ -268,7 +275,7 @@
                 </div>
             </div>
 
-            <div class="section-page-home-about-wrapper_tablet revealator-fade relv-animation">
+            <div class="section-page-home-about-wrapper_tablet revealator-fade ">
                 <div class="section-page-home-about-wrapper-tablet_two">
                     <h2 class="section-page-home-about-title_two">business class hotel</h2>
                     <p class="section-page-home-about_text section-page-home-about-text_two">
@@ -279,7 +286,7 @@
                         comfortable stay.</p>
                 </div>
 
-                <div class="ection-page-home-about-wrapper-tablet_three revealator-fade relv-animation">
+                <div class="ection-page-home-about-wrapper-tablet_three revealator-fade ">
                     <picture>
                         <source
                             srcset="/project-team-11/assets/home-about-recreation-room-desktop-bf660f95.webp 1x, /project-team-11/assets/home-about-recreation-room-desktop@2x-a3fcb31e.webp 2x"
@@ -312,15 +319,15 @@
 <section class="main-restaurant section">
   <div class="main-restaurant-container container">
     <div class="main-restaurant-header">
-      <h2 class="main-restaurant-title reset-title">Restaurant</h2>
-      <p class="main-restaurant-text reset-paragraph">
+      <h2 class="main-restaurant-title ">Restaurant</h2>
+      <p class="main-restaurant-text ">
         Relax and unwind with our delicious offerings, available any time of
         day.
       </p>
     </div>
-    <ul class="main-restaurant-slider reset-list">
+    <ul class="main-restaurant-slider ">
       <li
-        class="main-restaurant-slider-item reset-list revealator-slideup relv-animation"
+        class="main-restaurant-slider-item  revealator-slideup "
       >
         <picture>
           <source
@@ -358,7 +365,7 @@
             width="157"
           />
           <img
-            class="main-restaurant-slider-img common-image"
+            class="main-restaurant-slider-img "
             src="/project-team-11/assets/sl-rest-img1-mob@1x-0e773d60.jpg"
             alt="cocktail with ice and strawberries"
             width="157"
@@ -367,7 +374,7 @@
         </picture>
       </li>
       <li
-        class="main-restaurant-slider-item reset-list main-filter revealator-slideup revealator-delay1 relv-animation"
+        class="main-restaurant-slider-item  main-filter revealator-slideup  "
       >
         <picture>
           <source
@@ -405,7 +412,7 @@
             width="157"
           />
           <img
-            class="main-restaurant-slider-img common-image"
+            class="main-restaurant-slider-img "
             src="/project-team-11/assets/sl-rest-img2-des@1x-59fbd1dd.jpg"
             alt="hot sandwiches with vegetables and bacon"
             width="157"
@@ -414,7 +421,7 @@
         </picture>
       </li>
       <li
-        class="main-restaurant-slider-item reset-list main-filter revealator-slideup revealator-delay2 relv-animation"
+        class="main-restaurant-slider-item  main-filter revealator-slideup  "
       >
         <picture>
           <source
@@ -452,7 +459,7 @@
             width="157"
           />
           <img
-            class="main-restaurant-slider-img common-image"
+            class="main-restaurant-slider-img "
             src="/project-team-11/assets/sl-rest-img3-des@1x-e594bd9b.jpg"
             alt="wine glasses and wine on the table"
             width="157"
@@ -461,7 +468,7 @@
         </picture>
       </li>
       <li
-        class="main-restaurant-slider-item reset-list revealator-slideup revealator-delay3 relv-animation"
+        class="main-restaurant-slider-item  revealator-slideup revealator-delay3 "
       >
         <picture>
           <source
@@ -499,7 +506,7 @@
             width="157"
           />
           <img
-            class="main-restaurant-slider-img common-image"
+            class="main-restaurant-slider-img "
             src="/project-team-11/assets/sl-rest-img4-mob@1x-63739a59.jpg"
             alt="the cook prepares the dish"
             width="157"
@@ -508,7 +515,7 @@
         </picture>
       </li>
       <li
-        class="main-restaurant-slider-item reset-list main-filter revealator-slideup revealator-delay4 relv-animation"
+        class="main-restaurant-slider-item  main-filter revealator-slideup revealator-delay4 "
       >
         <picture>
           <source
@@ -546,7 +553,7 @@
             width="157"
           />
           <img
-            class="main-restaurant-slider-img common-image"
+            class="main-restaurant-slider-img "
             src="/project-team-11/assets/sl-rest-img5-des@1x-5413cd16.jpg"
             alt="baked salmon with vegetables and greens on a plate"
             width="157"
@@ -554,7 +561,7 @@
           />
         </picture>
       </li>
-      <li class="main-restaurant-slider-item reset-list">
+      <li class="main-restaurant-slider-item ">
         <picture>
           <source
             srcset="/project-team-11/assets/sl-rest-img6-des@1x-9781fedf.webp 1x, /project-team-11/assets/sl-rest-img6-des@2x-5c23b3f0.webp 2x"
@@ -591,7 +598,7 @@
             width="157"
           />
           <img
-            class="main-restaurant-slider-img common-image"
+            class="main-restaurant-slider-img "
             src="/project-team-11/assets/sl-rest-img6-mob@1x-d5082c41.jpg"
             alt="a plate with pasta and glasses on the table"
             width="157"
@@ -599,7 +606,7 @@
           />
         </picture>
       </li>
-      <li class="main-restaurant-slider-item reset-list">
+      <li class="main-restaurant-slider-item ">
         <picture>
           <source
             srcset="/project-team-11/assets/sl-rest-img7-des@1x-307a6bd7.webp 1x, /project-team-11/assets/sl-rest-img7-des@2x-2594e1d7.webp 2x"
@@ -636,7 +643,7 @@
             width="157"
           />
           <img
-            class="main-restaurant-slider-img common-image"
+            class="main-restaurant-slider-img "
             src="./img/home/slider-restourant-main/sl-rest-img7-mob@1x.jpg"
             alt="a satisfied girl eats at the table"
             width="157"
@@ -644,7 +651,7 @@
           />
         </picture>
       </li>
-      <li class="main-restaurant-slider-item reset-list">
+      <li class="main-restaurant-slider-item ">
         <picture>
           <source
             srcset="/project-team-11/assets/sl-rest-img8-des@1x-8c5f042e.webp 1x, /project-team-11/assets/sl-rest-img8-des@2x-75d99ea2.webp 2x"
@@ -681,7 +688,7 @@
             width="157"
           />
           <img
-            class="main-restaurant-slider-img common-image"
+            class="main-restaurant-slider-img "
             src="/project-team-11/assets/sl-rest-img8-mob@1x-18d0a8e7.jpg"
             alt="baked roll with salmon and greens"
             width="157"
@@ -689,7 +696,7 @@
           />
         </picture>
       </li>
-      <li class="main-restaurant-slider-item reset-list">
+      <li class="main-restaurant-slider-item ">
         <picture>
           <source
             srcset="/project-team-11/assets/sl-rest-img9-des@1x-1443c8b9.webp 1x, /project-team-11/assets/sl-rest-img9-des@2x-75140242.webp 2x"
@@ -726,7 +733,7 @@
             width="157"
           />
           <img
-            class="main-restaurant-slider-img common-image"
+            class="main-restaurant-slider-img "
             src="/project-team-11/assets/sl-rest-img9-mob@1x-24d7007e.jpg"
             alt="a glass of martini with olives and a sprig of greens"
             width="157"
@@ -734,7 +741,7 @@
           />
         </picture>
       </li>
-      <li class="main-restaurant-slider-item reset-list">
+      <li class="main-restaurant-slider-item ">
         <picture>
           <source
             srcset="/project-team-11/assets/sl-rest-img10-des@1x-351d772c.webp 1x, /project-team-11/assets/sl-rest-img10-des@2x-47eba018.webp 2x"
@@ -771,7 +778,7 @@
             width="157"
           />
           <img
-            class="main-restaurant-slider-img common-image"
+            class="main-restaurant-slider-img "
             src="/project-team-11/assets/sl-rest-img10-mob@1x-24fa236c.jpg"
             alt="salad with asparagus on a plate"
             width="157"
@@ -781,7 +788,7 @@
       </li>
     </ul>
 
-    <ul class="main-restaurant-buttons reset-list">
+    <ul class="main-restaurant-buttons ">
       <li class="main-restaurant-buttons-item">
         <button
           class="main-restaurant-button backdrop_button"
@@ -792,9 +799,9 @@
           book a table
         </button>
       </li>
-      <li class="main-restaurant-buttons-item reset-list">
+      <li class="main-restaurant-buttons-item ">
         <a
-          class="main-restaurant-buttons-ref-link reset-link"
+          class="main-restaurant-buttons-ref-link "
           href="./restaurant.html#menu"
           >View the menu</a
         >
@@ -808,17 +815,17 @@
 <section class="welcome section">
   <div class="welcome-container container">
     <div class="welcome-box">
-      <h2 class="welcome-title reset-title">Welcome to the epitome of
+      <h2 class="welcome-title ">Welcome to the epitome of
         <span class="welcome-title-span">luxury</span> and
         <span class="welcome-title-span">comfort</span>
       </h2>
-      <ul class="welcome-list reset-list">
-        <li class="welcome-list-item reset-list">
+      <ul class="welcome-list ">
+        <li class="welcome-list-item ">
           Our hotel rooms are elegantly designed with an eye for detail,
           ensuring that you have everything you need for a relaxing and
           rejuvenating stay.
         </li>
-        <li class="welcome-list-item reset-list">
+        <li class="welcome-list-item ">
           Each room is equipped with the latest amenities, including plush
           bedding, high-speed Wi-Fi, flat-screen TVs, and a coffee maker
           to help you start your day right. Our spacious bathrooms feature
@@ -827,7 +834,7 @@
         </li>
       </ul>
     </div>
-    <div class="welcome-box-pic revealator-fade relv-animation">
+    <div class="welcome-box-pic revealator-fade ">
       <picture>
         <source srcset="/project-team-11/assets/welcome-img1-des@1x-2a8ea624.webp 1x, /project-team-11/assets/welcome-img1-des@2x-19aa2ff6.webp 2x" media="(min-width: 1440px)" type="image/webp" width="672" />
         <source srcset="/project-team-11/assets/welcome-img1-des@1x-61cd4657.jpg 1x, /project-team-11/assets/welcome-img1-des@2x-7871ae15.jpg 2x" media="(min-width: 1440px)" type="image/jpg" width="672" />
@@ -846,8 +853,8 @@
 <section class="section home-hotel-sec">
   <div class="container home-hotel-container">
     <div class="home-hotel-description">
-      <h2 class="reset-title hotel-title home-hotel-title">Hotel</h2>
-      <p class="reset-paragraph hotel-paragraph">
+      <h2 class=" hotel-title home-hotel-title">Hotel</h2>
+      <p class=" hotel-paragraph">
         Book your stay with us now and experience the epitome of comfort and
         luxury at our hotel. We guarantee you'll be thrilled with your decision.
       </p>
@@ -855,7 +862,7 @@
 
     <div class="home-hotel-set-img">
       <div
-        class="home-hotel-img-center revealator-fade revealator-delay1 relv-animation"
+        class="home-hotel-img-center revealator-fade  "
       >
         <picture>
           <source
@@ -889,7 +896,7 @@
             type="image/jpg"
           />
           <img
-            class="common-image animated-image animated-image"
+            class=" animated-image animated-image"
             src="/project-team-11/assets/image.mob-1@1x-5626772a.jpg"
             alt="room with a large double bed and curtains on the window"
             loading="lazy"
@@ -899,7 +906,7 @@
       <ul class="home-hotel-list">
         <li class="home-hotel-list-item">
           <ul
-            class="home-hotel-img-left main-hotel-slider revealator-fade revealator-delay2 relv-animation reset-list"
+            class="home-hotel-img-left main-hotel-slider revealator-fade   "
           >
             <li class="home-hotel-img main-hotel-slider-item">
               <picture>
@@ -940,7 +947,7 @@
                   width="158"
                 />
                 <img
-                  class="common-image animated-image main-hotel-slider-img"
+                  class=" animated-image main-hotel-slider-img"
                   src="/project-team-11/assets/image.mob-2@1x-f3649640.jpg"
                   alt="shampoos and towels on the shelf"
                   width="158"
@@ -987,7 +994,7 @@
                   width="158"
                 />
                 <img
-                  class="common-image animated-image main-hotel-slider-img"
+                  class=" animated-image main-hotel-slider-img"
                   src="/project-team-11/assets/image.mob-3@1x-5556b5ad.jpg"
                   alt="a large pink bathtub with a decorative palm tree next to it"
                   width="158"
@@ -1034,7 +1041,7 @@
                   width="158"
                 />
                 <img
-                  class="common-image animated-image main-hotel-slider-img"
+                  class=" animated-image main-hotel-slider-img"
                   src="/project-team-11/assets/image.mob-4@1x-7f1b0cb9.jpg"
                   alt="creams on a shelf with a mirror"
                   width="158"
@@ -1081,7 +1088,7 @@
                   width="158"
                 />
                 <img
-                  class="common-image animated-image main-hotel-slider-img"
+                  class=" animated-image main-hotel-slider-img"
                   src="/project-team-11/assets/image.mob-5@1x-1d68dd5e.jpg"
                   alt="towels on the table with wash basins near the mirror"
                   width="158"
@@ -1093,7 +1100,7 @@
         </li>
         <li class="home-hotel-list-item home-hotel-img-right">
           <ul
-            class="home-hotel-img-right-list revealator-fade relv-animation reset-list"
+            class="home-hotel-img-right-list revealator-fade  "
           >
             <li class="home-hotel-img">
               <picture>
@@ -1118,7 +1125,7 @@
                   type="image/jpg"
                 />
                 <img
-                  class="common-image animated-image"
+                  class=" animated-image"
                   src="/project-team-11/assets/image.tablet-4@1x-ea9f4e5b.jpg"
                   alt="a large pink bathtub with a decorative palm tree next to it"
                 />
@@ -1147,7 +1154,7 @@
                   type="image/jpg"
                 />
                 <img
-                  class="common-image animated-image"
+                  class=" animated-image"
                   src="/project-team-11/assets/image.tablet-5@1x-5cc37677.jpg"
                   alt="towels on the table with wash basins near the mirror"
                 />
@@ -1158,10 +1165,10 @@
       </ul>
     </div>
 
-    <ul class="reset-list home-hotel-btn-list">
+    <ul class=" home-hotel-btn-list">
       <li>
         <button
-          class="spec-page-button common-button hotel-btn backdrop_button"
+          class="spec-page-button  hotel-btn backdrop_button"
           type="button"
           data-model-window="room"
         >
@@ -1170,7 +1177,7 @@
       </li>
       <li>
         <a
-          class="spec-page-button common-button hotel-btn reset-link"
+          class="spec-page-button  hotel-btn "
           href="./room.html"
           >View room</a
         >
@@ -1183,7 +1190,7 @@
     <!-- location section -->
 <section class="section location-section">
   <div class="container location-container">
-    <h2 class="reset-title section-title location-title">location</h2>
+    <h2 class=" section-title location-title">location</h2>
     <div class="map-location">
       <iframe
         class="map-location-ref"
@@ -1198,20 +1205,20 @@
     </div>
     <div class="contact-block">
       <address class="contact-address">
-        <p class="contact-address-text reset-paragraph">
+        <p class="contact-address-text ">
           Ukraine, Poltava, <br />
           St. Marshal Biryuzov, 15
         </p>
         <div class="contacts-number">
-          <p class="contacts-number-text reset-paragraph">call us:</p>
-          <ul class="our-number reset-list">
-            <li class="our-number-item reset-list">
-              <a class="reset-link number-phone" href="tel:+380955559533"
+          <p class="contacts-number-text ">call us:</p>
+          <ul class="our-number ">
+            <li class="our-number-item ">
+              <a class=" number-phone" href="tel:+380955559533"
                 >(095) 555 95 33</a
               >
             </li>
-            <li class="our-number-item reset-list">
-              <a class="reset-link number-phone" href="tel:+380668491089"
+            <li class="our-number-item ">
+              <a class=" number-phone" href="tel:+380668491089"
                 >(066) 849 10 89</a
               >
             </li>
@@ -1229,27 +1236,27 @@
   <footer class="footer">
     <div class="container footer-container">
         <nav class="footer-navigation">
-            <ul class="footer-navigation-list reset-list">
+            <ul class="footer-navigation-list ">
                 <li class="footer-navigation-item">
-                    <a class="footer-navigation-link reset-link" href="./">home</a>
+                    <a class="footer-navigation-link " href="./">home</a>
                 </li>
                 <li class="footer-navigation-item">
-                    <a class="footer-navigation-link reset-link" href="./hotel.html">hotel</a>
+                    <a class="footer-navigation-link " href="./hotel.html">hotel</a>
                 </li>
                 <li class="footer-navigation-item">
-                    <a class="footer-navigation-link reset-link" href="./restaurant.html">restaurant</a>
+                    <a class="footer-navigation-link " href="./restaurant.html">restaurant</a>
                 </li>
             </ul>
         </nav>
 
-        <a class="footer-logo reset-link" href="./">
+        <a class="footer-logo " href="./">
             <span class="footer-logo-name">mimino</span>
             <span class="footer-logo-sub-name">restaurant-hotel complex</span>
         </a>
 
-        <ul class="footer-media-list reset-list">
+        <ul class="footer-media-list ">
             <li class="footer-media-item">
-                <a class="footer-media-link reset-link" href="https://www.instagram.com/" aria-label="Instagram"
+                <a class="footer-media-link " href="https://www.instagram.com/" aria-label="Instagram"
                     rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-footer" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-instagram"></use>
@@ -1260,7 +1267,7 @@
 
             </li>
             <li class="footer-media-item">
-                <a class="footer-media-link reset-link" href="https://www.facebook.com/" aria-label="Facebook"
+                <a class="footer-media-link " href="https://www.facebook.com/" aria-label="Facebook"
                     rel="noopener noreferrer" rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-footer" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-facebook"></use>
@@ -1269,7 +1276,7 @@
                 </a>
             </li>
             <li class="footer-media-item">
-                <a class="footer-media-link reset-link" href="https://www.twitter.com/" aria-label="Twitter"
+                <a class="footer-media-link " href="https://www.twitter.com/" aria-label="Twitter"
                     rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-footer" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-twitter"></use>
@@ -1330,7 +1337,7 @@
           <label class="book-form-label" for="phone_number">Phone number</label>
         </div>
       </div>
-      <button class="book-form-button common-button" type="submit">
+      <button class="book-form-button " type="submit">
         Make a reservation
       </button>
     </form>
@@ -1390,7 +1397,7 @@
           <label class="book-form-label" for="category">Number category</label>
         </div>
       </div>
-      <button class="book-form-button common-button" type="submit">
+      <button class="book-form-button " type="submit">
         Make a reservation
       </button>
     </form>
@@ -1429,7 +1436,7 @@
           <label class="book-form-label" for="price">UAH</label>
         </div>
       </div>
-      <button class="book-form-button common-button" type="submit">
+      <button class="book-form-button " type="submit">
         Make a reservation
       </button>
     </form>
@@ -1445,7 +1452,7 @@
   </button>
 
   <div class="header-mob">
-    <a class="reset-link" href="./">
+    <a  href="./">
       <div class="logo-mob-wrp">
         <h2 class="logo-mob-title">Mimino</h2>
         <p class="logo-mob-discr">restaurant-hotel complex</p>
@@ -1454,22 +1461,22 @@
   </div>
 
   <nav class="nav-wrp">
-    <ul class="site-nav-mob reset-list">
+    <ul class="site-nav-mob ">
       <li class="site-nav-mob-item">
-        <a href="./" class="nav-mob-link reset-link">Home</a>
+        <a href="./" class="nav-mob-link ">Home</a>
       </li>
       <li class="site-nav-mob-item">
-        <a href="./hotel.html" class="nav-mob-link reset-link">Hotel</a>
+        <a href="./hotel.html" class="nav-mob-link ">Hotel</a>
       </li>
       <li class="site-nav-mob-item">
-        <a href="./restaurant.html" class="nav-mob-link reset-link">Restaurant</a>
+        <a href="./restaurant.html" class="nav-mob-link ">Restaurant</a>
       </li>
     </ul>
   </nav>
 
-  <ul class="social-mob-list reset-list">
+  <ul class="social-mob-list ">
     <li class="social-mob-list-item">
-      <a class="social-mob-list-link reset-link" href="https://instagram.com" aria-label="Instagram" target="_blank"
+      <a class="social-mob-list-link " href="https://instagram.com" aria-label="Instagram" target="_blank"
         rel="noopener noreferrer">
         <svg class="social-mob-icon" width="24" height="24">
           <use href="/project-team-11/assets/icons-c259e0ca.svg#instagram"></use>
@@ -1477,7 +1484,7 @@
       </a>
     </li>
     <li class="social-mob-list-item">
-      <a class="social-mob-list-link reset-link" href="https://facebook.com" aria-label="Facebook" target="_blank"
+      <a class="social-mob-list-link " href="https://facebook.com" aria-label="Facebook" target="_blank"
         rel="noopener noreferrer">
         <svg class="social-mob-icon" width="24" height="24">
           <use href="/project-team-11/assets/icons-c259e0ca.svg#facebook"></use>
@@ -1485,7 +1492,7 @@
       </a>
     </li>
     <li class="social-mob-list-item">
-      <a class="social-mob-list-link reset-link" href="https://twitter.com" aria-label="Twitter" target="_blank"
+      <a class="social-mob-list-link " href="https://twitter.com" aria-label="Twitter" target="_blank"
         rel="noopener noreferrer">
         <svg class="social-mob-icon" width="24" height="24">
           <use href="/project-team-11/assets/icons-c259e0ca.svg#twitter"></use>
@@ -1496,7 +1503,7 @@
 </div>
 
   <!-- Anchor -->
-  <a id="anchor-up" class="reset-link hidden" href="#up">up</a>
+  <a id="anchor-up" class=" hidden" href="#up">up</a>
 
   <!-- main js -->
   

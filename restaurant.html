@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mimino | Restaurant</title>
 
-  <link rel="icon" type="image/svg+xml" href="/project-team-11/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/project-team-11/favicon.svg" />
 
   <!-- jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
@@ -21,6 +21,8 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+  <script src="/js/slick.min.js"></script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,41 +35,44 @@
 
   <!-- Styles -->
   
-  <script type="module" crossorigin src="/project-team-11/assets/slider-slick-95ce6972.js"></script>
-  <link rel="stylesheet" href="/project-team-11/assets/slider-slick-12ce4073.css">
+
+  <!-- setCurrentPage function -->
+   <script src="./js/setCurrentPage.js"></script>
+  <script type="module" crossorigin src="/project-team-11/assets/slider-slick-02f9488b.js"></script>
+  <link rel="stylesheet" href="/project-team-11/assets/slider-slick-179bedd3.css">
 </head>
 
 <body id="up">
   <!-- header -->
   <header class="header">
     <div class="container header-container">
-        <button class="header-menu-button common-button" type="button" data-model-button='mobile_open'>
+        <button class="header-menu-button " type="button" data-model-button='mobile_open'>
             <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
                 <use href="/project-team-11/assets/icons-c259e0ca.svg#menu-button"></use>
             </svg>
         </button>
         <nav class="header-navigation">
-            <ul class="header-navigation-list reset-list">
+            <ul class="header-navigation-list ">
                 <li class="header-navigation-item">
-                    <a class="header-navigation-link reset-link" href="./">home</a>
+                    <a class="header-navigation-link " href="./">home</a>
                 </li>
                 <li class="header-navigation-item">
-                    <a class="header-navigation-link reset-link" href="./hotel.html">hotel</a>
+                    <a class="header-navigation-link " href="./hotel.html">hotel</a>
                 </li>
                 <li class="header-navigation-item">
-                    <a class="header-navigation-link reset-link current" href="./restaurant.html">restaurant</a>
+                    <a class="header-navigation-link " href="./restaurant.html">restaurant</a>
                 </li>
             </ul>
         </nav>
 
-        <a class="header-logo reset-link" href="./">
+        <a class="header-logo " href="./">
             <span class="header-logo-name">mimino</span>
             <span class="header-logo-sub-name">restaurant-hotel complex</span>
         </a>
 
-        <ul class="header-media-list reset-list">
+        <ul class="header-media-list ">
             <li class="header-media-item">
-                <a class="header-media-link reset-link" href="https://www.instagram.com/" aria-label="Instagram"
+                <a class="header-media-link " href="https://www.instagram.com/" aria-label="Instagram"
                     rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-header" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-instagram"></use>
@@ -75,7 +80,7 @@
                 </a>
             </li>
             <li class="header-media-item">
-                <a class="header-media-link reset-link" href="https://www.facebook.com/" aria-label="Facebook"
+                <a class="header-media-link " href="https://www.facebook.com/" aria-label="Facebook"
                     rel="noopener noreferrer" rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-header" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-facebook"></use>
@@ -84,7 +89,7 @@
                 </a>
             </li>
             <li class="header-media-item">
-                <a class="header-media-link reset-link" href="https://www.twitter.com/" aria-label="Twitter"
+                <a class="header-media-link " href="https://www.twitter.com/" aria-label="Twitter"
                     rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-header" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-twitter"></use>
@@ -95,6 +100,10 @@
     </div>
 </header>
 
+  <script>
+    setCurrentPage(2);
+  </script>
+
   <!-- main -->
   <main>
     <!-- sections -->
@@ -102,26 +111,26 @@
   <div class="container">
     <div class="restaurant-flex">
       <div class="restaurant-title-button">
-        <h1 class="restaurant-title revealator-slideright relv-animation">
+        <h1 class="restaurant-title  ">
           restaurant
         </h1>
         <ul
-          class="restaurant-button-flex reset-list revealator-slideright revealator-delay1 relv-animation"
+          class="restaurant-button-flex"
         >
           <li>
             <button
               type="button"
-              class="restaurant-button-hero common-button"
+              class="restaurant-button-hero "
               data-model-window="table"
             >
               book a table
             </button>
           </li>
           <li>
-            <a class="reset-link" href="#menu">
+            <a  href="#menu">
               <button
                 type="button"
-                class="restaurant-button-hero common-button"
+                class="restaurant-button-hero "
               >
                 View a menu
               </button>
@@ -130,10 +139,10 @@
         </ul>
       </div>
       <ul
-        class="restaurant-photo-flex reset-list revealator-slideleft revealator-delay2 relv-animation"
+        class="restaurant-photo-flex"
       >
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image1-desk-1x-477557d3.webp 1x, /project-team-11/assets/image1-desk-2x-919f7081.webp 2x"
@@ -183,7 +192,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image2-desk-1x-ffd76e6c.webp 1x, /project-team-11/assets/image2-desk-2x-51fb5272.webp 2x"
@@ -233,7 +242,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image3-desk-1x-dc62642e.webp 1x, /project-team-11/assets/image3-desk-2x-2c43cfcc.webp 2x"
@@ -283,7 +292,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image4-desk-1x-82fed214.webp 1x, /project-team-11/assets/image4-desk-2x-736b4e8e.webp 2x"
@@ -333,7 +342,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image5-desk-1x-1909e653.webp 1x, /project-team-11/assets/image5-desk-2x-029e727c.webp 2x"
@@ -383,7 +392,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image6-desk-1x-ca98a92b.webp 1x, /project-team-11/assets/image6-desk-2x-b16ae1e0.webp 2x"
@@ -433,7 +442,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image7-desk-1x-4030e288.webp 1x, /project-team-11/assets/image7-desk-2x-72ff6458.webp 2x"
@@ -483,7 +492,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image8-desk-1x-d7442222.webp 1x, /project-team-11/assets/image8-desk-2x-0718a63e.webp 2x"
@@ -533,7 +542,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image9-desk-1x-26f96a55.webp 1x, /project-team-11/assets/image9-desk-2x-a000bc6e.webp 2x"
@@ -583,7 +592,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image10-desk-1x-00025fa6.webp 1x, /project-team-11/assets/image10-desk-2x-eace8054.webp 2x"
@@ -633,7 +642,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image11-desk-1x-17c7691d.webp 1x, /project-team-11/assets/image11-desk-2x-3618afaf.webp 2x"
@@ -683,7 +692,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image12-desk-1x-4f6adff1.webp 1x, /project-team-11/assets/image12-desk-2x-604b731a.webp 2x"
@@ -733,7 +742,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image13-desk-1x-578cb2eb.webp 1x, /project-team-11/assets/image13-desk-2x-4650390e.webp 2x"
@@ -783,7 +792,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image14-desk-1x-22641ef4.webp 1x, /project-team-11/assets/image14-desk-2x-c0e912fe.webp 2x"
@@ -833,7 +842,7 @@
           </picture>
         </li>
         <li class="main-restaurant-slider-item">
-          <picture class="common-image">
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcset="/project-team-11/assets/image15-desk-1x-b7801b4a.webp 1x, /project-team-11/assets/image15-desk-2x-3fe56a77.webp 2x"
@@ -886,7 +895,7 @@
     </div>
     <div class="restaurant-arrow-par">
       <ul
-        class="restaurant-slider-arrows reset-list revealator-slideleft revealator-delay4 relv-animation"
+        class="restaurant-slider-arrows   revealator-delay4 "
       >
         <li>
           <button type="button" class="restaurant-slider-buttons slick-arrow">
@@ -898,10 +907,10 @@
         <li>
           <button
             type="button"
-            class="restaurant-slider-buttons common-button slick-arrow"
+            class="restaurant-slider-buttons  slick-arrow"
           >
             <svg
-              class="restaurant-arrow-button common-button"
+              class="restaurant-arrow-button "
               width="7"
               height="14"
             >
@@ -911,7 +920,7 @@
         </li>
       </ul>
       <p
-        class="reset-paragraph restaurant-hero-par revealator-slideright revealator-delay3 relv-animation"
+        class=" restaurant-hero-par  revealator-delay3 "
       >
         Whether you're in the mood for a hearty breakfast, a light lunch, or
         <i>a romantic dinner</i>, our menu has something for everyone.
@@ -922,9 +931,9 @@
 
     <section class="about section">
   <div class="container">
-    <h1 class="reset-title visually-hidden">About a kitchen</h1>
+    <h1 class=" visually-hidden">About a kitchen</h1>
     <div class="about-pics-wrapper">
-      <picture class="about-pic revealator-fade relv-animation">
+      <picture class="about-pic revealator-fade ">
         <source media="(min-width: 1440px)" srcset="/project-team-11/assets/img1-desk-1x-e101e295.webp 1x, /project-team-11/assets/img1-desk-2x-635ca67b.webp 2x" width="511" type="image/webp" />
         <source media="(min-width: 1440px)" srcset="/project-team-11/assets/img1-desk-1x-7d081ce9.jpg 1x, /project-team-11/assets/img1-desk-2x-244c8b83.jpg 2x" width="511" type="image/jpg" />
         <source media="(min-width: 768px)" srcset="/project-team-11/assets/img1-tab-1x-80c7f0f3.webp 1x, /project-team-11/assets/img1-tab-2x-9a5d18e3.webp 2x" width="388" type="image/webp" />
@@ -934,9 +943,9 @@
         <img src="/project-team-11/assets/img1-mob-1x-ceb8ae02.jpg" alt="About a Kitchen" width="335" height="443"
           class="about-img animated-image" />
       </picture>
-      <ul class="about-pics-list reset-list">
+      <ul class="about-pics-list ">
         <li>
-          <picture class="revealator-fade revealator-delay1 relv-animation">
+          <picture class="revealator-fade  ">
             <source media="(min-width: 1440px)" srcset="/project-team-11/assets/img2-desk-1x-370ce697.webp 1x, /project-team-11/assets/img2-desk-2x-c5c47ee3.webp 2x" width="334" type="image/webp" />
             <source media="(min-width: 1440px)" srcset="/project-team-11/assets/img2-desk-1x-853c9b9f.jpg 1x, /project-team-11/assets/img2-desk-2x-76ecd189.jpg 2x" width="334" type="image/jpg" />
             <source media="(min-width: 768px)" srcset="/project-team-11/assets/img2-tab-1x-375f0112.webp 1x, /project-team-11/assets/img2-tab-2x-310ec9d7.webp 2x" width="284" type="image/webp" />
@@ -946,7 +955,7 @@
             <img src="/project-team-11/assets/img2-mob-1x-bb904af7.jpg" width="158" height="149" alt="About a Kitchen"
               class="about-img animated-image" />
           </picture>
-          <p class="about-txt-hidden reset-paragraph">
+          <p class="about-txt-hidden ">
             At Mimino, we are experts in <i>meat preparation</i>. Our chefs use
             only <br />
             the finest and freshest ingredients to create
@@ -955,7 +964,7 @@
           </p>
         </li>
         <li>
-          <picture class="revealator-fade revealator-delay2 relv-animation">
+          <picture class="revealator-fade  ">
             <source media="(min-width: 1440px)" srcset="/project-team-11/assets/img3-desk-1x-6d55e7fa.webp 1x, /project-team-11/assets/img3-desk-2x-827b253d.webp 2x" width="467" type="image/webp" />
             <source media="(min-width: 1440px)" srcset="/project-team-11/assets/img3-desk-1x-26bb61cc.jpg 1x, /project-team-11/assets/img3-desk-2x-1fbbb475.jpg 2x" width="467" type="image/jpg" />
             <source media="(min-width: 768px)" srcset="/project-team-11/assets/img3-tab-1x-018fbbb8.webp 1x, /project-team-11/assets/img3-tab-2x-a1b9a34e.webp 2x" width="284" type="image/webp" />
@@ -965,7 +974,7 @@
             <img src="/project-team-11/assets/img3-mob-1x-524db0ef.jpg" alt="About a Kitchen" width="157" height="149"
               class="about-img animated-image" />
           </picture>
-          <p class="about-txt-hidden reset-paragraph">
+          <p class="about-txt-hidden ">
             Our <i>slow-cooking</i> process and expert seasoning bring out the
             best in each dish, <br />
             making for an unforgettable dining experience. Come taste the magic
@@ -974,9 +983,9 @@
         </li>
       </ul>
     </div>
-    <ul class="about-txt-list reset-list">
+    <ul class="about-txt-list ">
       <li>
-        <p class="about-txt reset-paragraph">
+        <p class="about-txt ">
           At Mimino, we are experts in <i>meat preparation</i>. Our chefs use
           only the finest and freshest ingredients to create
           <i>delicious</i> dishes that showcase the flavors of premium cuts of
@@ -984,7 +993,7 @@
         </p>
       </li>
       <li>
-        <p class="about-txt reset-paragraph">
+        <p class="about-txt ">
           Our <i>slow-cooking</i> process and expert seasoning bring out the
           best in each dish, making for an unforgettable dining experience. Come
           taste the magic <i>of meat preparation</i> at Mimino.
@@ -995,100 +1004,100 @@
 </section>
     <section class="rest-menu section" id="menu">
   <div class="container rest-menu-content">
-    <h2 class="rest-menu-title reset-title section-title">Restautant menu</h2>
-    <ul class="rest-menu-list reset-list flex-container">
+    <h2 class="rest-menu-title  section-title">Restautant menu</h2>
+    <ul class="rest-menu-list  flex-container">
       <li class="rest-menu-item flex-container-item">
-        <h3 class="rest-menu-item-title reset-title">Hot meals</h3>
-        <ul class="menu-meal-list reset-list revealator-slideright relv-animation">
+        <h3 class="rest-menu-item-title ">Hot meals</h3>
+        <ul class="menu-meal-list   ">
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Veal borscht with beans
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 400 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Veal, potatoes, cabbage, carrots, onions, beans, garlic,
                 tomatoes, greens, sour cream
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 240 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Cheese soup with chicken
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 400 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Chicken, potatoes, carrots, onions, mushrooms, soft cheese,
                 greens
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 200 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Carbonara pasta
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 400 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Tagliatelle pasta, bacon, cream, Parmesan cheese, egg, greens
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 430 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Pork steak
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 400 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Pork tenderloin, spices, served with sweet chili sauce and
                 vegetables
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 500 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Gorbusha in white wine sauce
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 400 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Tender redfish, cream sauce based on white wine
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 400 UAH
               </p>
             </div>
@@ -1096,95 +1105,95 @@
         </ul>
       </li>
       <li class="rest-menu-item flex-container-item">
-        <h3 class="rest-menu-item-title reset-title">Side dishes and snacks</h3>
-        <ul class="menu-meal-list reset-list revealator-slideleft relv-animation">
+        <h3 class="rest-menu-item-title ">Side dishes and snacks</h3>
+        <ul class="menu-meal-list   ">
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Baked vegetables
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 200 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Zucchini, pepper, tomato, eggplant
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 230 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 French fries
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 150 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Potatoes, tomato sauce
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 160 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Peasant-style potatoes
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 150 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Potatoes, spices, spicy sauces
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 160 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Crisp pickles from the barrel
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 250 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Salted cucumber, pickled tomato, sauerkraut, Korean carrot
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 350 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Chicken wings in honey sauce
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 400 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Chicken wings, mustard-honey sauce, served with carrots, celery
                 and blue cheese sauce
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 400 UAH
               </p>
             </div>
@@ -1192,80 +1201,80 @@
         </ul>
       </li>
       <li class="rest-menu-item flex-container-item">
-        <h3 class="rest-menu-item-title reset-title">Salads</h3>
-        <ul class="menu-meal-list reset-list revealator-slideright relv-animation">
+        <h3 class="rest-menu-item-title ">Salads</h3>
+        <ul class="menu-meal-list   ">
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Caesar with chicken
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 230 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Chicken fillet, lettuce, cherry tomatoes, Parmesan cheese,
                 croutons, Caesar sauce
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 450 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Caesar with shrimp
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 230 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 PTiger shrimp, lettuce, cherry tomatoes, parmesan cheese,
                 croutons, caesar sauce
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 300 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Greek salad
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 230 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Fresh cucumber, tomato, bell pepper, olives, brynza cheese,
                 lettuce, sauce
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 280 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Meat salad
               </p>
-              <p class="menu-meal-item-data reset-paragraph menu-meal-item-weight">
+              <p class="menu-meal-item-data  menu-meal-item-weight">
                 230 g
               </p>
             </div>
             <div class="menu-meal-item-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph compound">
+              <p class="menu-meal-item-p menu-meal-item-data  compound">
                 Chicken fillet or pork tenderloin, fresh cucumber, tomato, bell
                 pepper, ranch sauce
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 300 UAH
               </p>
             </div>
@@ -1273,67 +1282,67 @@
         </ul>
       </li>
       <li class="rest-menu-item flex-container-item">
-        <h3 class="rest-menu-item-title reset-title">Desserts</h3>
-        <ul class="menu-meal-list reset-list revealator-slideleft relv-animation">
+        <h3 class="rest-menu-item-title ">Desserts</h3>
+        <ul class="menu-meal-list   ">
           <li class="menu-meal-item">
             <div class="menu-meal-item-box extra-menu-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Napoleon cake
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 200 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box extra-menu-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Poppy cake
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 300 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box extra-menu-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Tiramisu
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 260 UAH
               </p>
             </div>
           </li>
         </ul>
-        <h3 class="rest-menu-item-title reset-title menu-drinks">Drinks</h3>
-        <ul class="menu-meal-list reset-list revealator-slideleft relv-animation">
+        <h3 class="rest-menu-item-title  menu-drinks">Drinks</h3>
+        <ul class="menu-meal-list   ">
           <li class="menu-meal-item">
             <div class="menu-meal-item-box extra-menu-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Black/green tea
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 100 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box extra-menu-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Espresso
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 100 UAH
               </p>
             </div>
           </li>
           <li class="menu-meal-item">
             <div class="menu-meal-item-box extra-menu-box">
-              <p class="menu-meal-item-p menu-meal-item-data reset-paragraph menu-meal-item-name">
+              <p class="menu-meal-item-p menu-meal-item-data  menu-meal-item-name">
                 Cappuccino
               </p>
-              <p class="menu-meal-item-price menu-meal-item-data reset-paragraph">
+              <p class="menu-meal-item-price menu-meal-item-data ">
                 100 UAH
               </p>
             </div>
@@ -1342,7 +1351,7 @@
       </li>
     </ul>
 
-    <ul class="rest-menu-remote-list reset-list">
+    <ul class="rest-menu-remote-list ">
       <li class="rest-menu-remote-item">
         <button class="rest-menu-remote-button">
           <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
@@ -1367,27 +1376,27 @@
   <footer class="footer">
     <div class="container footer-container">
         <nav class="footer-navigation">
-            <ul class="footer-navigation-list reset-list">
+            <ul class="footer-navigation-list ">
                 <li class="footer-navigation-item">
-                    <a class="footer-navigation-link reset-link" href="./">home</a>
+                    <a class="footer-navigation-link " href="./">home</a>
                 </li>
                 <li class="footer-navigation-item">
-                    <a class="footer-navigation-link reset-link" href="./hotel.html">hotel</a>
+                    <a class="footer-navigation-link " href="./hotel.html">hotel</a>
                 </li>
                 <li class="footer-navigation-item">
-                    <a class="footer-navigation-link reset-link" href="./restaurant.html">restaurant</a>
+                    <a class="footer-navigation-link " href="./restaurant.html">restaurant</a>
                 </li>
             </ul>
         </nav>
 
-        <a class="footer-logo reset-link" href="./">
+        <a class="footer-logo " href="./">
             <span class="footer-logo-name">mimino</span>
             <span class="footer-logo-sub-name">restaurant-hotel complex</span>
         </a>
 
-        <ul class="footer-media-list reset-list">
+        <ul class="footer-media-list ">
             <li class="footer-media-item">
-                <a class="footer-media-link reset-link" href="https://www.instagram.com/" aria-label="Instagram"
+                <a class="footer-media-link " href="https://www.instagram.com/" aria-label="Instagram"
                     rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-footer" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-instagram"></use>
@@ -1398,7 +1407,7 @@
 
             </li>
             <li class="footer-media-item">
-                <a class="footer-media-link reset-link" href="https://www.facebook.com/" aria-label="Facebook"
+                <a class="footer-media-link " href="https://www.facebook.com/" aria-label="Facebook"
                     rel="noopener noreferrer" rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-footer" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-facebook"></use>
@@ -1407,7 +1416,7 @@
                 </a>
             </li>
             <li class="footer-media-item">
-                <a class="footer-media-link reset-link" href="https://www.twitter.com/" aria-label="Twitter"
+                <a class="footer-media-link " href="https://www.twitter.com/" aria-label="Twitter"
                     rel="noopener noreferrer nofollow" target="_blank">
                     <svg class="social-icon-footer" width="20" height="20">
                         <use href="/project-team-11/assets/icons-c259e0ca.svg#icon-twitter"></use>
@@ -1468,7 +1477,7 @@
           <label class="book-form-label" for="phone_number">Phone number</label>
         </div>
       </div>
-      <button class="book-form-button common-button" type="submit">
+      <button class="book-form-button " type="submit">
         Make a reservation
       </button>
     </form>
@@ -1484,7 +1493,7 @@
   </button>
 
   <div class="header-mob">
-    <a class="reset-link" href="./">
+    <a  href="./">
       <div class="logo-mob-wrp">
         <h2 class="logo-mob-title">Mimino</h2>
         <p class="logo-mob-discr">restaurant-hotel complex</p>
@@ -1493,22 +1502,22 @@
   </div>
 
   <nav class="nav-wrp">
-    <ul class="site-nav-mob reset-list">
+    <ul class="site-nav-mob ">
       <li class="site-nav-mob-item">
-        <a href="./" class="nav-mob-link reset-link">Home</a>
+        <a href="./" class="nav-mob-link ">Home</a>
       </li>
       <li class="site-nav-mob-item">
-        <a href="./hotel.html" class="nav-mob-link reset-link">Hotel</a>
+        <a href="./hotel.html" class="nav-mob-link ">Hotel</a>
       </li>
       <li class="site-nav-mob-item">
-        <a href="./restaurant.html" class="nav-mob-link reset-link">Restaurant</a>
+        <a href="./restaurant.html" class="nav-mob-link ">Restaurant</a>
       </li>
     </ul>
   </nav>
 
-  <ul class="social-mob-list reset-list">
+  <ul class="social-mob-list ">
     <li class="social-mob-list-item">
-      <a class="social-mob-list-link reset-link" href="https://instagram.com" aria-label="Instagram" target="_blank"
+      <a class="social-mob-list-link " href="https://instagram.com" aria-label="Instagram" target="_blank"
         rel="noopener noreferrer">
         <svg class="social-mob-icon" width="24" height="24">
           <use href="/project-team-11/assets/icons-c259e0ca.svg#instagram"></use>
@@ -1516,7 +1525,7 @@
       </a>
     </li>
     <li class="social-mob-list-item">
-      <a class="social-mob-list-link reset-link" href="https://facebook.com" aria-label="Facebook" target="_blank"
+      <a class="social-mob-list-link " href="https://facebook.com" aria-label="Facebook" target="_blank"
         rel="noopener noreferrer">
         <svg class="social-mob-icon" width="24" height="24">
           <use href="/project-team-11/assets/icons-c259e0ca.svg#facebook"></use>
@@ -1524,7 +1533,7 @@
       </a>
     </li>
     <li class="social-mob-list-item">
-      <a class="social-mob-list-link reset-link" href="https://twitter.com" aria-label="Twitter" target="_blank"
+      <a class="social-mob-list-link " href="https://twitter.com" aria-label="Twitter" target="_blank"
         rel="noopener noreferrer">
         <svg class="social-mob-icon" width="24" height="24">
           <use href="/project-team-11/assets/icons-c259e0ca.svg#twitter"></use>
@@ -1535,7 +1544,7 @@
 </div>
 
   <!-- Anchor -->
-  <a id="anchor-up" class="reset-link hidden" href="#up">up</a>
+  <a id="anchor-up" class=" hidden" href="#up">up</a>
 
   <!-- scripts -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
