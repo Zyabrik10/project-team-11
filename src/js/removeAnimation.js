@@ -1,4 +1,4 @@
-// const relveators = document.querySelectorAll(".relv-animation");
+// const relveators = document.querySelectorAll(".");
 
 // function removeAnimation() {
 //     if (innerWidth <= 900) {

@@ -119,6 +119,11 @@
   }
 }
 
+.main-restaurant-slider-item{
+  width: 70%;
+  flex-shrink: 0;
+}
+
 .restaurant-slider-arrows {
   display: flex;
   justify-content: right;

@@ -49,7 +49,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 375px;
+  max-width: 415px;
 
   padding-left: 20px;
   padding-right: 20px;
@@ -104,13 +104,13 @@ body {
   padding-bottom: 0;
 }
 
-.common-image {
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.common-button {
+button {
   color: currentColor;
   cursor: pointer;
 
@@ -125,8 +125,6 @@ body {
 }
 
 .section-title {
-  font-style: normal;
-
   font-weight: 700;
   font-size: 32px;
 

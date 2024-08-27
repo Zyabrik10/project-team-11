@@ -1,5 +1,10 @@
-.triple-room-list {
-  min-width: 335px;
+.hotel-room-section {
+  background-color: var(--common-light);
+}
+
+.hotel-room-list {
+  position: relative;
+  min-width: 355px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -7,33 +12,54 @@
 }
 
 @media screen and (min-width: 768px) {
-  .triple-room-list {
+  .hotel-room-list {
     margin-bottom: 40px;
     gap: 32px;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .triple-room-list {
+    justify-content: flex-start;
+  }
+
+  .hotel-room-bath {
+    order: -2;
+  }
+
+
+  .triple-room-list .hotel-room-bath {
+    order: 0;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hotel-room-kitchen {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+  }
+
+  .triple-room-list .hotel-room-kitchen {
+    right: 0;
+    left: auto;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .triple-room-list {
+  .hotel-room-list {
     display: flex;
     max-width: 1440px;
     flex-direction: row;
     margin-bottom: 50px;
   }
-  .triple-kitchen {
+
+  .hotel-room-kitchen {
+    order: -3;
+  }
+  .hotel-room-bed {
     order: -2;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .triple-room-list {
-    position: relative;
-  }
-
-  .triple-kitchen {
-    position: absolute;
-    right: 0px;
-    bottom: 0;
   }
 }
 
@@ -50,9 +76,17 @@
   }
 }
 
+
 @media screen and (min-width: 1440px) {
-  .room-text-title-box {
-    margin-left: auto;
+  .hotel-room-box {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hotel-room-title-box {
+    margin-right: auto;
   }
 }
 
@@ -93,6 +127,7 @@
 }
 
 .hotel-room-paragraph {
+  max-width: 475px !important;
   font-size: 14px;
   line-height: calc(18 / 14);
 }
@@ -124,9 +159,27 @@
   gap: 14px;
 }
 
-@media screen and (max-width: 326px) {
+@media screen and (min-width: 768px) {
   .hotel-room-buttons-list {
-    flex-direction: column;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .tripple-room-section .hotel-room-buttons-list{
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hotel-room-buttons-list {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .tripple-room-section .hotel-room-buttons-list{
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -144,4 +197,3 @@
   background-color: var(--common-dark);
   color: var(--common-light);
 }
-

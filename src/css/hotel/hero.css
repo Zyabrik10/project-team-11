@@ -111,6 +111,11 @@
     gap: 32px;
     margin-bottom: 16px;
   }
+
+  .hotel-photo-flex > li{
+    flex-shrink: 0;
+    width: 70%;
+  }
 }
 
 .slider-arrows {
